@@ -1,0 +1,161 @@
+\section{Test problem and numerical protocol}
+\label{sec:experiments}
+
+\subsection{Spectrally controlled manufactured family}
+\label{subsec:spectral_controlled_fadeev}
+
+The experiments are built on the rotated Fadeev equilibrium~\cite{Fadeev1965Self-focusingCurrents},
+\begin{equation}
+\begin{aligned}
+&\Psi_F(x,y) = \ln\!\left[ \alpha\cos\widetilde{x} + \sqrt{1+\alpha^2}\cosh\widetilde{y} \right],
+\\
+&\widetilde{x}=x\cos\theta-y\sin\theta, \quad \widetilde{y}=x\sin\theta+y\cos\theta ,
+\end{aligned}
+\label{eq:fadeev_solution}
+\end{equation}
+on $\Omega=[-15,15]\times[-5,5]$, which satisfies Eq.~\eqref{eq:grad-shafranov} with the free function $F(\Psi)=-\tfrac{1}{2}e^{-2\Psi}$, so that $\dv*{F}{\Psi}=e^{-2\Psi}$.
+
+ To place $\rho(\mathbf{G})$ at prescribed values while retaining an exact discrete solution, the family is manufactured at the discrete level. Let $\mathbf{b}(\bm{\Psi})$ denote the source vector of Eq.~\eqref{eq:rhs_split} assembled with the Fadeev free function, and let $\bm{\Psi}_F$ be Eq.~\eqref{eq:fadeev_solution} sampled at the generators. For a scalar $c>0$ define
+\begin{equation}
+\mathbf{b}_c(\bm{\Psi}) = c\,\mathbf{b}(\bm{\Psi})+\mathbf{q}_c , \qquad \mathbf{q}_c = \mathbf{A}\bm{\Psi}_F-\mathbf{b}_D-c\,\mathbf{b}(\bm{\Psi}_F) ,
+\label{eq:manufactured_family}
+\end{equation}
+and replace $\mathbf{b}$ by $\mathbf{b}_c$ in Eq.~\eqref{eq:residual}. Two properties follow, both exact. First, the residual vanishes at $\bm{\Psi}_F$ for every $c$, so the reference state is a discrete solution of the manufactured problem at every point of the family, with no discretisation error separating it from the state the iteration is asked to find. Second, $\mathbf{q}_c$ does not depend on $\bm{\Psi}$, so
+\begin{equation}
+\mathbf{D}_c=c\,\mathbf{D}, \qquad \mathbf{G}_c=c\,\mathbf{G}, \qquad \rho(\mathbf{G}_c)=c\,\rho(\mathbf{G}) ,
+\label{eq:spectral_scaling}
+\end{equation}
+where $\mathbf{D}$ and $\mathbf{G}$ are the operators of Eq.~\eqref{eq:picard_operator} at $c=1$. The spectral radius is therefore an exactly controlled experimental variable.
+
+The first property has a consequence for the nonlinear problem itself. Written relative to the reference state, the manufactured residual is
+\begin{equation}
+\mathbf{R}_c(\bm{\Psi})=\mathbf{A}(\bm{\Psi}-\bm{\Psi}_F)-c\left[\mathbf{b}(\bm{\Psi})-\mathbf{b}(\bm{\Psi}_F)\right] ,
+\label{eq:family_residual}
+\end{equation}
+so $\bm{\Psi}_F$ is a solution along the whole family, and its linearisation $\mathbf{A}(\mathbf{I}-\mathbf{G}_c)$ becomes singular when $\rho(\mathbf{G}_c)$ reaches unity through a real eigenvalue. Such a point is a bifurcation from the branch $\bm{\Psi}=\bm{\Psi}_F$, and the classical theory of bifurcation from a simple eigenvalue and of exchange of stability~\cite{Crandall1971BifurcationEigenvalues,Crandall1973BifurcationStability}, applied to the manufactured family, gives the following.
+
+\begin{proposition}
+\label{prop:bifurcation}
+Let $\mu_{1}=\rho(\mathbf{G})$ be a real, algebraically simple eigenvalue of $\mathbf{G}$ with every other eigenvalue of smaller modulus, let $c^{\ast}=1/\mu_{1}$, and let $\mathbf{R}_c$ be twice continuously differentiable near $\bm{\Psi}_F$ with derivative $\mathbf{A}-c\mathbf{D}$ there. Then the solutions of $\mathbf{R}_c(\bm{\Psi})=\mathbf{0}$ near $(c^{\ast},\bm{\Psi}_F)$ other than $\bm{\Psi}_F$ form a curve $\bigl(c(s),\,\bm{\Psi}_F+s\mathbf{v}+o(s)\bigr)$ with $c(0)=c^{\ast}$ and $\mathbf{G}\mathbf{v}=\mu_{1}\mathbf{v}$. If $c'(0)\neq0$, then along this curve
+\begin{equation}
+\|\bm{\Psi}-\bm{\Psi}_F\| \sim \frac{\|\mathbf{v}\|}{|c'(0)|\,\mu_{1}}\,\bigl|\rho(\mathbf{G}_c)-1\bigr| ,
+\qquad
+1-\tilde{\mu} \sim \rho(\mathbf{G}_c)-1 ,
+\label{eq:bifurcation_scaling}
+\end{equation}
+where $\tilde{\mu}$ is the eigenvalue of the Picard operator at the nontrivial solution that continues $\mu_{1}$. In particular, for $\rho(\mathbf{G}_c)$ slightly above unity the nontrivial solution is locally attracting for the Picard iteration and $\bm{\Psi}_F$ is not.
+\end{proposition}
+
+\begin{proof}
+$\mathbf{R}_c(\bm{\Psi}_F)=\mathbf{0}$ for every $c$, and the derivative $\mathbf{A}(\mathbf{I}-c^{\ast}\mathbf{G})$ at $(c^{\ast},\bm{\Psi}_F)$ has the one-dimensional kernel spanned by $\mathbf{v}$. If $\mathbf{u}$ is the left eigenvector of $\mathbf{G}$ for $\mu_{1}$, then $\mathbf{w}=\mathbf{A}^{-\mathsf{T}}\mathbf{u}$ spans the left kernel, and $\mathbf{w}^{\mathsf{T}}\mathbf{D}\mathbf{v}=\mu_{1}\mathbf{u}^{\mathsf{T}}\mathbf{v}\neq0$ by simplicity, which is the transversality condition of~\cite[Theorem~1.7]{Crandall1971BifurcationEigenvalues}; it gives the curve, and the first relation of Eq.~\eqref{eq:bifurcation_scaling} follows from $c-c^{\ast}\sim c'(0)s$ and $\rho(\mathbf{G}_c)=c\mu_{1}$. The eigenvalues $\gamma$ of $(\mathbf{A}-c\mathbf{D})\mathbf{x}=\gamma\mathbf{A}\mathbf{x}$ are $\gamma=1-\mu$ with $\mu$ an eigenvalue of the Picard operator. On the trivial branch $\gamma(c)=1-c\mu_{1}$, and by~\cite[Theorem~1.16]{Crandall1973BifurcationStability} its continuation on the nontrivial branch satisfies $\tilde{\gamma}\sim -s\,c'(s)\,\gamma'(c^{\ast})=s\,c'(s)\,\mu_{1}\sim\rho(\mathbf{G}_c)-1$, which is the second relation. The remaining eigenvalues of $\mathbf{G}_{c^{\ast}}$ lie inside the unit disc and remain there near $(c^{\ast},\bm{\Psi}_F)$ by continuity.
+\end{proof}
+
+Proposition~\ref{prop:bifurcation} identifies the solutions nearest the reference state once $\rho_{\rm ref}$ exceeds unity, and Section~\ref{sec:results_discussion} examines whether the Picard failures above unity reach them. The trivial branch is a property of the manufactured family. Without $\mathbf{q}_c$, a real eigenvalue of $\mathbf{G}$ crossing unity generically marks a turning point, where the intended solution meets a second one~\cite{Rabinowitz1977ApplicationsSeminar}; under $u=-2\Psi$ the Fadeev free function turns Eq.~\eqref{eq:grad-shafranov} into the Gelfand problem $-\laplacian{u}=2c\,e^{u}$~\cite{Gelfand1963SomeEquations}, whose fold is of this kind. A complex pair or a negative eigenvalue leaving the unit disc leaves $\mathbf{J}$ nonsingular and creates no branch. The proposition covers neither case. 
+
+The construction is deliberate about what it gives up. With $\mathbf{q}_c$ present, the system solved is no longer a finite-volume discretisation of Eq.~\eqref{eq:grad-shafranov} for a free function of $\Psi$ alone; it is a discrete semilinear system carrying a fixed forcing vector. What it retains is exactly the structure the analysis concerns: $\mathbf{A}$ is unchanged, the iterate still enters through the source alone, and that source is still evaluated by gradient reconstruction, so $\mathbf{D}_c$ keeps the reconstruction stencil and its asymmetry.Section~\ref{subsec:fadeev_verification} verifies the discrete operator against the unmodified Fadeev equilibrium, where no forcing vector is present.
+
+The forcing vector does not change what a solve costs. Since $\mathbf{q}_c$ is fixed it enters the residual exactly as $\mathbf{b}_D$ does, at the cost of one vector addition, and $\mathbf{D}_c=c\mathbf{D}$ carries the sparsity pattern, the colouring and the assembly cost of $\mathbf{D}$. The timings of Section~\ref{sec:results_discussion} therefore transfer to the unmodified system at the same discretisation, and it is the spectral stratification, not the cost measurement, that the manufactured family provides.
+
+% Depois
+The family is nonetheless a discretisation of a continuous problem. Since $\mathbf{A}\bm{\Psi}_F-\mathbf{b}(\bm{\Psi}_F)-\mathbf{b}_D$ is the truncation error $\bm{\tau}_h$ of Eq.~\eqref{eq:grad-shafranov} at the sampled Fadeev state, Eq.~\eqref{eq:manufactured_family} gives $\mathbf{q}_c=\bm{\tau}_h+(1-c)\,\mathbf{b}(\bm{\Psi}_F)$, so the manufactured system is the discretisation of Section~\ref{sec:discrete_problem} applied to
+\begin{equation}
+\laplacian{\Psi}=c\,e^{-2\Psi}+(1-c)\,e^{-2\Psi_F(\vb{r})} \qq{in} \Omega,
+\qquad
+\Psi=\Psi_F \qq{on} \partial\Omega,
+\label{eq:manufactured_continuous}
+\end{equation}
+together with a defect correction of the order of the scheme that makes $\bm{\Psi}_F$ exact at the discrete level. Equation~\eqref{eq:manufactured_continuous} is semilinear with the same nonlinearity scaled by $c$ and a fixed forcing determined by the analytical equilibrium, and reduces to Eq.~\eqref{eq:grad-shafranov} with the Fadeev free function at $c=1$.
+
+A prescribed radius $\rho_{\rm target}$ is imposed through $c=\rho_{\rm target}/\rho(\mathbf{G})$, with $\rho(\mathbf{G})$ evaluated once per case on the Cartesian mesh with the WLSQR reconstruction, at that case's own reference state, and then applied unchanged to every mesh family and reconstruction. On the mesh where it is calibrated the target is met to machine precision: over the $2000$ Cartesian WLSQR cases the largest relative deviation of the recomputed radius from $\rho_{\rm target}$ is $6.1\times10^{-15}$. On the other families the operator differs and the target drifts: by at most $2.2\times10^{-3}$ on the hexagonal meshes and, on the random meshes, by a median of $2.7\times10^{-3}$, with $99\%$ of cases within $7.9\times10^{-3}$. Six random-mesh cases are displaced much further, the largest by a factor of $8.3$, so that $\rho_{\rm ref}$ reaches $10.37$ against a sampled target range of $[0.70,1.30]$. All results in Section~\ref{sec:results_discussion} are therefore stratified by the radius recomputed at the reference state, written $\rho_{\rm ref}$, and not by the target.
+
+\begin{table}[h]
+\centering
+\caption{Sampled population, shared by every strategy, mesh family and reconstruction.}
+\label{tab:sampling_design}
+\begin{tabular}{ll}
+\toprule
+Quantity & Distribution \\
+\midrule
+$\alpha$            & uniform on $(10^{-4},\,0.9999)$ \\
+$\theta$            & uniform on $[-10^\circ,\,10^\circ]$ \\
+$\rho_{\rm target}$ & uniform within five strata partitioning $[0.70,\,1.30]$ \\
+                    & at $0.90$, $0.98$, $1.02$ and $1.10$; $400$ cases each \\
+Cases               & $2000$ per mesh family and reconstruction \\
+Generator           & \texttt{mt19937\_64}, seed $20260914$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Each case draws three parameters independently, so that the population varies the equilibrium as well as the nonlinearity; Table~\ref{tab:sampling_design} gives the distributions. Because $c$ is calibrated per case from that case's own $\alpha$ and $\theta$, the spectral target is attained independently of them: the median ratio $\rho_{\rm ref}/\rho_{\rm target}$ is $1.0$ on the Cartesian meshes, $1.0003$ on the hexagonal ones and $0.9973$ on the random ones.
+
+\subsection{Verification of the discrete operator}
+\label{subsec:fadeev_verification}
+
+The finite-vol\-ume discretisation was verified independently by inserting the analytical Fadeev source directly into the discrete balance. This isolates the spatial discretisation from gradient reconstruction and nonlinear iteration, so the test verifies the discrete balance operator and not the reconstructed source of Eq.~\eqref{eq:gradient_ratio}. Cartesian, hexagonal, and random Voronoi meshes were considered at three levels of refinement. Table~\ref{tab:fadeev_convergence} reports the volume-weighted $L_2$ error, the maximum error, and the observed three-mesh order based on the actual number of control volumes.
+
+\begin{table}[h]
+\centering
+\caption{Convergence to the Fadeev equilibrium: $N_{\rm vol}$ control volumes, least-squares order $p_2$ from the $L_2$ error.}
+\label{tab:fadeev_convergence}
+\begin{tabular}{lrrrr}
+\toprule
+Mesh & $N_{\rm vol}$ & $E_2$ & $E_\infty$ & $p_2$ \\
+\midrule
+Cartesian & 768   & $1.107\times10^{-2}$ & $4.645\times10^{-2}$ & \\
+          & 3072  & $2.712\times10^{-3}$ & $1.096\times10^{-2}$ & \\
+          & 12288 & $6.756\times10^{-4}$ & $2.781\times10^{-3}$ & 2.017 \\
+\midrule
+Hexagonal & 855   & $8.181\times10^{-3}$ & $3.948\times10^{-2}$ & \\
+          & 3438  & $2.011\times10^{-3}$ & $9.438\times10^{-3}$ & \\
+          & 13979 & $5.004\times10^{-4}$ & $2.362\times10^{-3}$ & 2.000 \\
+\midrule
+Random    & 768   & $3.654\times10^{-2}$ & $1.492\times10^{-1}$ & \\
+          & 3072  & $6.020\times10^{-3}$ & $3.313\times10^{-2}$ & \\
+          & 12288 & $1.240\times10^{-3}$ & $8.282\times10^{-3}$ & 2.441 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The errors decrease systematically under refinement for all three mesh families. Cartesian and hexagonal meshes give observed orders close to two. On the random meshes the coarsest level carries an $L_2$ error more than three times the Cartesian value at the same cell count, so that level lies outside the asymptotic range and the observed rate over the present sequence exceeds the formal order of the scheme; it is reported as a finite-range rate and not as an asymptotic order. This test verifies convergence of the implementation on distinct mesh topologies rather than comparing their accuracy.
+
+
+
+\subsection{Numerical protocol}
+\label{subsec:numerical_protocol}
+
+The computations use a serial C++ implementation developed for this study, with PETSc~\cite{petsc-efficient} for the linear systems, SLEPc~\cite{Hernandez2005SLEPc:Problems} for the eigenvalue problems and ADOL-C~\cite{Griewank1996AlgorithmADOL-C} for the source Jacobian. Table~\ref{tab:protocol} lists the settings common to every campaign.
+
+Every nonlinear solve starts from the reference state perturbed by the fixed smooth field $s_P=\sin(0.731x_P+1.173y_P)+\cos(1.337x_P-0.619y_P) / 2$, so the main campaigns measure behaviour near the solution; Section~\ref{subsec:which_rho} varies the amplitude. A solve that meets the residual test is said to converge, and to reach the reference solution if its final state also lies within the tolerance of Table~\ref{tab:protocol}; a converged solve that does not is counted, with residual non-convergence, as a failure to reach the reference solution. A case in which the source derivative of Eq.~\eqref{eq:gradient_ratio} became non-finite is recorded as a technical exception. In the main campaigns exceptions occurred only under Picard, in $244$ of the $6000$ WLSQR cases, all with $\rho_{\rm target}>1$. The run terminates before the diagnostic evaluation of $\rho_{\rm ref}$ is written, so these cases carry no spectral stratum and are excluded from the binned tables; they are counted as failures to reach the reference solution wherever a rate over attempted solves is reported. Over attempted solves rather than over cases carrying $\rho_{\rm ref}$, Picard failed to return the reference equilibrium in $2935$ of $6000$ cases, or $48.9\%$.
+
+Newton takes full steps and computes each correction by GMRES~\cite{Saad1986GMRES:Systems} preconditioned by the invariant factorisation, stopped at a relative residual of $10^{-2}$, so that the method is an inexact Newton method with fixed forcing term~\cite{Dembo1982InexactMethods}; the iteration limit was not reached in any of the $43\,164$ corrections of the Newton-only campaign. The spectral radius is computed by SLEPc applied matrix-free to $\mathbf{G}$, each application costing one product with $\mathbf{D}$ and one solve with the factorisation of $\mathbf{A}$. The Initial-$\rho$ strategy evaluates $\rho(\mathbf{G})$ once at $\bm{\Psi}^{0}$ and applies the selection rule; the Updated-$\rho$ strategy repeats the evaluation and the choice before every nonlinear step. For stratification, $\rho_{\rm ref}$ is also evaluated at $\bm{\Psi}_F$ in every campaign.
+
+Cost is measured as algorithmic time: the wall-clock time of the nonlinear solve, including the initial spectral evaluation of the two spectral strategies and the assembly of the first source Jacobian for Newton, and excluding case setup and the diagnostic evaluations of $\rho_{\rm ref}$ and $\rho_{\rm initial}$ recorded in every campaign. Nonlinear work is reported as the number of linear systems solved by the nonlinear method, each Newton system counting once irrespective of its Krylov iterations.
+
+
+
+\begin{table}[h]
+\centering
+\caption{Settings common to every campaign.}
+\label{tab:protocol}
+\small
+\begin{tabular}{ll}
+\toprule
+Item & Setting \\
+\midrule
+Cells & $21\,760$ (Cartesian, random), $25\,039$ (hexagonal); nominal $256\times85$ \\
+Random mesh & generator seed $12345$ \\
+Cases & $2000$ per mesh family and gradient operator; \\ &$6000$ WLSQR per campaign \\
+Initial state & $\bm{\Psi}_F+a\,\mathbf{s}/\|\mathbf{s}\|_{\infty}$, $a=10^{-4}$; $a$ varied in Section~\ref{sec:results_discussion} \\
+Residual test & $\|\mathbf{R}\|_2\leq10^{-12}+10^{-10}\max\bigl(\|\mathbf{R}(\bm{\Psi}^{0})\|_2,1\bigr)$ \\
+Iteration limits & $5000$; divergence at $10^{8}\max\bigl(\|\mathbf{R}(\bm{\Psi}^{0})\|_2,1\bigr)$ \\
+Reference reached & relative distance to $\bm{\Psi}_F$ at most $10^{-6}$ \\
+Newton & $\lambda_k=1$; GMRES, relative tolerance $10^{-2}$, at most $50$ iterations \\
+Preconditioner & Cholesky factorisation of $\mathbf{A}$, computed once \\
+Eigensolver & $8$ eigenpairs, tolerance $10^{-11}$, at most $3000$ iterations \\
+Selection rule & Picard if $\rho_{\rm initial}<1$, Newton otherwise \\
+Platform & 13th Gen Intel Core i7-13700, one core; \\
+& GNU C++ 15.2.0, \texttt{-O3 -DNDEBUG} \\
+Libraries & PETSc 3.25.99, SLEPc 3.24.2, ADOL-C 2.7.2 \\
+\bottomrule
+\end{tabular}
+\end{table}

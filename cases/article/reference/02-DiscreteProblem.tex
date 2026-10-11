@@ -1,0 +1,177 @@
+\section{The discrete problem}
+\label{sec:discrete_problem}
+
+The problem is two-dimensional, so a face is an edge and $\Delta S$ and $\Delta V$ denote its length and the cell area. The control volumes are the cells of a Voronoi diagram. The formulation follows the unstructured finite-volume construction of Maliska~\cite{Maliska2023FundamentalsDynamics}, in the form developed for Voronoi meshes in~\cite{Vasconcellos2004}. Consider the cell of generator $P$ and its $N$ face neighbours, indexed by $i$. The face shared with neighbour $i$ has area $\Delta S_{\mathrm{P}i}$, the two generators lie a distance $\Delta L_{\mathrm{P}i}$ apart, and the cell occupies the region $V_P$ of volume $\Delta V_P$. The segment joining $P$ and $i$ crosses that face at the integration point $\mathrm{P}i$.
+
+The Laplacian is a divergence, so integrating Eq.~\eqref{eq:grad-shafranov} over $V_P$ and applying Gauss's theorem turns the volume integral into a flux through the cell boundary. The boundary of a Voronoi cell is the union of its faces, so that contour integral splits exactly into face integrals. Approximating each face integral by the flux at its integration point gives
+\begin{equation}
+  \sum_{i}^{N} \left( \pdv{\Psi}{\vb{n}} \right)_{\mathrm{P}i} \Delta S_{\mathrm{P}i} \approx \int_{V_P} \dv{F}{\Psi} \, \dd V .
+  \label{eq:integrated}
+\end{equation}
+
+Because the segment is normal to the face, the derivative at that point follows from the two cell values alone,
+\begin{equation}
+  \left( \pdv{\Psi}{\vb{n}} \right)_{\mathrm{P}i} \approx \frac{\Psi_i - \Psi_P}{\Delta L_{\mathrm{P}i}} ,
+  \label{eq:two_point}
+\end{equation}
+the same two-point expression used on a Cartesian grid~\cite{Vasconcellos2004}. Perpendicularity holds in any Voronoi diagram, so Eq.~\eqref{eq:two_point} is available however irregular the generators are. The accuracy of Eq.~\eqref{eq:integrated} rests on a second property, the proximity of the integration point to the centroid of its face, since it is the flux at the former that is taken for the average over the latter. Section~\ref{subsec:fadeev_verification} reports the order of convergence observed against the analytical equilibrium.
+
+The source is evaluated at the generator and carried explicitly, so the right-hand side of Eq.~\eqref{eq:integrated} becomes $\left.\dv*{F}{\Psi}\right|_{P}\Delta V_P$. Since $F$ depends on position only through $\Psi$, the chain rule makes $\grad{F}$ and $\grad{\Psi}$ parallel with $\dv*{F}{\Psi}$ as the factor between them, so projecting onto $\grad{\Psi}$, and flooring the denominator, the value used at $P$ is taken as
+\begin{equation}
+  \eval{\dv{F}{\Psi}}_P
+  = \frac{\grad{F_P} \cdot \grad{\Psi_P}}
+         {\left\| \grad{\Psi_P} \right\|^{2} + \delta^{2} \left\| \grad{\Psi} \right\|_{\max}^{2}} ,
+  \label{eq:gradient_ratio}
+\end{equation}
+where $\delta=10^{-10}$ is a dimensionless parameter and $\left\|\grad{\Psi}\right\|_{\max}$ is the largest reconstructed gradient magnitude on the mesh. Taking the floor proportional to that magnitude, rather than as a fixed absolute value, makes the threshold at which it becomes active the same fraction of the field whatever the scale of $\Psi$, and leaves the recovered value transforming as the derivative itself does under a rescaling of $F$ and of $\Psi$. Where the reconstructed gradient is not small the floor is negligible and Eq.~\eqref{eq:gradient_ratio} returns the exact ratio; where it is active the recovered derivative is damped towards zero and never inflated, so the evaluation errs towards a weaker nonlinearity.
+
+Both gradients are reconstructed at $P$ from the cell values in its neighbourhood, $\grad{\Psi_P}$ from the values of $\Psi$ and $\grad{F_P}$ from those of $F(\Psi)$, by one of the two operators retained from the preceding study~\cite{Vasconcellos2026GradientCost}. Although $\dv*{F}{\Psi}$ is pointwise in Eq.~\eqref{eq:grad-shafranov}, the value used at $P$ draws on the whole reconstruction stencil, so the source of a cell depends on the solution in its neighbourhood and not on $\Psi_P$ alone.
+
+A cell with one or more faces on $\partial\Omega$ is treated in the same way. A boundary face has no neighbouring generator: the prescribed value $\Psi_b = g(\vb{r}_b)$ takes the place of $\Psi_i$, and the distance $\Delta L_{\mathrm{P}b}$ is measured from the generator $P$ to the face itself, so that
+\begin{equation}
+  \left( \pdv{\Psi}{\vb{n}} \right)_{\mathrm{P}b} \approx \frac{\Psi_b - \Psi_P}{\Delta L_{\mathrm{P}b}} .
+  \label{eq:boundary_face}
+\end{equation}
+
+Collecting the terms gives the discrete equation for the cell,
+\begin{equation}
+  A_P \Psi_P = \sum_{i}^{N} A_i \Psi_i + B_P ,
+  \label{eq:cell_equation}
+\end{equation}
+where
+\begin{equation}  \label{eq:coefficients}
+\begin{aligned}   
+  &A_i = \frac{\Delta S_{\mathrm{P}i}}{\Delta L_{\mathrm{P}i}} ,
+  \qquad
+  A_b = \frac{\Delta S_{\mathrm{P}b}}{\Delta L_{\mathrm{P}b}} ,
+  \\
+  &A_P = \sum_{i}^{N} A_i + \sum_{b}^{N_b} A_b ,
+  \qquad
+  B_P = \sum_{b}^{N_b} A_b \Psi_b - \eval{\dv{F}{\Psi}}_P \Delta V_P ,
+\end{aligned}
+\end{equation}
+the second sum running over the $N_b$ faces of cell $P$ that lie on $\partial\Omega$ and being empty for an interior cell. Each boundary face therefore adds $A_b$ to the central coefficient and $A_b\Psi_b$ to the right-hand side. The neighbour and central coefficients are built from face areas and distances alone and neither depends on $\Psi$; of the two terms in $B_P$, the first is fixed by the boundary data and the second carries all dependence on the solution.
+
+\subsection{The algebraic system}
+\label{subsec:algebraic_system}
+
+Collecting Eqs.~\eqref{eq:cell_equation} and~\eqref{eq:coefficients} over all cells, and denoting by $\bm{\Psi}$ the vector of cell values, the discrete system takes the form
+\begin{equation}
+  \mathbf{R}(\bm{\Psi})
+  =
+  \mathbf{A}\bm{\Psi}
+  -
+  \mathbf{b}(\bm{\Psi})
+  -
+  \mathbf{b}_D
+  =
+  \mathbf{0} ,
+  \label{eq:residual}
+\end{equation}
+where $\mathbf{A}$ holds $A_P$ on its diagonal and $-A_i$ off it, and the two vectors separate the terms of $B_P$,
+\begin{equation}
+  \left[ \mathbf{b}_D \right]_P = \sum_{b}^{N_b} A_b \Psi_b ,
+  \qquad
+  \left[ \mathbf{b}(\bm{\Psi}) \right]_P = - \eval{\dv{F}{\Psi}}_P \Delta V_P .
+  \label{eq:rhs_split}
+\end{equation}
+Both $\mathbf{A}$ and $\mathbf{b}_D$ are fixed by the mesh and the boundary data. Across the forward solutions of the inverse calculation only the free function changes, so only $\mathbf{b}(\bm{\Psi})$ changes with it.
+
+Every coefficient of Eq.~\eqref{eq:coefficients} is positive, faces of zero area being discarded when the mesh is built. The matrix $\mathbf{A}$ is therefore symmetric with a positive diagonal and, on a connected mesh with at least one Dirichlet face, irreducibly diagonally dominant, the dominance being strict in every cell that holds a boundary face. It is consequently positive definite~\cite{Varga2000MatrixAnalysis,Eymard2000FiniteMethods} and admits a Cholesky factorisation, which is computed once and reused in every nonlinear solve.
+
+\subsection{The Picard iteration}
+\label{subsec:picard_iteration}
+
+For a prescribed free function, the Picard iteration associated with Eq.~\eqref{eq:cell_equation} is
+\begin{equation}
+  \mathbf{A}\bm{\Psi}^{k+1}
+  =
+  \mathbf{b}(\bm{\Psi}^{k})
+  +
+  \mathbf{b}_D ,
+  \qquad
+  \bm{\Psi}^{k+1} = \bm{\Phi}(\bm{\Psi}^{k}),
+  \qquad
+  \bm{\Phi}(\bm{\Psi})
+  =
+  \mathbf{A}^{-1}
+  \left[
+    \mathbf{b}(\bm{\Psi}) + \mathbf{b}_D
+  \right] .
+  \label{eq:picard_iteration}
+\end{equation}
+Because $\mathbf{A}$ does not change with the iterate, the factorisation built for it is reused throughout the iteration and across every forward solution.
+
+At a discrete solution $\bm{\Psi}^{*}$, write
+\begin{equation}
+  \mathbf{D}
+  :=
+  \eval{\pdv{\mathbf{b}}{\bm{\Psi}}}_{\bm{\Psi}^{*}} ,
+  \qquad
+  \mathbf{G}
+  :=
+  \mathbf{A}^{-1}\mathbf{D} .
+  \label{eq:picard_operator}
+\end{equation}
+For the reconstruction operators used here the stencil of a cell is its set of face neighbours, so the dependence of $\left[\mathbf{b}\right]_P$ on its neighbours carries the sparsity pattern of $\mathbf{A}$. That pattern is symmetric, since a face couples its two cells both ways, but the entries are not, because the reconstruction weights are not symmetric under exchange of the two cells. The mesh-wide maximum in Eq.~\eqref{eq:gradient_ratio} is only piecewise smooth and is held fixed when $\mathbf{D}$ is formed; where the floor is inactive this changes $\mathbf{D}$ by a relative $\order{\delta^{2}}$, below round-off, and $\mathbf{G}$, $\mathbf{J}=\mathbf{A}-\mathbf{D}$ and the smoothness hypothesis of Proposition~\ref{prop:bifurcation} refer to this frozen map. Expanding $\bm{\Phi}$ about $\bm{\Psi}^{*}$, the Picard error $\mathbf{e}_k=\bm{\Psi}^{k}-\bm{\Psi}^{*}$ satisfies
+\begin{equation}
+\mathbf{e}_{k+1}
+  =
+  \mathbf{G}\mathbf{e}_{k}
+  +
+  \order{\left\| \mathbf{e}_{k} \right\|^{2}} ,
+  \label{eq:picard_error}
+\end{equation}
+so the local behaviour of the iteration is governed by the spectrum of $\mathbf{G}$.
+
+At a general state, $\mathbf{G}(\bm{\Psi})=\mathbf{A}^{-1}\mathbf{D}(\bm{\Psi})$; its spectral radius at the reference solution, at the initial iterate and at the state returned by the solver is written $\rho_{\rm ref}$, $\rho_{\rm initial}$ and $\rho_{\rm final}$.
+
+Had the source been evaluated pointwise, $\mathbf{D}$ would be diagonal and therefore symmetric, $\mathbf{G}$ would be similar to $\mathbf{A}^{-1/2}\mathbf{D}\mathbf{A}^{-1/2}$, and its eigenvalues would all be real. That configuration is available only for a free function given in closed form, and it serves here as the reference against which the reconstructed case is placed. The reconstructed source does not preserve the symmetry, so $\mathbf{G}$ may have complex eigenvalues, and its spectrum has to be established rather than assumed.
+
+\subsection{Newton's method and the invariant preconditioner}
+\label{subsec:newton_method}
+
+Newton's meth\-od applied to the residual of Eq.~\eqref{eq:residual} uses
+\begin{equation}
+  \mathbf{J}(\bm{\Psi}^{k})\Delta\bm{\Psi}^{k}
+  =
+  -\mathbf{R}(\bm{\Psi}^{k}) ,
+  \qquad
+  \bm{\Psi}^{k+1}
+  =
+  \bm{\Psi}^{k}
+  +
+  \lambda_k\Delta\bm{\Psi}^{k} ,
+  \label{eq:newton_iteration}
+\end{equation}
+where $\lambda_k$ is a damping parameter, equal to unity in every computation reported here, and its Jacobian is
+\begin{equation}
+  \mathbf{J}(\bm{\Psi})
+  =
+  \mathbf{A}
+  -
+  \mathbf{D}(\bm{\Psi}) .
+  \label{eq:newton_jacobian}
+\end{equation}
+Since $\mathbf{D}=\mathbf{A}\mathbf{G}$, the two linearisations are linked by
+\begin{equation}
+  \mathbf{J}
+  =
+  \mathbf{A}\left( \mathbf{I} - \mathbf{G} \right) ,
+  \label{eq:picard_newton_identity}
+\end{equation}
+so that, $\mathbf{A}$ being nonsingular, $\mathbf{J}$ is singular precisely when $1\in\sigma(\mathbf{G})$, and reusing $\mathbf{A}$ as a preconditioner gives
+\begin{equation}
+  \mathbf{A}^{-1}\mathbf{J}
+  =
+  \mathbf{I} - \mathbf{G} ,
+  \qquad
+  \sigma\!\left( \mathbf{A}^{-1}\mathbf{J} \right)
+  =
+  \left\{ 1-\mu : \mu \in \sigma(\mathbf{G}) \right\} .
+  \label{eq:preconditioned_newton_spectrum}
+\end{equation}
+
+The same spectrum therefore governs the Newton side. Equation~\eqref{eq:preconditioned_newton_spectrum} gives one direction, that $\rho(\mathbf{G})<1$ implies $\mathbf{J}$ nonsingular; the converse fails, since $\mathbf{J}$ is nonsingular whenever $1\notin\sigma(\mathbf{G})$, however large $\rho(\mathbf{G})$ may be. Section~\ref{sec:spectral} takes up what the clustering of $\sigma(\mathbf{A}^{-1}\mathbf{J})$ about unity does and does not say about the number of Krylov iterations a Newton correction costs.
+
+The operator $\mathbf{G}$ is never formed. The source Jacobian $\mathbf{D}$ is assembled once per iterate by automatic differentiation of the discrete source with ADOL-C~\cite{Griewank1996AlgorithmADOL-C}, in coloured forward mode, into the adjacency pattern described above, which requires $7$, $10$ and $14$ colours on the Cartesian, hexagonal and random meshes of Section~\ref{sec:experiments}; each application of $\mathbf{G}$ then costs one multiplication by $\mathbf{D}$ and one solve with the stored factorisation of $\mathbf{A}$, and each Newton step one further such solve per Krylov iteration. A new free function changes $\mathbf{b}$, and with it $\mathbf{D}$ and the spectrum of $\mathbf{G}$, while leaving $\mathbf{A}$ untouched.

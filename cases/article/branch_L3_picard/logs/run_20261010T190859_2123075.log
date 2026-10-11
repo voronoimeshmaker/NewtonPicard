@@ -1,0 +1,14 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/100 rho_target=1.15334 rho_c1=7.4005 c=0.155846
+
+SETUP/CAMPAIGN FAILURE: WLSQR / random : Physical face must have exactly one reciprocal segment: site 902, edge 3, matches 0
+
+Results: Result/run_20261010T190900Z
+Cases recorded: 0
+rho-target calibration failures: 0
+Algorithmic non-convergences: 0
+rho_reference<1 but residual did not converge: 0
+rho_reference<1 but reference equilibrium not recovered: 0
+Converged to a different equilibrium: 0
+Case exceptions (campaign continued): 0
+Setup failures: 1

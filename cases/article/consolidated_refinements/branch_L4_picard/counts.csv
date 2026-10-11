@@ -1,0 +1,4 @@
+mesh_family,cases,converged,converged_to_reference,nonconverged
+cartesian,100,79,47,21
+hexagonal,100,80,48,20
+random,100,79,47,21

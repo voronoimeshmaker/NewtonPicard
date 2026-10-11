@@ -1,0 +1,15 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/100 rho_target=1.15334 rho_c1=7.4005 c=0.155846
+Mesh repair: exact cell clipping after: Physical face must have exactly one reciprocal segment: site 902, edge 3, matches 0
+Mesh repair: exact clipping accepted 87552 cells with unchanged connectivity tolerance.
+picard_only / WLSQR / random case 100/100 rho_target=1.15334 rho_ref=nan rho0=nan conv=1 ref=0 Ei=2.25403e-05 Ef=0.0352821 NL=204 LinCalls=204 t=3.70487 s
+
+Results: Result/run_20261011T015614Z
+Cases recorded: 100
+rho-target calibration failures: 0
+Algorithmic non-convergences: 14
+rho_reference<1 but residual did not converge: 0
+rho_reference<1 but reference equilibrium not recovered: 0
+Converged to a different equilibrium: 31
+Case exceptions (campaign continued): 7
+Setup failures: 0

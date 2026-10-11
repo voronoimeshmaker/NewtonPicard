@@ -1,0 +1,31 @@
+
+Paper III: finite-volume verification against analytical Fadeev
+  alpha              : 0.225
+  theta [deg]        : 5.7
+  source             : analytical exp(-2 Psi_F), frozen at exact state
+  nonlinear solve    : none (manufactured Poisson verification)
+  gradient method    : none
+  mesh families      : 3
+  refinement levels  : 3
+
+  Cartesian
+    nominal=48x16 actual_cells=768 E2=1.10660603e-02 Einf=4.64480467e-02 KSP_it=1 lin_rel=5.69167375e-16 PASS
+    nominal=96x32 actual_cells=3072 E2=2.71218948e-03 Einf=1.09583237e-02 KSP_it=1 lin_rel=8.43621517e-16 PASS
+    nominal=192x64 actual_cells=12288 E2=6.75591109e-04 Einf=2.78103416e-03 KSP_it=1 lin_rel=1.14743243e-15 PASS
+
+  Hexagonal
+    nominal=48x16 actual_cells=855 E2=8.18126820e-03 Einf=3.94829852e-02 KSP_it=1 lin_rel=7.46722728e-16 PASS
+    nominal=96x32 actual_cells=3438 E2=2.01089926e-03 Einf=9.43758625e-03 KSP_it=1 lin_rel=1.36347960e-15 PASS
+    nominal=192x64 actual_cells=13979 E2=5.00352255e-04 Einf=2.36207234e-03 KSP_it=1 lin_rel=2.18431574e-15 PASS
+
+  Random
+    nominal=48x16 actual_cells=768 E2=3.65355546e-02 Einf=1.49161977e-01 KSP_it=1 lin_rel=2.47334975e-17 PASS
+    nominal=96x32 actual_cells=3072 E2=6.02047366e-03 Einf=3.31259743e-02 KSP_it=1 lin_rel=3.80354344e-16 PASS
+    nominal=192x64 actual_cells=12288 E2=1.23991356e-03 Einf=8.28181464e-03 KSP_it=1 lin_rel=2.35136438e-16 PASS
+
+  summary cartesian  p_L2=2.03628333e+00 monotone_L2=yes monotone_Linf=yes all_converged=yes
+  summary hexagonal  p_L2=2.02781712e+00 monotone_L2=yes monotone_Linf=yes all_converged=yes
+  summary random     p_L2=2.67427085e+00 monotone_L2=yes monotone_Linf=yes all_converged=yes
+
+Results: Result/run_20261009T183114Z
+Failures: 0

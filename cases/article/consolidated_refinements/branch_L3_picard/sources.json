@@ -1,0 +1,8 @@
+{
+  "sources": {
+    "cartesian": "/home/jflavio/Programas/NewtonPicard/cases/article/branch_L3_picard/Result/run_20261010T182937Z",
+    "hexagonal": "/home/jflavio/Programas/NewtonPicard/cases/article/branch_L3_picard/Result/run_20261010T182937Z",
+    "random": "/home/jflavio/Programas/NewtonPicard/cases/article/branch_L3_picard/Result/run_20261011T015614Z"
+  },
+  "note": "Random mesh resumed with local exact-clipping fallback; other families preserved. Nonconvergence and case exceptions remain recorded scientific outcomes."
+}

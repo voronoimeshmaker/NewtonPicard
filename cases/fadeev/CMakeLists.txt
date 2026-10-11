@@ -1,0 +1,6 @@
+foreach(method IN ITEMS newton picard)
+  add_executable(fadeev_${method}_case ${method}/main.cpp)
+  target_compile_definitions(fadeev_${method}_case PRIVATE FADEEV_CASE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/${method}")
+  target_link_libraries(fadeev_${method}_case PRIVATE gss::gss)
+  gss_apply_common_flags(fadeev_${method}_case)
+endforeach()

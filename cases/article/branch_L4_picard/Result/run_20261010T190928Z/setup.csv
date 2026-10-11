@@ -1,0 +1,3 @@
+method,mesh_family,requested_cells,actual_cells,nominal_nx,nominal_ny,colours,jacobian_nnz,source_derivative,gradient_operator_relative_defect,calibration_rho_c1,spectral_A_factorisation_seconds,newton_A_factorisation_seconds
+WLSQR,cartesian,349184,349184,1024,341,7,1743190,adolc,9.94496236962126409e-17,7.37059447017053238e+00,1.96884490700000003e+00,0.00000000000000000e+00
+WLSQR,hexagonal,349184,403259,1024,341,10,2817145,adolc,1.18491929649264529e-16,7.37090913824330762e+00,3.41275979899999982e+00,0.00000000000000000e+00

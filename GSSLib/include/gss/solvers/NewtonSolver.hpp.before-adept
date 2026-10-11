@@ -1,0 +1,158 @@
+#pragma once
+
+#include <algorithm>
+#include <chrono>
+#include <cmath>
+#include <span>
+
+#include "gss/assembly/MatrixAssembler.hpp"
+#include "gss/assembly/RHSAssembler.hpp"
+#include "gss/analysis/ErrorNorms.hpp"
+#include "gss/linear/PETScLinearSystem.hpp"
+#include "gss/solvers/Traits.hpp"
+
+namespace gss {
+
+/// @brief Finite-difference Jacobian policy for Newton's method.
+struct FiniteDifferenceJacobian {
+    /// @brief Assemble a dense finite-difference Jacobian into PETSc AIJ storage.
+    template<typename RHS>
+    [[nodiscard]] static Mat assemble(
+        MeshAdapter& mesh,
+        const RHS& rhs,
+        std::span<const Real> psi,
+        Real epsilon) {
+        const Index n = mesh.n_cells();
+        Mat J{};
+        petsc_check(MatCreateAIJ(PETSC_COMM_WORLD, PETSC_DECIDE, PETSC_DECIDE, n, n, n, nullptr, n, nullptr, &J),
+                    "create Newton Jacobian");
+        const auto base_rhs = rhs.assemble(mesh, psi);
+        const auto base_Apsi = MatrixAssembler::apply_stencil(mesh, psi);
+        std::vector<Real> base(static_cast<std::size_t>(n), 0.0);
+        for (Index i = 0; i < n; ++i) {
+            const auto s = static_cast<std::size_t>(i);
+            base[s] = base_Apsi[s] - base_rhs[s];
+        }
+        std::vector<Real> pert(psi.begin(), psi.end());
+        for (Index j = 0; j < n; ++j) {
+            pert[static_cast<std::size_t>(j)] += epsilon;
+            const auto rhs_p = rhs.assemble(mesh, pert);
+            const auto Apsi_p = MatrixAssembler::apply_stencil(mesh, pert);
+            std::vector<Index> rows(static_cast<std::size_t>(n));
+            std::vector<Real> vals(static_cast<std::size_t>(n));
+            for (Index i = 0; i < n; ++i) {
+                rows[static_cast<std::size_t>(i)] = i;
+                const auto s = static_cast<std::size_t>(i);
+                vals[s] = ((Apsi_p[s] - rhs_p[s]) - base[s]) / epsilon;
+            }
+            petsc_check(MatSetValues(J, n, rows.data(), 1, &j, vals.data(), INSERT_VALUES), "set Newton Jacobian column");
+            pert[static_cast<std::size_t>(j)] = psi[static_cast<std::size_t>(j)];
+        }
+        petsc_check(MatAssemblyBegin(J, MAT_FINAL_ASSEMBLY), "begin Newton Jacobian assembly");
+        petsc_check(MatAssemblyEnd(J, MAT_FINAL_ASSEMBLY), "end Newton Jacobian assembly");
+        return J;
+    }
+};
+
+/// @brief Newton nonlinear solver with policy-selected Jacobian.
+template<typename LinearBackend, typename JacobianPolicy = FiniteDifferenceJacobian, typename RHS = RHSAssembler<>>
+requires LinearSolverConcept<LinearBackend>
+class NewtonSolver {
+public:
+    /// @brief Construct from immutable configuration.
+    explicit NewtonSolver(const Config& config) : config_(config), backend_(config), rhs_(config) {}
+
+    /// @brief Solve F(psi) = A psi - B(psi) = 0.
+    [[nodiscard]] SolveResult solve(MeshAdapter& mesh, std::span<const Real> initial_guess) {
+        using clock = std::chrono::steady_clock;
+        SolveResult result{};
+        result.psi.assign(initial_guess.begin(), initial_guess.end());
+        mesh.data().psi = result.psi;
+        const auto total_start = clock::now();
+        Real rho0 = 0.0;
+        for (Index iter = 0; iter < config_.solver.max_iter; ++iter) {
+            const auto rhs0 = clock::now();
+            const auto b = rhs_.assemble(mesh, result.psi);
+            result.timing.rhs_assembly += elapsed(rhs0, clock::now());
+            const auto Apsi = MatrixAssembler::apply_stencil(mesh, result.psi);
+            std::vector<Real> F(Apsi.size(), 0.0);
+            for (std::size_t i = 0; i < F.size(); ++i) {
+                F[i] = Apsi[i] - b[i];
+            }
+            const Real rho = compute_norms(F, mesh.data().volume).L2;
+            if (iter == 0) {
+                rho0 = std::max(rho, config_.solver.tolerance_absolute);
+            }
+            result.residual_history.push_back(rho);
+            result.iterations = iter + 1;
+            if (rho <= config_.solver.tolerance_absolute || rho / rho0 <= config_.solver.tolerance_relative) {
+                result.converged = true;
+                break;
+            }
+
+            const auto ma0 = clock::now();
+            Mat J = JacobianPolicy::assemble(mesh, rhs_, result.psi, config_.newton.fd_epsilon);
+            result.timing.matrix_assembly += elapsed(ma0, clock::now());
+            const auto fac0 = clock::now();
+            backend_.factorize(J);
+            result.timing.cholesky_factorization += elapsed(fac0, clock::now());
+
+            for (auto& v : F) {
+                v = -v;
+            }
+            Vec bvec = PETScLinearSystem::make_vec(F);
+            std::vector<Real> delta(result.psi.size(), 0.0);
+            Vec xvec = PETScLinearSystem::make_vec(delta);
+            const auto solve0 = clock::now();
+            backend_.solve(bvec, xvec);
+            result.timing.triangular_solve += elapsed(solve0, clock::now());
+            delta = PETScLinearSystem::to_std_vector(xvec);
+            PETScLinearSystem::destroy(bvec);
+            PETScLinearSystem::destroy(xvec);
+            PETScLinearSystem::destroy(J);
+
+            Real alpha = 1.0;
+            if (config_.newton.linesearch) {
+                alpha = line_search(mesh, result.psi, delta, rho);
+            }
+            for (std::size_t i = 0; i < result.psi.size(); ++i) {
+                result.psi[i] += alpha * delta[i];
+            }
+            mesh.data().psi = result.psi;
+        }
+        result.timing.total = elapsed(total_start, clock::now());
+        return result;
+    }
+
+private:
+    [[nodiscard]] Real line_search(MeshAdapter& mesh, const std::vector<Real>& psi, const std::vector<Real>& delta, Real rho) const {
+        Real alpha = 1.0;
+        std::vector<Real> trial(psi.size());
+        for (Index ls = 0; ls < config_.newton.linesearch_max_iter; ++ls) {
+            for (std::size_t i = 0; i < psi.size(); ++i) {
+                trial[i] = psi[i] + alpha * delta[i];
+            }
+            const auto b = rhs_.assemble(mesh, trial);
+            const auto Apsi = MatrixAssembler::apply_stencil(mesh, trial);
+            std::vector<Real> F(Apsi.size(), 0.0);
+            for (std::size_t i = 0; i < F.size(); ++i) {
+                F[i] = Apsi[i] - b[i];
+            }
+            if (compute_norms(F, mesh.data().volume).L2 <= rho) {
+                return alpha;
+            }
+            alpha *= config_.newton.linesearch_reduction;
+        }
+        return alpha;
+    }
+
+    static double elapsed(std::chrono::steady_clock::time_point a, std::chrono::steady_clock::time_point b) {
+        return std::chrono::duration<double>(b - a).count();
+    }
+
+    Config config_;
+    LinearBackend backend_;
+    RHS rhs_;
+};
+
+} // namespace gss

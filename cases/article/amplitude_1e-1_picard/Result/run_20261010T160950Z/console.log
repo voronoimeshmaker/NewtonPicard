@@ -1,0 +1,18 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/200 rho_target=1.15334 rho_c1=7.37093 c=0.156472
+calibration case 200/200 rho_target=1.26828 rho_c1=7.34255 c=0.17273
+picard_only / WLSQR / cartesian case 100/200 rho_target=1.15334 rho_ref=1.15334 rho0=1.16416 conv=0 ref=0 Ei=0.0224882 Ef=49.3141 NL=29 LinCalls=29 t=0.063939 s
+picard_only / WLSQR / cartesian case 200/200 rho_target=1.26828 rho_ref=1.26828 rho0=1.27968 conv=0 ref=0 Ei=0.0225457 Ef=470.053 NL=20 LinCalls=20 t=0.0429244 s
+picard_only / WLSQR / hexagonal case 100/200 rho_target=1.15334 rho_ref=1.15428 rho0=1.1651 conv=0 ref=0 Ei=0.022635 Ef=909.615 NL=29 LinCalls=29 t=0.0978122 s
+picard_only / WLSQR / random case 100/200 rho_target=1.15334 rho_ref=1.1509 rho0=1.16177 conv=0 ref=0 Ei=0.0225056 Ef=7.49745 NL=29 LinCalls=29 t=0.108859 s
+picard_only / WLSQR / random case 200/200 rho_target=1.26828 rho_ref=1.26565 rho0=1.27687 conv=0 ref=0 Ei=0.0225623 Ef=74.1568 NL=20 LinCalls=20 t=0.0766294 s
+
+Results: Result/run_20261010T160950Z
+Cases recorded: 600
+rho-target calibration failures: 0
+Algorithmic non-convergences: 227
+rho_reference<1 but residual did not converge: 8
+rho_reference<1 but reference equilibrium not recovered: 28
+Converged to a different equilibrium: 32
+Case exceptions (campaign continued): 73
+Setup failures: 0

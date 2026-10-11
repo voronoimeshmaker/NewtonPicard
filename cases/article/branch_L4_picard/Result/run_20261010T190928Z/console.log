@@ -1,0 +1,16 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/100 rho_target=1.15334 rho_c1=7.40786 c=0.155692
+picard_only / WLSQR / cartesian case 100/100 rho_target=1.15334 rho_ref=nan rho0=nan conv=1 ref=0 Ei=2.24839e-05 Ef=0.035081 NL=201 LinCalls=201 t=10.8084 s
+picard_only / WLSQR / hexagonal case 100/100 rho_target=1.15334 rho_ref=nan rho0=nan conv=1 ref=0 Ei=2.24935e-05 Ef=0.0351238 NL=201 LinCalls=201 t=14.4961 s
+
+SETUP/CAMPAIGN FAILURE: WLSQR / random : Physical face must have exactly one reciprocal segment: site 877, edge 0, matches 0
+
+Results: Result/run_20261010T190928Z
+Cases recorded: 200
+rho-target calibration failures: 0
+Algorithmic non-convergences: 31
+rho_reference<1 but residual did not converge: 0
+rho_reference<1 but reference equilibrium not recovered: 0
+Converged to a different equilibrium: 64
+Case exceptions (campaign continued): 10
+Setup failures: 1

@@ -1,0 +1,905 @@
+[
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/verification/ReferenceField.hpp",
+    "destination": "support/library/include/gsmaker/verification/ReferenceField.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/mesh/MeshGeometry.hpp",
+    "destination": "support/library/include/gsmaker/mesh/MeshGeometry.hpp",
+    "source_sha256": "7b166b9eb2ee65f3da1a33c5025d55709b65457352ebb7ea54a7c029857510ed",
+    "copied_sha256": "7b166b9eb2ee65f3da1a33c5025d55709b65457352ebb7ea54a7c029857510ed",
+    "prepared_sha256": "7b166b9eb2ee65f3da1a33c5025d55709b65457352ebb7ea54a7c029857510ed"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/mesh/BoundaryFaceGeometry.hpp",
+    "destination": "support/library/include/gsmaker/mesh/BoundaryFaceGeometry.hpp",
+    "source_sha256": "c3f0035d94262b5b791648981de2988fa9c9ca290d43df409915c79296377b69",
+    "copied_sha256": "c3f0035d94262b5b791648981de2988fa9c9ca290d43df409915c79296377b69",
+    "prepared_sha256": "c3f0035d94262b5b791648981de2988fa9c9ca290d43df409915c79296377b69"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/mesh/MeshFactory.hpp",
+    "destination": "support/library/include/gsmaker/mesh/MeshFactory.hpp",
+    "source_sha256": "4a88274f5b9744a45060e042488964641937e391a6231ccae5dd4f85a6fe8030",
+    "copied_sha256": "4a88274f5b9744a45060e042488964641937e391a6231ccae5dd4f85a6fe8030",
+    "prepared_sha256": "4a88274f5b9744a45060e042488964641937e391a6231ccae5dd4f85a6fe8030"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/NonlinearHistory.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/NonlinearHistory.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/NonlinearResult.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/NonlinearResult.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/NonlinearMethod.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/NonlinearMethod.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/NonlinearConfig.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/NonlinearConfig.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/io/ResultsWriter.hpp",
+    "destination": "support/library/include/gsmaker/io/ResultsWriter.hpp",
+    "source_sha256": "bc3d97d55c7e48e97bdc3440b97de00a1c62c3008a374e129c02e2bb6637e396",
+    "copied_sha256": "bc3d97d55c7e48e97bdc3440b97de00a1c62c3008a374e129c02e2bb6637e396",
+    "prepared_sha256": "bc3d97d55c7e48e97bdc3440b97de00a1c62c3008a374e129c02e2bb6637e396"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/io/ConfigFactory.hpp",
+    "destination": "support/library/include/gsmaker/io/ConfigFactory.hpp",
+    "source_sha256": "ee5626c8bba28006cbd9f18c40e106c88ca8a1216a28db17b0d8d8ff5474194d",
+    "copied_sha256": "ee5626c8bba28006cbd9f18c40e106c88ca8a1216a28db17b0d8d8ff5474194d",
+    "prepared_sha256": "ee5626c8bba28006cbd9f18c40e106c88ca8a1216a28db17b0d8d8ff5474194d"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/io/YAMLConfig.hpp",
+    "destination": "support/library/include/gsmaker/io/YAMLConfig.hpp",
+    "source_sha256": "9e87053358ae5c887674f1111d977194c2c858b6200d15f9c52380bcddf2e822",
+    "copied_sha256": "9e87053358ae5c887674f1111d977194c2c858b6200d15f9c52380bcddf2e822",
+    "prepared_sha256": "9e87053358ae5c887674f1111d977194c2c858b6200d15f9c52380bcddf2e822"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/autodiff/AdolcSparseJacobian.hpp",
+    "destination": "support/library/include/gsmaker/autodiff/AdolcSparseJacobian.hpp",
+    "source_sha256": "e9cbf9a43d13f492f6620467243dcb62414d0f452a7502422c3ddc8d997fc7c1",
+    "copied_sha256": "e9cbf9a43d13f492f6620467243dcb62414d0f452a7502422c3ddc8d997fc7c1",
+    "prepared_sha256": "e9cbf9a43d13f492f6620467243dcb62414d0f452a7502422c3ddc8d997fc7c1"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/assembly/CsrMatrix.hpp",
+    "destination": "support/library/include/gsmaker/assembly/CsrMatrix.hpp",
+    "source_sha256": "c1e983f4bc9312d3355a3d77bdbe3e2accde8a19c869478b41f22cebbc670cb4",
+    "copied_sha256": "c1e983f4bc9312d3355a3d77bdbe3e2accde8a19c869478b41f22cebbc670cb4",
+    "prepared_sha256": "c1e983f4bc9312d3355a3d77bdbe3e2accde8a19c869478b41f22cebbc670cb4"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/assembly/PoissonAssembler.hpp",
+    "destination": "support/library/include/gsmaker/assembly/PoissonAssembler.hpp",
+    "source_sha256": "c4296269bb86eee4de3e7e6da7952de21d4934a0a1e012872d85f5c00f0dbd1b",
+    "copied_sha256": "c4296269bb86eee4de3e7e6da7952de21d4934a0a1e012872d85f5c00f0dbd1b",
+    "prepared_sha256": "c4296269bb86eee4de3e7e6da7952de21d4934a0a1e012872d85f5c00f0dbd1b"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/StationaryPointRecovery.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/StationaryPointRecovery.hpp",
+    "source_sha256": "10f9328f409b12e0f8954224dc08a2d1837dad17cf67d454d25399812d1c022a",
+    "copied_sha256": "10f9328f409b12e0f8954224dc08a2d1837dad17cf67d454d25399812d1c022a",
+    "prepared_sha256": "10f9328f409b12e0f8954224dc08a2d1837dad17cf67d454d25399812d1c022a"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/SemilinearProblem.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/SemilinearProblem.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/SemilinearSystem.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/SemilinearSystem.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/GradientRatioSource.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/GradientRatioSource.hpp",
+    "source_sha256": "f16ca6f253a29d4d2697b418b5f097a3553292aa7bafd7097e54767e56f50bb2",
+    "copied_sha256": "f16ca6f253a29d4d2697b418b5f097a3553292aa7bafd7097e54767e56f50bb2",
+    "prepared_sha256": "f16ca6f253a29d4d2697b418b5f097a3553292aa7bafd7097e54767e56f50bb2"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/ResidualEvaluator.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/ResidualEvaluator.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/NonlinearSource.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/NonlinearSource.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/semilinear/SourceDerivative.hpp",
+    "destination": "support/library/include/gsmaker/semilinear/SourceDerivative.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/solver/SolutionState.hpp",
+    "destination": "support/library/include/gsmaker/solver/SolutionState.hpp",
+    "source_sha256": "f2c115776362ed3a8ab7b4383cdf15af6c0e6234bfc378c99feca703c4458e05",
+    "copied_sha256": "f2c115776362ed3a8ab7b4383cdf15af6c0e6234bfc378c99feca703c4458e05",
+    "prepared_sha256": "f2c115776362ed3a8ab7b4383cdf15af6c0e6234bfc378c99feca703c4458e05"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/gradient/Gradient.hpp",
+    "destination": "support/library/include/gsmaker/gradient/Gradient.hpp",
+    "source_sha256": "6153ec158fbb0f49533df032979e252c0ceee190c9b79fa5f35da0479daaa659",
+    "copied_sha256": "6153ec158fbb0f49533df032979e252c0ceee190c9b79fa5f35da0479daaa659",
+    "prepared_sha256": "6153ec158fbb0f49533df032979e252c0ceee190c9b79fa5f35da0479daaa659"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/core/Config.hpp",
+    "destination": "support/library/include/gsmaker/core/Config.hpp",
+    "source_sha256": "b8f34af88ab7afe2778537f7140beb99e178f856462766a0e3740c30c38f648a",
+    "copied_sha256": "b8f34af88ab7afe2778537f7140beb99e178f856462766a0e3740c30c38f648a",
+    "prepared_sha256": "b8f34af88ab7afe2778537f7140beb99e178f856462766a0e3740c30c38f648a"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/core/ConfigTraits.hpp",
+    "destination": "support/library/include/gsmaker/core/ConfigTraits.hpp",
+    "source_sha256": "7f4079b80fc09555e53f16b95104c8f1aa75ac065af5c7fe3132ce3ce6612ea5",
+    "copied_sha256": "7f4079b80fc09555e53f16b95104c8f1aa75ac065af5c7fe3132ce3ce6612ea5",
+    "prepared_sha256": "7f4079b80fc09555e53f16b95104c8f1aa75ac065af5c7fe3132ce3ce6612ea5"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/core/Concepts.hpp",
+    "destination": "support/library/include/gsmaker/core/Concepts.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/core/MeshAdapter.hpp",
+    "destination": "support/library/include/gsmaker/core/MeshAdapter.hpp",
+    "source_sha256": "c4fda96c4fe510d5603c04c3473158be7178e55393ba0abde846ca3513ecc228",
+    "copied_sha256": "c4fda96c4fe510d5603c04c3473158be7178e55393ba0abde846ca3513ecc228",
+    "prepared_sha256": "c4fda96c4fe510d5603c04c3473158be7178e55393ba0abde846ca3513ecc228"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/core/Types.hpp",
+    "destination": "support/library/include/gsmaker/core/Types.hpp",
+    "source_sha256": "63f87a79c66101bde32e69d31fdeb900339439cd2bc39ee39a0e83d9536ee1e3",
+    "copied_sha256": "63f87a79c66101bde32e69d31fdeb900339439cd2bc39ee39a0e83d9536ee1e3",
+    "prepared_sha256": "63f87a79c66101bde32e69d31fdeb900339439cd2bc39ee39a0e83d9536ee1e3"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/boundary/BoundaryApplication.hpp",
+    "destination": "support/library/include/gsmaker/boundary/BoundaryApplication.hpp",
+    "source_sha256": "8736842fee3936aa1fcd3b079893dd8cc9301ed78d07a599311528c447ecd833",
+    "copied_sha256": "8736842fee3936aa1fcd3b079893dd8cc9301ed78d07a599311528c447ecd833",
+    "prepared_sha256": "8736842fee3936aa1fcd3b079893dd8cc9301ed78d07a599311528c447ecd833"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/boundary/BoundaryCondition.hpp",
+    "destination": "support/library/include/gsmaker/boundary/BoundaryCondition.hpp",
+    "source_sha256": "a5e104bb5e01da2ddbfeaee279e357e5c1a3840b3c444025698732beb33a0c76",
+    "copied_sha256": "a5e104bb5e01da2ddbfeaee279e357e5c1a3840b3c444025698732beb33a0c76",
+    "prepared_sha256": "a5e104bb5e01da2ddbfeaee279e357e5c1a3840b3c444025698732beb33a0c76"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/linear_system/PetscLinearConfig.hpp",
+    "destination": "support/library/include/gsmaker/linear_system/PetscLinearConfig.hpp",
+    "source_sha256": "7358a675378f4392eb448fd4a7ccb083da902d8b0f0cca5baeadda3b11fa0504",
+    "copied_sha256": "7358a675378f4392eb448fd4a7ccb083da902d8b0f0cca5baeadda3b11fa0504",
+    "prepared_sha256": "7358a675378f4392eb448fd4a7ccb083da902d8b0f0cca5baeadda3b11fa0504"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/linear_system/PetscLinearSystemController.hpp",
+    "destination": "support/library/include/gsmaker/linear_system/PetscLinearSystemController.hpp",
+    "source_sha256": "0ca441db1dda16f361643ddd6048501d11f33d128005e0c5736a104c67d28e30",
+    "copied_sha256": "0ca441db1dda16f361643ddd6048501d11f33d128005e0c5736a104c67d28e30",
+    "prepared_sha256": "0ca441db1dda16f361643ddd6048501d11f33d128005e0c5736a104c67d28e30"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/linear_system/PetscLinearResult.hpp",
+    "destination": "support/library/include/gsmaker/linear_system/PetscLinearResult.hpp",
+    "source_sha256": "3993be370fcebff246467e424d69b7dd6dc42c18172c437bd63626bc4854dd85",
+    "copied_sha256": "3993be370fcebff246467e424d69b7dd6dc42c18172c437bd63626bc4854dd85",
+    "prepared_sha256": "3993be370fcebff246467e424d69b7dd6dc42c18172c437bd63626bc4854dd85"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/linear_system/PetscMatrixUpdate.hpp",
+    "destination": "support/library/include/gsmaker/linear_system/PetscMatrixUpdate.hpp",
+    "source_sha256": "8abf9c4f66191bc9f33fb30aa06072b66379a0a3fd01faf613162997acf9480a",
+    "copied_sha256": "8abf9c4f66191bc9f33fb30aa06072b66379a0a3fd01faf613162997acf9480a",
+    "prepared_sha256": "8abf9c4f66191bc9f33fb30aa06072b66379a0a3fd01faf613162997acf9480a"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/linear_system/PetscContext.hpp",
+    "destination": "support/library/include/gsmaker/linear_system/PetscContext.hpp",
+    "source_sha256": "e30e723b5e7bbe9dedd315029fa7561971f0a7c04e345174cdbf59efd4ab61a2",
+    "copied_sha256": "e30e723b5e7bbe9dedd315029fa7561971f0a7c04e345174cdbf59efd4ab61a2",
+    "prepared_sha256": "e30e723b5e7bbe9dedd315029fa7561971f0a7c04e345174cdbf59efd4ab61a2"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/performance/NonlinearSolveStatistics.hpp",
+    "destination": "support/library/include/gsmaker/analysis/performance/NonlinearSolveStatistics.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/performance/PerformanceRecorder.hpp",
+    "destination": "support/library/include/gsmaker/analysis/performance/PerformanceRecorder.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/performance/LinearSolveStatistics.hpp",
+    "destination": "support/library/include/gsmaker/analysis/performance/LinearSolveStatistics.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/performance/Timing.hpp",
+    "destination": "support/library/include/gsmaker/analysis/performance/Timing.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/error/ErrorNorms.hpp",
+    "destination": "support/library/include/gsmaker/analysis/error/ErrorNorms.hpp",
+    "source_sha256": "4f04c8c143d141e77322a0d1d62ea479e7a6af1f73875111e340ec40eda022f4",
+    "copied_sha256": "4f04c8c143d141e77322a0d1d62ea479e7a6af1f73875111e340ec40eda022f4",
+    "prepared_sha256": "4f04c8c143d141e77322a0d1d62ea479e7a6af1f73875111e340ec40eda022f4"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/error/ConvergenceOrder.hpp",
+    "destination": "support/library/include/gsmaker/analysis/error/ConvergenceOrder.hpp",
+    "source_sha256": "9be95b345f9daea9855dfaf162446a941cd2834595857a19b013afdb7f0dfefb",
+    "copied_sha256": "9be95b345f9daea9855dfaf162446a941cd2834595857a19b013afdb7f0dfefb",
+    "prepared_sha256": "9be95b345f9daea9855dfaf162446a941cd2834595857a19b013afdb7f0dfefb"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/error/ReferenceError.hpp",
+    "destination": "support/library/include/gsmaker/analysis/error/ReferenceError.hpp",
+    "source_sha256": "92c3075c14751e47e7a7a8c9f2fc63632445477d2205fedb514b74a3af812d34",
+    "copied_sha256": "92c3075c14751e47e7a7a8c9f2fc63632445477d2205fedb514b74a3af812d34",
+    "prepared_sha256": "92c3075c14751e47e7a7a8c9f2fc63632445477d2205fedb514b74a3af812d34"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/matrix/MatrixNorms.hpp",
+    "destination": "support/library/include/gsmaker/analysis/matrix/MatrixNorms.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/matrix/SparsityAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/matrix/SparsityAnalysis.hpp",
+    "source_sha256": "25a5949b2ca0f18fb42fb4b72178a58deea23c46a518f2d8ac02ce776ef29ce5",
+    "copied_sha256": "25a5949b2ca0f18fb42fb4b72178a58deea23c46a518f2d8ac02ce776ef29ce5",
+    "prepared_sha256": "25a5949b2ca0f18fb42fb4b72178a58deea23c46a518f2d8ac02ce776ef29ce5"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/matrix/DiagonalAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/matrix/DiagonalAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/matrix/SymmetryAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/matrix/SymmetryAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/matrix/PositiveDefinitenessAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/matrix/PositiveDefinitenessAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/matrix/DerivativeOperatorAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/matrix/DerivativeOperatorAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/PicardSpectralAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/PicardSpectralAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/PicardOperator.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/PicardOperator.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/EigenvalueAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/EigenvalueAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/SlepcContext.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/SlepcContext.hpp",
+    "source_sha256": "e47c1cf6ed2f3e430a3fd61e5b4fb911b69b503ebee3f8ad626fca2bad2a60ee",
+    "copied_sha256": "e47c1cf6ed2f3e430a3fd61e5b4fb911b69b503ebee3f8ad626fca2bad2a60ee",
+    "prepared_sha256": "e47c1cf6ed2f3e430a3fd61e5b4fb911b69b503ebee3f8ad626fca2bad2a60ee"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/SlepcEigenResult.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/SlepcEigenResult.hpp",
+    "source_sha256": "d604c76249f9ded0f3b4d89ceda887ea60fe14b14831b0b74d0fbdf27bcf5084",
+    "copied_sha256": "d604c76249f9ded0f3b4d89ceda887ea60fe14b14831b0b74d0fbdf27bcf5084",
+    "prepared_sha256": "d604c76249f9ded0f3b4d89ceda887ea60fe14b14831b0b74d0fbdf27bcf5084"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/SpectralRadiusAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/SpectralRadiusAnalysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/SlepcEigenSolverController.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/SlepcEigenSolverController.hpp",
+    "source_sha256": "3455cfe88bf939edefc95570c17bead26fef079d9e42c98678cb7ac039a280f1",
+    "copied_sha256": "3455cfe88bf939edefc95570c17bead26fef079d9e42c98678cb7ac039a280f1",
+    "prepared_sha256": "3455cfe88bf939edefc95570c17bead26fef079d9e42c98678cb7ac039a280f1"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/spectral/SlepcEigenConfig.hpp",
+    "destination": "support/library/include/gsmaker/analysis/spectral/SlepcEigenConfig.hpp",
+    "source_sha256": "f57605c883a12932f8dd9020fb8bdcbfd3287e330c7471e960828e30bfbd2ef5",
+    "copied_sha256": "f57605c883a12932f8dd9020fb8bdcbfd3287e330c7471e960828e30bfbd2ef5",
+    "prepared_sha256": "f57605c883a12932f8dd9020fb8bdcbfd3287e330c7471e960828e30bfbd2ef5"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/convergence/PicardConvergenceComparison.hpp",
+    "destination": "support/library/include/gsmaker/analysis/convergence/PicardConvergenceComparison.hpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/convergence/NonlinearConvergenceAnalysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/convergence/NonlinearConvergenceAnalysis.hpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/convergence/ConvergenceFactors.hpp",
+    "destination": "support/library/include/gsmaker/analysis/convergence/ConvergenceFactors.hpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/convergence/AsymptoticRate.hpp",
+    "destination": "support/library/include/gsmaker/analysis/convergence/AsymptoticRate.hpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/common/AnalysisContext.hpp",
+    "destination": "support/library/include/gsmaker/analysis/common/AnalysisContext.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/common/Analysis.hpp",
+    "destination": "support/library/include/gsmaker/analysis/common/Analysis.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/common/AnalysisMetadata.hpp",
+    "destination": "support/library/include/gsmaker/analysis/common/AnalysisMetadata.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/analysis/common/AnalysisBase.hpp",
+    "destination": "support/library/include/gsmaker/analysis/common/AnalysisBase.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/relaxation/AitkenRelaxation.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/relaxation/AitkenRelaxation.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/relaxation/ConstantRelaxation.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/relaxation/ConstantRelaxation.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/relaxation/NoRelaxation.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/relaxation/NoRelaxation.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/mesh/MeshFactory.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/mesh/MeshFactory.hpp",
+    "source_sha256": "4aa45026cd0297643dcdd68d672d456da14711a251deddd651368bbef20167e0",
+    "copied_sha256": "4aa45026cd0297643dcdd68d672d456da14711a251deddd651368bbef20167e0",
+    "prepared_sha256": "4aa45026cd0297643dcdd68d672d456da14711a251deddd651368bbef20167e0"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/picard/PicardResult.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/picard/PicardResult.hpp",
+    "source_sha256": "de0aad3a67017c6c6204e04e77425e645ce58ce010e11433256d53a23de91b27",
+    "copied_sha256": "de0aad3a67017c6c6204e04e77425e645ce58ce010e11433256d53a23de91b27",
+    "prepared_sha256": "de0aad3a67017c6c6204e04e77425e645ce58ce010e11433256d53a23de91b27"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/picard/Picard.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/picard/Picard.hpp",
+    "source_sha256": "6983edd730a8eb80b777ad65fe6b037de3c17f31d89417face361977a1bd90c4",
+    "copied_sha256": "6983edd730a8eb80b777ad65fe6b037de3c17f31d89417face361977a1bd90c4",
+    "prepared_sha256": "6983edd730a8eb80b777ad65fe6b037de3c17f31d89417face361977a1bd90c4"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/picard/PicardConfig.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/picard/PicardConfig.hpp",
+    "source_sha256": "4d2e537a21912cb35c1c1c8e05167225cef815eb1bb648a4067bab5cce176127",
+    "copied_sha256": "4d2e537a21912cb35c1c1c8e05167225cef815eb1bb648a4067bab5cce176127",
+    "prepared_sha256": "4d2e537a21912cb35c1c1c8e05167225cef815eb1bb648a4067bab5cce176127"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/newton/NewtonResult.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/newton/NewtonResult.hpp",
+    "source_sha256": "b487cafec1247eb2381aea31032f2c57c9d1cfbdeb00476502795b53bda65693",
+    "copied_sha256": "b487cafec1247eb2381aea31032f2c57c9d1cfbdeb00476502795b53bda65693",
+    "prepared_sha256": "b487cafec1247eb2381aea31032f2c57c9d1cfbdeb00476502795b53bda65693"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/newton/NewtonConfig.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/newton/NewtonConfig.hpp",
+    "source_sha256": "52baf619a802adb7b043fbef9aee6186539afc48e4dd42b058ec74b8548867fa",
+    "copied_sha256": "52baf619a802adb7b043fbef9aee6186539afc48e4dd42b058ec74b8548867fa",
+    "prepared_sha256": "52baf619a802adb7b043fbef9aee6186539afc48e4dd42b058ec74b8548867fa"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/newton/Newton.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/newton/Newton.hpp",
+    "source_sha256": "fa7345e37231ec4ab897f3cd8d6d90a6a5162d6f094682014af38c7f349a1196",
+    "copied_sha256": "fa7345e37231ec4ab897f3cd8d6d90a6a5162d6f094682014af38c7f349a1196",
+    "prepared_sha256": "fa7345e37231ec4ab897f3cd8d6d90a6a5162d6f094682014af38c7f349a1196"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/newton/NewtonSolverConfig.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/newton/NewtonSolverConfig.hpp",
+    "source_sha256": "f38869e72aaefdf596e9ed0ea68f908b7b1c60cbd55de7e8aeb871034d62adfb",
+    "copied_sha256": "f38869e72aaefdf596e9ed0ea68f908b7b1c60cbd55de7e8aeb871034d62adfb",
+    "prepared_sha256": "f38869e72aaefdf596e9ed0ea68f908b7b1c60cbd55de7e8aeb871034d62adfb"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/linesearch/BacktrackingLineSearch.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/linesearch/BacktrackingLineSearch.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/linesearch/NoLineSearch.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/linesearch/NoLineSearch.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/nonlinear/linesearch/ArmijoLineSearch.hpp",
+    "destination": "support/library/include/gsmaker/nonlinear/linesearch/ArmijoLineSearch.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/verification/analytical/Fadeev.hpp",
+    "destination": "support/library/include/gsmaker/verification/analytical/Fadeev.hpp",
+    "source_sha256": "57540fca15dfc1f9837e668a675622eca5093d21b49c4bc11c4d1c777e8aa006",
+    "copied_sha256": "57540fca15dfc1f9837e668a675622eca5093d21b49c4bc11c4d1c777e8aa006",
+    "prepared_sha256": "57540fca15dfc1f9837e668a675622eca5093d21b49c4bc11c4d1c777e8aa006"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/verification/analytical/AnalyticalSolution.hpp",
+    "destination": "support/library/include/gsmaker/verification/analytical/AnalyticalSolution.hpp",
+    "source_sha256": "1202eca22ce0ee3c0f966be6a172c7700163572830fd44f164ee09872552ac93",
+    "copied_sha256": "1202eca22ce0ee3c0f966be6a172c7700163572830fd44f164ee09872552ac93",
+    "prepared_sha256": "1202eca22ce0ee3c0f966be6a172c7700163572830fd44f164ee09872552ac93"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/verification/manufactured/ManufacturedSolution.hpp",
+    "destination": "support/library/include/gsmaker/verification/manufactured/ManufacturedSolution.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/include/gsmaker/verification/reference/NumericalReference.hpp",
+    "destination": "support/library/include/gsmaker/verification/reference/NumericalReference.hpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/mesh/MeshGeometry.cpp",
+    "destination": "support/library/src/mesh/MeshGeometry.cpp",
+    "source_sha256": "94b0860f4d99831af1eef1c56faf19c1b6a2a94bf894fe3f512fab01c949d1b7",
+    "copied_sha256": "94b0860f4d99831af1eef1c56faf19c1b6a2a94bf894fe3f512fab01c949d1b7",
+    "prepared_sha256": "94b0860f4d99831af1eef1c56faf19c1b6a2a94bf894fe3f512fab01c949d1b7"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/mesh/MeshFactory.cpp",
+    "destination": "support/library/src/mesh/MeshFactory.cpp",
+    "source_sha256": "2850b65b90605c8ba7059a99713b14fbe8376068808483580f94086bf51da867",
+    "copied_sha256": "2850b65b90605c8ba7059a99713b14fbe8376068808483580f94086bf51da867",
+    "prepared_sha256": "2850b65b90605c8ba7059a99713b14fbe8376068808483580f94086bf51da867"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/io/YAMLConfig.cpp",
+    "destination": "support/library/src/io/YAMLConfig.cpp",
+    "source_sha256": "ab2d0056df3d8d201f1c9f11cad5699efb497473ee4161d1f3a78810dfe5c06b",
+    "copied_sha256": "ab2d0056df3d8d201f1c9f11cad5699efb497473ee4161d1f3a78810dfe5c06b",
+    "prepared_sha256": "ab2d0056df3d8d201f1c9f11cad5699efb497473ee4161d1f3a78810dfe5c06b"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/assembly/CsrMatrix.cpp",
+    "destination": "support/library/src/assembly/CsrMatrix.cpp",
+    "source_sha256": "e4341c4e8b3d04ef1b3d30c9c2482dcb1a75178fb0eef03d79304bf4a5545d10",
+    "copied_sha256": "e4341c4e8b3d04ef1b3d30c9c2482dcb1a75178fb0eef03d79304bf4a5545d10",
+    "prepared_sha256": "e4341c4e8b3d04ef1b3d30c9c2482dcb1a75178fb0eef03d79304bf4a5545d10"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/assembly/PoissonAssembler.cpp",
+    "destination": "support/library/src/assembly/PoissonAssembler.cpp",
+    "source_sha256": "907899f20463f2979fd8cefe96454024b62ff7bdc04c0f5019cea4a265ed153c",
+    "copied_sha256": "907899f20463f2979fd8cefe96454024b62ff7bdc04c0f5019cea4a265ed153c",
+    "prepared_sha256": "907899f20463f2979fd8cefe96454024b62ff7bdc04c0f5019cea4a265ed153c"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/semilinear/ResidualEvaluator.cpp",
+    "destination": "support/library/src/semilinear/ResidualEvaluator.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/semilinear/SemilinearSystem.cpp",
+    "destination": "support/library/src/semilinear/SemilinearSystem.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/semilinear/GradientRatioSource.cpp",
+    "destination": "support/library/src/semilinear/GradientRatioSource.cpp",
+    "source_sha256": "056b81908238e25bed8580982d667c465fd124d224295a46a304017a1c773e8e",
+    "copied_sha256": "056b81908238e25bed8580982d667c465fd124d224295a46a304017a1c773e8e",
+    "prepared_sha256": "056b81908238e25bed8580982d667c465fd124d224295a46a304017a1c773e8e"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/solver/SolutionState.cpp",
+    "destination": "support/library/src/solver/SolutionState.cpp",
+    "source_sha256": "9af03f30833858c5d04f1b0ebb1446d98d74453d5794496a262e9d401cc1767d",
+    "copied_sha256": "9af03f30833858c5d04f1b0ebb1446d98d74453d5794496a262e9d401cc1767d",
+    "prepared_sha256": "9af03f30833858c5d04f1b0ebb1446d98d74453d5794496a262e9d401cc1767d"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/core/MeshAdapter.cpp",
+    "destination": "support/library/src/core/MeshAdapter.cpp",
+    "source_sha256": "d84f7b2e97a997c472abb9cbafaee82549b89f44ef2d5ee44fd2b5939f2dc3a9",
+    "copied_sha256": "d84f7b2e97a997c472abb9cbafaee82549b89f44ef2d5ee44fd2b5939f2dc3a9",
+    "prepared_sha256": "d84f7b2e97a997c472abb9cbafaee82549b89f44ef2d5ee44fd2b5939f2dc3a9"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/core/Types.cpp",
+    "destination": "support/library/src/core/Types.cpp",
+    "source_sha256": "e8b494b51ba6f40e3ee73d946e7dcf74ee02c65993a09b5334bba61f78d70fef",
+    "copied_sha256": "e8b494b51ba6f40e3ee73d946e7dcf74ee02c65993a09b5334bba61f78d70fef",
+    "prepared_sha256": "e8b494b51ba6f40e3ee73d946e7dcf74ee02c65993a09b5334bba61f78d70fef"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/boundary/BoundaryCondition.cpp",
+    "destination": "support/library/src/boundary/BoundaryCondition.cpp",
+    "source_sha256": "e61cd04d975065e6e6b7f3c69817e07b1da6a81c5258cc3ca84e8119fb257948",
+    "copied_sha256": "e61cd04d975065e6e6b7f3c69817e07b1da6a81c5258cc3ca84e8119fb257948",
+    "prepared_sha256": "e61cd04d975065e6e6b7f3c69817e07b1da6a81c5258cc3ca84e8119fb257948"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/boundary/BoundaryApplication.cpp",
+    "destination": "support/library/src/boundary/BoundaryApplication.cpp",
+    "source_sha256": "1b7e41e0eb6f78c0e60ced71f6d37975c956c34ea0730e0f667ab4137c7336df",
+    "copied_sha256": "1b7e41e0eb6f78c0e60ced71f6d37975c956c34ea0730e0f667ab4137c7336df",
+    "prepared_sha256": "1b7e41e0eb6f78c0e60ced71f6d37975c956c34ea0730e0f667ab4137c7336df"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/linear_system/PetscContext.cpp",
+    "destination": "support/library/src/linear_system/PetscContext.cpp",
+    "source_sha256": "a0f27c32726d7b5436b96c4ab66dce7438d2eb852779f5f615e9556c792b4df3",
+    "copied_sha256": "a0f27c32726d7b5436b96c4ab66dce7438d2eb852779f5f615e9556c792b4df3",
+    "prepared_sha256": "f5eb6b8c29a1f3f4aceba16bb8999782866101ec407891f1f179e00149868325"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/linear_system/PetscLinearSystemController.cpp",
+    "destination": "support/library/src/linear_system/PetscLinearSystemController.cpp",
+    "source_sha256": "e9f399b6b73a8d9e23cfea1113d349212d8414f0999ec45b4749073fc4136c51",
+    "copied_sha256": "e9f399b6b73a8d9e23cfea1113d349212d8414f0999ec45b4749073fc4136c51",
+    "prepared_sha256": "e9f399b6b73a8d9e23cfea1113d349212d8414f0999ec45b4749073fc4136c51"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/linear_system/PetscMatrixUpdate.cpp",
+    "destination": "support/library/src/linear_system/PetscMatrixUpdate.cpp",
+    "source_sha256": "74ebd7259cd289ceb9db18602f847c3cfad4a84b8101e07245643527f63a73d9",
+    "copied_sha256": "74ebd7259cd289ceb9db18602f847c3cfad4a84b8101e07245643527f63a73d9",
+    "prepared_sha256": "74ebd7259cd289ceb9db18602f847c3cfad4a84b8101e07245643527f63a73d9"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/performance/PerformanceRecorder.cpp",
+    "destination": "support/library/src/analysis/performance/PerformanceRecorder.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/error/ReferenceError.cpp",
+    "destination": "support/library/src/analysis/error/ReferenceError.cpp",
+    "source_sha256": "5a387dd94f20b4807e3c79454e6893ee0d09a7a4fb945a68fd1131518bcd1485",
+    "copied_sha256": "5a387dd94f20b4807e3c79454e6893ee0d09a7a4fb945a68fd1131518bcd1485",
+    "prepared_sha256": "5a387dd94f20b4807e3c79454e6893ee0d09a7a4fb945a68fd1131518bcd1485"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/error/ErrorNorms.cpp",
+    "destination": "support/library/src/analysis/error/ErrorNorms.cpp",
+    "source_sha256": "4f554f0731bf2581906c76f586b49c47845719ff76b92033cc0e93946a832a20",
+    "copied_sha256": "4f554f0731bf2581906c76f586b49c47845719ff76b92033cc0e93946a832a20",
+    "prepared_sha256": "4f554f0731bf2581906c76f586b49c47845719ff76b92033cc0e93946a832a20"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/error/ConvergenceOrder.cpp",
+    "destination": "support/library/src/analysis/error/ConvergenceOrder.cpp",
+    "source_sha256": "1412f4f62816ffa3ec2dfecaa48e66c30a46b364c6fa7e20dc7fa610ca568420",
+    "copied_sha256": "1412f4f62816ffa3ec2dfecaa48e66c30a46b364c6fa7e20dc7fa610ca568420",
+    "prepared_sha256": "1412f4f62816ffa3ec2dfecaa48e66c30a46b364c6fa7e20dc7fa610ca568420"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/matrix/DiagonalAnalysis.cpp",
+    "destination": "support/library/src/analysis/matrix/DiagonalAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/matrix/MatrixNorms.cpp",
+    "destination": "support/library/src/analysis/matrix/MatrixNorms.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/matrix/SymmetryAnalysis.cpp",
+    "destination": "support/library/src/analysis/matrix/SymmetryAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/matrix/DerivativeOperatorAnalysis.cpp",
+    "destination": "support/library/src/analysis/matrix/DerivativeOperatorAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/matrix/PositiveDefinitenessAnalysis.cpp",
+    "destination": "support/library/src/analysis/matrix/PositiveDefinitenessAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/matrix/SparsityAnalysis.cpp",
+    "destination": "support/library/src/analysis/matrix/SparsityAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/spectral/SpectralRadiusAnalysis.cpp",
+    "destination": "support/library/src/analysis/spectral/SpectralRadiusAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/spectral/SlepcEigenSolverController.cpp",
+    "destination": "support/library/src/analysis/spectral/SlepcEigenSolverController.cpp",
+    "source_sha256": "91a2c3a10b075e5600176a26e3f44f178ef345d93508deb1f6de4a0363c7ac27",
+    "copied_sha256": "91a2c3a10b075e5600176a26e3f44f178ef345d93508deb1f6de4a0363c7ac27",
+    "prepared_sha256": "91a2c3a10b075e5600176a26e3f44f178ef345d93508deb1f6de4a0363c7ac27"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/spectral/PicardSpectralAnalysis.cpp",
+    "destination": "support/library/src/analysis/spectral/PicardSpectralAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/spectral/PicardOperator.cpp",
+    "destination": "support/library/src/analysis/spectral/PicardOperator.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/spectral/SlepcContext.cpp",
+    "destination": "support/library/src/analysis/spectral/SlepcContext.cpp",
+    "source_sha256": "260d17e6e5f5570b94baf7ced437249cbd024cb4f08dfd23bc2ae0e42fb157f8",
+    "copied_sha256": "260d17e6e5f5570b94baf7ced437249cbd024cb4f08dfd23bc2ae0e42fb157f8",
+    "prepared_sha256": "260d17e6e5f5570b94baf7ced437249cbd024cb4f08dfd23bc2ae0e42fb157f8"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/spectral/EigenvalueAnalysis.cpp",
+    "destination": "support/library/src/analysis/spectral/EigenvalueAnalysis.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/convergence/PicardConvergenceComparison.cpp",
+    "destination": "support/library/src/analysis/convergence/PicardConvergenceComparison.cpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/convergence/AsymptoticRate.cpp",
+    "destination": "support/library/src/analysis/convergence/AsymptoticRate.cpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/convergence/ConvergenceFactors.cpp",
+    "destination": "support/library/src/analysis/convergence/ConvergenceFactors.cpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/analysis/convergence/NonlinearConvergenceAnalysis.cpp",
+    "destination": "support/library/src/analysis/convergence/NonlinearConvergenceAnalysis.cpp",
+    "source_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "copied_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070",
+    "prepared_sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/nonlinear/picard/Picard.cpp",
+    "destination": "support/library/src/nonlinear/picard/Picard.cpp",
+    "source_sha256": "ad42b46df6825ed7902ead4c10a6c290c528b518882176acdb6af833d6e9143a",
+    "copied_sha256": "ad42b46df6825ed7902ead4c10a6c290c528b518882176acdb6af833d6e9143a",
+    "prepared_sha256": "ad42b46df6825ed7902ead4c10a6c290c528b518882176acdb6af833d6e9143a"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/nonlinear/newton/Newton.cpp",
+    "destination": "support/library/src/nonlinear/newton/Newton.cpp",
+    "source_sha256": "3d6f973bf834cddd3fd2a110983910b075b1f102462fc658c2c8c8fb8f3fb2ab",
+    "copied_sha256": "3d6f973bf834cddd3fd2a110983910b075b1f102462fc658c2c8c8fb8f3fb2ab",
+    "prepared_sha256": "3d6f973bf834cddd3fd2a110983910b075b1f102462fc658c2c8c8fb8f3fb2ab"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/verification/analytical/Fadeev.cpp",
+    "destination": "support/library/src/verification/analytical/Fadeev.cpp",
+    "source_sha256": "f743c06baabc7c152a3dafec86d0cf28786f5bbc44810a676430adb8cfc8a8b3",
+    "copied_sha256": "f743c06baabc7c152a3dafec86d0cf28786f5bbc44810a676430adb8cfc8a8b3",
+    "prepared_sha256": "f743c06baabc7c152a3dafec86d0cf28786f5bbc44810a676430adb8cfc8a8b3"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/GSMakerLib/src/verification/reference/NumericalReference.cpp",
+    "destination": "support/library/src/verification/reference/NumericalReference.cpp",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prepared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/studies/Common/ConsoleTee.hpp",
+    "destination": "support/common/ConsoleTee.hpp",
+    "source_sha256": "4c89db8750cea2da33154e16353f1b36852aca508cdb6e0ea56369f22df0868d",
+    "copied_sha256": "4c89db8750cea2da33154e16353f1b36852aca508cdb6e0ea56369f22df0868d",
+    "prepared_sha256": "4c89db8750cea2da33154e16353f1b36852aca508cdb6e0ea56369f22df0868d"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/studies/Common/FadeevNonlinearStudyCommon.hpp",
+    "destination": "support/common/FadeevNonlinearStudyCommon.hpp",
+    "source_sha256": "1671621b617674a43e9555b15b90dc96c58f3dd395d51b99418870c1d9c871ec",
+    "copied_sha256": "1671621b617674a43e9555b15b90dc96c58f3dd395d51b99418870c1d9c871ec",
+    "prepared_sha256": "1671621b617674a43e9555b15b90dc96c58f3dd395d51b99418870c1d9c871ec"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/studies/Common/SparseJacobian.hpp",
+    "destination": "support/common/SparseJacobian.hpp",
+    "source_sha256": "365d4e3ff3775a5c4f05dd5ab6f192847c3c6d4b105831d763e71cecbb433d59",
+    "copied_sha256": "365d4e3ff3775a5c4f05dd5ab6f192847c3c6d4b105831d763e71cecbb433d59",
+    "prepared_sha256": "365d4e3ff3775a5c4f05dd5ab6f192847c3c6d4b105831d763e71cecbb433d59"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/studies/Common/MatrixFreePicardOperator.hpp",
+    "destination": "support/common/MatrixFreePicardOperator.hpp",
+    "source_sha256": "7a0a77d7e76c8d47f04101ca34ebd69a79d00f55d8da5fc712e87134044e17bb",
+    "copied_sha256": "7a0a77d7e76c8d47f04101ca34ebd69a79d00f55d8da5fc712e87134044e17bb",
+    "prepared_sha256": "7a0a77d7e76c8d47f04101ca34ebd69a79d00f55d8da5fc712e87134044e17bb"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/NewtonOnly10000/OfficialFourStrategies10000Common.hpp",
+    "destination": "support/official.hpp",
+    "source_sha256": "16b1cfc812b37d59782f89499bb7a014d113d6b94025723b7315219d88caffa1",
+    "copied_sha256": "6a48d2cdd9a1fd97862c2f31b4bc50cc39d57b950ad5048584d7f7891f01c5ac",
+    "prepared_sha256": "6a48d2cdd9a1fd97862c2f31b4bc50cc39d57b950ad5048584d7f7891f01c5ac"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/Common/OfficialFourStrategies10000Common.hpp",
+    "destination": "support/complementary.hpp",
+    "source_sha256": "41187bc7a041305df7e4ac90afb52987cd80bd61d15e656329690c0c9a8fb4dc",
+    "copied_sha256": "d3c1ab2e9972e4a9796b92ba8be88e7cc1f53a26e2e321b7ffe0a8d1b5bb5c5e",
+    "prepared_sha256": "d3c1ab2e9972e4a9796b92ba8be88e7cc1f53a26e2e321b7ffe0a8d1b5bb5c5e"
+  },
+  {
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/FadeevConvergence/pap_p3_fadeev_convergence.cpp",
+    "destination": "support/spatial.cpp",
+    "source_sha256": "17128222dfc75457093469225bf35b7248298a1500aaa4a87407cdd438303ade",
+    "copied_sha256": "ebfea2f181e00631dbbc1698c07143050c2676ae86dea088da8ee32b8cf687ff",
+    "prepared_sha256": "ebfea2f181e00631dbbc1698c07143050c2676ae86dea088da8ee32b8cf687ff"
+  }
+]

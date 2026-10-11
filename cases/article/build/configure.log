@@ -1,0 +1,8 @@
+-- Targeting Unix Makefiles
+-- Using /usr/bin/c++ compiler.
+-- Boost include dirs: /usr/local/include
+-- Boost libraries:    
+-- Using gcc version 4 or later. Adding -frounding-math
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jflavio/Programas/NewtonPicard/cases/article/build

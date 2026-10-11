@@ -1,0 +1,28 @@
+#pragma once
+
+#include <stdexcept>
+#include <vector>
+
+#include <petsc.h>
+
+#include "gss/core/MeshAdapter.hpp"
+
+namespace gss {
+
+/// @brief Assembles the FVM Voronoi diffusion operator into a PETSc matrix.
+class MatrixAssembler {
+public:
+    /// @brief Assemble an SPD diffusion matrix from mesh topology.
+    [[nodiscard]] static Mat assemble(const MeshAdapter& mesh, MPI_Comm comm = PETSC_COMM_WORLD,
+                                      Real diffusivity = Real{1});
+
+    /// @brief Apply the matrix-free FVM stencil to a PETSc vector.
+    static void apply_stencil(const MeshAdapter& mesh, Vec psi, Vec out,
+                              Real diffusivity = Real{1});
+
+    /// @brief Apply the matrix-free FVM stencil to a vector.
+    [[nodiscard]] static std::vector<Real> apply_stencil(const MeshAdapter& mesh, std::span<const Real> psi,
+                                                         Real diffusivity = Real{1});
+};
+
+} // namespace gss

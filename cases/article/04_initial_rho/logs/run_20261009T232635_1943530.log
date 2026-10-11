@@ -1,0 +1,151 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/2000 rho_target=1.15334 rho_c1=7.37093 c=0.156472
+calibration case 200/2000 rho_target=1.26828 rho_c1=7.34255 c=0.17273
+calibration case 300/2000 rho_target=1.11833 rho_c1=7.08693 c=0.157801
+calibration case 400/2000 rho_target=1.25443 rho_c1=7.87394 c=0.159314
+calibration case 500/2000 rho_target=1.25458 rho_c1=7.99865 c=0.156849
+calibration case 600/2000 rho_target=1.25963 rho_c1=8.71317 c=0.144567
+calibration case 700/2000 rho_target=1.155 rho_c1=7.23926 c=0.159546
+calibration case 800/2000 rho_target=1.26715 rho_c1=7.28553 c=0.173927
+calibration case 900/2000 rho_target=1.29066 rho_c1=7.54793 c=0.170995
+calibration case 1000/2000 rho_target=1.2034 rho_c1=7.09664 c=0.169573
+calibration case 1100/2000 rho_target=1.18256 rho_c1=7.71113 c=0.153357
+calibration case 1200/2000 rho_target=1.20134 rho_c1=7.17017 c=0.167548
+calibration case 1300/2000 rho_target=1.10288 rho_c1=7.32178 c=0.15063
+calibration case 1400/2000 rho_target=1.23055 rho_c1=7.87668 c=0.156227
+calibration case 1500/2000 rho_target=1.17951 rho_c1=7.27109 c=0.162219
+calibration case 1600/2000 rho_target=1.20183 rho_c1=8.36456 c=0.143681
+calibration case 1700/2000 rho_target=1.24157 rho_c1=7.69143 c=0.161423
+calibration case 1800/2000 rho_target=1.15392 rho_c1=7.80425 c=0.147858
+calibration case 1900/2000 rho_target=1.14537 rho_c1=7.71239 c=0.14851
+calibration case 2000/2000 rho_target=1.19094 rho_c1=7.74858 c=0.153698
+mixed_rho_initial / WLSQR / cartesian case 100/2000 rho_target=1.15334 rho_ref=1.15334 rho0=1.15334 conv=1 ref=1 Ei=2.24882e-05 Ef=1.16258e-12 NL=3 LinCalls=43 t=0.0730962 s
+mixed_rho_initial / WLSQR / cartesian case 200/2000 rho_target=1.26828 rho_ref=1.26828 rho0=1.26828 conv=1 ref=1 Ei=2.25457e-05 Ef=9.15619e-12 NL=3 LinCalls=43 t=0.0769366 s
+mixed_rho_initial / WLSQR / cartesian case 300/2000 rho_target=1.11833 rho_ref=1.11833 rho0=1.11833 conv=1 ref=1 Ei=2.01557e-05 Ef=1.2735e-12 NL=3 LinCalls=43 t=0.0726476 s
+mixed_rho_initial / WLSQR / cartesian case 400/2000 rho_target=1.25443 rho_ref=1.25443 rho0=1.25445 conv=1 ref=1 Ei=1.97015e-05 Ef=1.20809e-10 NL=3 LinCalls=44 t=0.0780998 s
+mixed_rho_initial / WLSQR / cartesian case 500/2000 rho_target=1.25458 rho_ref=1.25458 rho0=1.25459 conv=1 ref=1 Ei=2.0264e-05 Ef=2.02901e-12 NL=3 LinCalls=44 t=0.0739278 s
+mixed_rho_initial / WLSQR / cartesian case 600/2000 rho_target=1.25963 rho_ref=1.25963 rho0=1.25965 conv=1 ref=1 Ei=1.95475e-05 Ef=1.2502e-13 NL=3 LinCalls=45 t=0.0770113 s
+mixed_rho_initial / WLSQR / cartesian case 700/2000 rho_target=1.155 rho_ref=1.155 rho0=1.155 conv=1 ref=1 Ei=2.02413e-05 Ef=4.87069e-15 NL=4 LinCalls=45 t=0.0883514 s
+mixed_rho_initial / WLSQR / cartesian case 800/2000 rho_target=1.26715 rho_ref=1.26715 rho0=1.26714 conv=1 ref=1 Ei=2.20526e-05 Ef=1.62122e-13 NL=4 LinCalls=36 t=0.0889933 s
+mixed_rho_initial / WLSQR / cartesian case 900/2000 rho_target=1.29066 rho_ref=1.29066 rho0=1.29066 conv=1 ref=1 Ei=2.19794e-05 Ef=1.55941e-11 NL=3 LinCalls=44 t=0.075684 s
+mixed_rho_initial / WLSQR / cartesian case 1000/2000 rho_target=1.2034 rho_ref=1.2034 rho0=1.2034 conv=1 ref=1 Ei=1.97678e-05 Ef=1.32772e-14 NL=4 LinCalls=36 t=0.0793087 s
+mixed_rho_initial / WLSQR / cartesian case 1100/2000 rho_target=1.18256 rho_ref=1.18256 rho0=1.18256 conv=1 ref=1 Ei=2.15745e-05 Ef=8.03396e-15 NL=4 LinCalls=45 t=0.08987 s
+mixed_rho_initial / WLSQR / cartesian case 1200/2000 rho_target=1.20134 rho_ref=1.20134 rho0=1.20135 conv=1 ref=1 Ei=2.12478e-05 Ef=1.23082e-11 NL=3 LinCalls=43 t=0.0730771 s
+mixed_rho_initial / WLSQR / cartesian case 1300/2000 rho_target=1.10288 rho_ref=1.10288 rho0=1.10289 conv=1 ref=1 Ei=2.22061e-05 Ef=2.12229e-14 NL=4 LinCalls=44 t=0.0849933 s
+mixed_rho_initial / WLSQR / cartesian case 1400/2000 rho_target=1.23055 rho_ref=1.23055 rho0=1.23056 conv=1 ref=1 Ei=1.92277e-05 Ef=3.0933e-12 NL=3 LinCalls=44 t=0.0804449 s
+mixed_rho_initial / WLSQR / cartesian case 1500/2000 rho_target=1.17951 rho_ref=1.17951 rho0=1.17951 conv=1 ref=1 Ei=2.25983e-05 Ef=2.87731e-11 NL=3 LinCalls=43 t=0.0765708 s
+mixed_rho_initial / WLSQR / cartesian case 1600/2000 rho_target=1.20183 rho_ref=1.20183 rho0=1.20184 conv=1 ref=1 Ei=2.0544e-05 Ef=2.79724e-11 NL=3 LinCalls=44 t=0.0792946 s
+mixed_rho_initial / WLSQR / cartesian case 1700/2000 rho_target=1.24157 rho_ref=1.24157 rho0=1.24158 conv=1 ref=1 Ei=2.20749e-05 Ef=2.08023e-11 NL=3 LinCalls=44 t=0.0779858 s
+mixed_rho_initial / WLSQR / cartesian case 1800/2000 rho_target=1.15392 rho_ref=1.15392 rho0=1.15392 conv=1 ref=1 Ei=1.99771e-05 Ef=2.65575e-14 NL=4 LinCalls=45 t=0.0935646 s
+mixed_rho_initial / WLSQR / cartesian case 1900/2000 rho_target=1.14537 rho_ref=1.14537 rho0=1.14538 conv=1 ref=1 Ei=1.96445e-05 Ef=4.58989e-12 NL=3 LinCalls=44 t=0.0790993 s
+mixed_rho_initial / WLSQR / cartesian case 2000/2000 rho_target=1.19094 rho_ref=1.19094 rho0=1.19094 conv=1 ref=1 Ei=2.19593e-05 Ef=6.17478e-13 NL=3 LinCalls=44 t=0.0808551 s
+mixed_rho_initial / WLSQR / hexagonal case 100/2000 rho_target=1.15334 rho_ref=1.15428 rho0=1.15428 conv=1 ref=1 Ei=2.2635e-05 Ef=1.37312e-12 NL=3 LinCalls=35 t=0.119014 s
+mixed_rho_initial / WLSQR / hexagonal case 200/2000 rho_target=1.26828 rho_ref=1.26948 rho0=1.26948 conv=1 ref=1 Ei=2.26932e-05 Ef=6.93012e-10 NL=3 LinCalls=35 t=0.118877 s
+mixed_rho_initial / WLSQR / hexagonal case 300/2000 rho_target=1.11833 rho_ref=1.11988 rho0=1.11988 conv=1 ref=1 Ei=2.02688e-05 Ef=1.18471e-12 NL=3 LinCalls=43 t=0.130093 s
+mixed_rho_initial / WLSQR / hexagonal case 400/2000 rho_target=1.25443 rho_ref=1.25472 rho0=1.25473 conv=1 ref=1 Ei=1.981e-05 Ef=7.07061e-11 NL=3 LinCalls=44 t=0.134218 s
+mixed_rho_initial / WLSQR / hexagonal case 500/2000 rho_target=1.25458 rho_ref=1.25485 rho0=1.25487 conv=1 ref=1 Ei=2.03801e-05 Ef=1.82075e-12 NL=3 LinCalls=44 t=0.128997 s
+mixed_rho_initial / WLSQR / hexagonal case 600/2000 rho_target=1.25963 rho_ref=1.25978 rho0=1.2598 conv=1 ref=1 Ei=1.96558e-05 Ef=1.36034e-13 NL=3 LinCalls=45 t=0.134314 s
+mixed_rho_initial / WLSQR / hexagonal case 700/2000 rho_target=1.155 rho_ref=1.15568 rho0=1.15568 conv=1 ref=1 Ei=2.03556e-05 Ef=1.15804e-14 NL=4 LinCalls=45 t=0.145912 s
+mixed_rho_initial / WLSQR / hexagonal case 800/2000 rho_target=1.26715 rho_ref=1.26854 rho0=1.26854 conv=1 ref=1 Ei=2.21925e-05 Ef=1.89254e-13 NL=4 LinCalls=44 t=0.143866 s
+mixed_rho_initial / WLSQR / hexagonal case 900/2000 rho_target=1.29066 rho_ref=1.29129 rho0=1.2913 conv=1 ref=1 Ei=2.21187e-05 Ef=1.55326e-11 NL=3 LinCalls=44 t=0.127832 s
+mixed_rho_initial / WLSQR / hexagonal case 1000/2000 rho_target=1.2034 rho_ref=1.20447 rho0=1.20447 conv=1 ref=1 Ei=1.98759e-05 Ef=1.36857e-14 NL=4 LinCalls=36 t=0.154356 s
+mixed_rho_initial / WLSQR / hexagonal case 1100/2000 rho_target=1.18256 rho_ref=1.18296 rho0=1.18297 conv=1 ref=1 Ei=2.17083e-05 Ef=1.69647e-14 NL=4 LinCalls=45 t=0.14306 s
+mixed_rho_initial / WLSQR / hexagonal case 1200/2000 rho_target=1.20134 rho_ref=1.20353 rho0=1.2035 conv=1 ref=1 Ei=2.13758e-05 Ef=7.70086e-12 NL=3 LinCalls=43 t=0.122952 s
+mixed_rho_initial / WLSQR / hexagonal case 1300/2000 rho_target=1.10288 rho_ref=1.10386 rho0=1.10386 conv=1 ref=1 Ei=2.23483e-05 Ef=1.82821e-14 NL=4 LinCalls=44 t=0.133442 s
+mixed_rho_initial / WLSQR / hexagonal case 1400/2000 rho_target=1.23055 rho_ref=1.23079 rho0=1.23079 conv=1 ref=1 Ei=1.93303e-05 Ef=3.17766e-12 NL=3 LinCalls=44 t=0.124192 s
+mixed_rho_initial / WLSQR / hexagonal case 1500/2000 rho_target=1.17951 rho_ref=1.18159 rho0=1.18159 conv=1 ref=1 Ei=2.27467e-05 Ef=5.08321e-11 NL=3 LinCalls=35 t=0.110169 s
+mixed_rho_initial / WLSQR / hexagonal case 1600/2000 rho_target=1.20183 rho_ref=1.20206 rho0=1.20207 conv=1 ref=1 Ei=2.06649e-05 Ef=3.05379e-11 NL=3 LinCalls=44 t=0.12401 s
+mixed_rho_initial / WLSQR / hexagonal case 1700/2000 rho_target=1.24157 rho_ref=1.24206 rho0=1.24206 conv=1 ref=1 Ei=2.22162e-05 Ef=2.61014e-11 NL=3 LinCalls=44 t=0.122889 s
+mixed_rho_initial / WLSQR / hexagonal case 1800/2000 rho_target=1.15392 rho_ref=1.15422 rho0=1.15422 conv=1 ref=1 Ei=2.0089e-05 Ef=3.28891e-14 NL=4 LinCalls=45 t=0.145166 s
+mixed_rho_initial / WLSQR / hexagonal case 1900/2000 rho_target=1.14537 rho_ref=1.14575 rho0=1.14577 conv=1 ref=1 Ei=1.97519e-05 Ef=1.3824e-11 NL=3 LinCalls=44 t=0.121385 s
+mixed_rho_initial / WLSQR / hexagonal case 2000/2000 rho_target=1.19094 rho_ref=1.19138 rho0=1.19138 conv=1 ref=1 Ei=2.20989e-05 Ef=6.32457e-13 NL=3 LinCalls=44 t=0.118773 s
+mixed_rho_initial / WLSQR / random case 100/2000 rho_target=1.15334 rho_ref=1.1509 rho0=1.1509 conv=1 ref=1 Ei=2.25056e-05 Ef=1.04379e-14 NL=4 LinCalls=36 t=0.148343 s
+mixed_rho_initial / WLSQR / random case 200/2000 rho_target=1.26828 rho_ref=1.26565 rho0=1.26565 conv=1 ref=1 Ei=2.25623e-05 Ef=3.87133e-13 NL=4 LinCalls=36 t=0.15355 s
+mixed_rho_initial / WLSQR / random case 300/2000 rho_target=1.11833 rho_ref=1.11639 rho0=1.11645 conv=1 ref=1 Ei=2.0097e-05 Ef=1.82778e-14 NL=4 LinCalls=36 t=0.146879 s
+mixed_rho_initial / WLSQR / random case 400/2000 rho_target=1.25443 rho_ref=1.25013 rho0=1.25015 conv=1 ref=1 Ei=1.96519e-05 Ef=2.22504e-13 NL=4 LinCalls=45 t=0.174725 s
+mixed_rho_initial / WLSQR / random case 500/2000 rho_target=1.25458 rho_ref=1.25086 rho0=1.25087 conv=1 ref=1 Ei=2.02203e-05 Ef=6.98148e-14 NL=4 LinCalls=45 t=0.163774 s
+mixed_rho_initial / WLSQR / random case 600/2000 rho_target=1.25963 rho_ref=1.25569 rho0=1.2557 conv=1 ref=1 Ei=1.95123e-05 Ef=3.13634e-14 NL=4 LinCalls=46 t=0.170373 s
+mixed_rho_initial / WLSQR / random case 700/2000 rho_target=1.155 rho_ref=1.15205 rho0=1.15205 conv=1 ref=1 Ei=2.03004e-05 Ef=7.39162e-15 NL=4 LinCalls=37 t=0.148552 s
+mixed_rho_initial / WLSQR / random case 800/2000 rho_target=1.26715 rho_ref=1.26455 rho0=1.26456 conv=1 ref=1 Ei=2.20134e-05 Ef=1.93708e-14 NL=4 LinCalls=36 t=0.185347 s
+mixed_rho_initial / WLSQR / random case 900/2000 rho_target=1.29066 rho_ref=1.28769 rho0=1.28769 conv=1 ref=1 Ei=2.20056e-05 Ef=1.17651e-14 NL=5 LinCalls=38 t=0.186723 s
+mixed_rho_initial / WLSQR / random case 1000/2000 rho_target=1.2034 rho_ref=1.20045 rho0=1.20045 conv=1 ref=1 Ei=1.98312e-05 Ef=3.09539e-14 NL=4 LinCalls=36 t=0.151188 s
+mixed_rho_initial / WLSQR / random case 1100/2000 rho_target=1.18256 rho_ref=1.17986 rho0=1.17986 conv=1 ref=1 Ei=2.15431e-05 Ef=1.58654e-13 NL=4 LinCalls=45 t=0.15815 s
+mixed_rho_initial / WLSQR / random case 1200/2000 rho_target=1.20134 rho_ref=1.19687 rho0=1.19666 conv=1 ref=1 Ei=2.12991e-05 Ef=2.70014e-14 NL=4 LinCalls=37 t=0.155115 s
+mixed_rho_initial / WLSQR / random case 1300/2000 rho_target=1.10288 rho_ref=1.10042 rho0=1.10042 conv=1 ref=1 Ei=2.21719e-05 Ef=2.23895e-14 NL=4 LinCalls=36 t=0.149735 s
+mixed_rho_initial / WLSQR / random case 1400/2000 rho_target=1.23055 rho_ref=1.22487 rho0=1.22487 conv=1 ref=1 Ei=1.92838e-05 Ef=4.97046e-15 NL=4 LinCalls=45 t=0.159454 s
+mixed_rho_initial / WLSQR / random case 1500/2000 rho_target=1.17951 rho_ref=1.17693 rho0=1.1769 conv=1 ref=1 Ei=2.26176e-05 Ef=4.45297e-14 NL=4 LinCalls=44 t=0.164916 s
+mixed_rho_initial / WLSQR / random case 1600/2000 rho_target=1.20183 rho_ref=1.19849 rho0=1.1985 conv=1 ref=1 Ei=2.05168e-05 Ef=3.8802e-14 NL=4 LinCalls=46 t=0.167625 s
+mixed_rho_initial / WLSQR / random case 1700/2000 rho_target=1.24157 rho_ref=1.23929 rho0=1.2393 conv=1 ref=1 Ei=2.20687e-05 Ef=1.97611e-13 NL=4 LinCalls=45 t=0.164031 s
+mixed_rho_initial / WLSQR / random case 1800/2000 rho_target=1.15392 rho_ref=1.14926 rho0=1.14927 conv=1 ref=1 Ei=2.0029e-05 Ef=2.13438e-14 NL=5 LinCalls=46 t=0.183423 s
+mixed_rho_initial / WLSQR / random case 1900/2000 rho_target=1.14537 rho_ref=1.14169 rho0=1.1417 conv=1 ref=1 Ei=1.95927e-05 Ef=1.70611e-14 NL=4 LinCalls=45 t=0.166148 s
+mixed_rho_initial / WLSQR / random case 2000/2000 rho_target=1.19094 rho_ref=1.18828 rho0=1.18828 conv=1 ref=1 Ei=2.19656e-05 Ef=5.01904e-14 NL=4 LinCalls=45 t=0.160191 s
+mixed_rho_initial / MGG / cartesian case 100/2000 rho_target=1.15334 rho_ref=1.15334 rho0=1.15334 conv=1 ref=1 Ei=2.24882e-05 Ef=1.16242e-12 NL=3 LinCalls=43 t=0.0754354 s
+mixed_rho_initial / MGG / cartesian case 200/2000 rho_target=1.26828 rho_ref=1.26828 rho0=1.26828 conv=1 ref=1 Ei=2.25457e-05 Ef=8.31403e-12 NL=3 LinCalls=43 t=0.0795055 s
+mixed_rho_initial / MGG / cartesian case 300/2000 rho_target=1.11833 rho_ref=1.11833 rho0=1.11833 conv=1 ref=1 Ei=2.01557e-05 Ef=1.2732e-12 NL=3 LinCalls=43 t=0.0758958 s
+mixed_rho_initial / MGG / cartesian case 400/2000 rho_target=1.25443 rho_ref=1.25443 rho0=1.25445 conv=1 ref=1 Ei=1.97015e-05 Ef=1.20954e-10 NL=3 LinCalls=44 t=0.0880374 s
+mixed_rho_initial / MGG / cartesian case 500/2000 rho_target=1.25458 rho_ref=1.25458 rho0=1.25459 conv=1 ref=1 Ei=2.0264e-05 Ef=2.01632e-12 NL=3 LinCalls=44 t=0.0800847 s
+mixed_rho_initial / MGG / cartesian case 600/2000 rho_target=1.25963 rho_ref=1.25963 rho0=1.25965 conv=1 ref=1 Ei=1.95475e-05 Ef=1.2833e-13 NL=3 LinCalls=44 t=0.0813113 s
+mixed_rho_initial / MGG / cartesian case 700/2000 rho_target=1.155 rho_ref=1.155 rho0=1.155 conv=1 ref=1 Ei=2.02413e-05 Ef=5.35196e-15 NL=4 LinCalls=45 t=0.091817 s
+mixed_rho_initial / MGG / cartesian case 800/2000 rho_target=1.26715 rho_ref=1.26715 rho0=1.26714 conv=1 ref=1 Ei=2.20526e-05 Ef=1.6073e-13 NL=4 LinCalls=36 t=0.0904672 s
+mixed_rho_initial / MGG / cartesian case 900/2000 rho_target=1.29066 rho_ref=1.29066 rho0=1.29066 conv=1 ref=1 Ei=2.19794e-05 Ef=1.56134e-11 NL=3 LinCalls=44 t=0.0784091 s
+mixed_rho_initial / MGG / cartesian case 1000/2000 rho_target=1.2034 rho_ref=1.2034 rho0=1.2034 conv=1 ref=1 Ei=1.97678e-05 Ef=1.30615e-14 NL=4 LinCalls=36 t=0.0851217 s
+mixed_rho_initial / MGG / cartesian case 1100/2000 rho_target=1.18256 rho_ref=1.18256 rho0=1.18256 conv=1 ref=1 Ei=2.15745e-05 Ef=6.76639e-15 NL=4 LinCalls=45 t=0.0956604 s
+mixed_rho_initial / MGG / cartesian case 1200/2000 rho_target=1.20134 rho_ref=1.20135 rho0=1.20135 conv=1 ref=1 Ei=2.12478e-05 Ef=1.23352e-11 NL=3 LinCalls=43 t=0.0781458 s
+mixed_rho_initial / MGG / cartesian case 1300/2000 rho_target=1.10288 rho_ref=1.10288 rho0=1.10289 conv=1 ref=1 Ei=2.22061e-05 Ef=1.85592e-14 NL=4 LinCalls=44 t=0.0884127 s
+mixed_rho_initial / MGG / cartesian case 1400/2000 rho_target=1.23055 rho_ref=1.23055 rho0=1.23056 conv=1 ref=1 Ei=1.92277e-05 Ef=3.10125e-12 NL=3 LinCalls=44 t=0.0791744 s
+mixed_rho_initial / MGG / cartesian case 1500/2000 rho_target=1.17951 rho_ref=1.17951 rho0=1.17951 conv=1 ref=1 Ei=2.25983e-05 Ef=2.87915e-11 NL=3 LinCalls=43 t=0.0804869 s
+mixed_rho_initial / MGG / cartesian case 1600/2000 rho_target=1.20183 rho_ref=1.20183 rho0=1.20184 conv=1 ref=1 Ei=2.0544e-05 Ef=2.80185e-11 NL=3 LinCalls=44 t=0.077752 s
+mixed_rho_initial / MGG / cartesian case 1700/2000 rho_target=1.24157 rho_ref=1.24157 rho0=1.24158 conv=1 ref=1 Ei=2.20749e-05 Ef=2.09595e-11 NL=3 LinCalls=44 t=0.0830643 s
+mixed_rho_initial / MGG / cartesian case 1800/2000 rho_target=1.15392 rho_ref=1.15392 rho0=1.15392 conv=1 ref=1 Ei=1.99771e-05 Ef=2.83493e-14 NL=4 LinCalls=45 t=0.0974138 s
+mixed_rho_initial / MGG / cartesian case 1900/2000 rho_target=1.14537 rho_ref=1.14537 rho0=1.14538 conv=1 ref=1 Ei=1.96445e-05 Ef=4.59097e-12 NL=3 LinCalls=44 t=0.0772671 s
+mixed_rho_initial / MGG / cartesian case 2000/2000 rho_target=1.19094 rho_ref=1.19094 rho0=1.19094 conv=1 ref=1 Ei=2.19593e-05 Ef=6.21138e-13 NL=3 LinCalls=44 t=0.0804351 s
+mixed_rho_initial / MGG / hexagonal case 100/2000 rho_target=1.15334 rho_ref=1.15428 rho0=1.15428 conv=1 ref=1 Ei=2.2635e-05 Ef=1.36795e-12 NL=3 LinCalls=35 t=0.107538 s
+mixed_rho_initial / MGG / hexagonal case 200/2000 rho_target=1.26828 rho_ref=1.26947 rho0=1.26948 conv=1 ref=1 Ei=2.26932e-05 Ef=7.16501e-10 NL=3 LinCalls=35 t=0.110497 s
+mixed_rho_initial / MGG / hexagonal case 300/2000 rho_target=1.11833 rho_ref=1.11988 rho0=1.11988 conv=1 ref=1 Ei=2.02688e-05 Ef=1.18456e-12 NL=3 LinCalls=43 t=0.117708 s
+mixed_rho_initial / MGG / hexagonal case 400/2000 rho_target=1.25443 rho_ref=1.25472 rho0=1.25473 conv=1 ref=1 Ei=1.981e-05 Ef=7.13776e-11 NL=3 LinCalls=44 t=0.124411 s
+mixed_rho_initial / MGG / hexagonal case 500/2000 rho_target=1.25458 rho_ref=1.25485 rho0=1.25487 conv=1 ref=1 Ei=2.03801e-05 Ef=1.77176e-12 NL=3 LinCalls=44 t=0.122143 s
+mixed_rho_initial / MGG / hexagonal case 600/2000 rho_target=1.25963 rho_ref=1.25978 rho0=1.2598 conv=1 ref=1 Ei=1.96558e-05 Ef=1.39683e-13 NL=3 LinCalls=45 t=0.126618 s
+mixed_rho_initial / MGG / hexagonal case 700/2000 rho_target=1.155 rho_ref=1.15568 rho0=1.15568 conv=1 ref=1 Ei=2.03556e-05 Ef=1.32178e-14 NL=4 LinCalls=45 t=0.145525 s
+mixed_rho_initial / MGG / hexagonal case 800/2000 rho_target=1.26715 rho_ref=1.26854 rho0=1.26854 conv=1 ref=1 Ei=2.21925e-05 Ef=1.10867e-13 NL=4 LinCalls=44 t=0.144086 s
+mixed_rho_initial / MGG / hexagonal case 900/2000 rho_target=1.29066 rho_ref=1.29129 rho0=1.2913 conv=1 ref=1 Ei=2.21187e-05 Ef=1.55219e-11 NL=3 LinCalls=44 t=0.124677 s
+mixed_rho_initial / MGG / hexagonal case 1000/2000 rho_target=1.2034 rho_ref=1.20447 rho0=1.20447 conv=1 ref=1 Ei=1.98759e-05 Ef=1.40767e-14 NL=4 LinCalls=36 t=0.128792 s
+mixed_rho_initial / MGG / hexagonal case 1100/2000 rho_target=1.18256 rho_ref=1.18296 rho0=1.18297 conv=1 ref=1 Ei=2.17083e-05 Ef=1.45722e-14 NL=4 LinCalls=45 t=0.142949 s
+mixed_rho_initial / MGG / hexagonal case 1200/2000 rho_target=1.20134 rho_ref=1.20353 rho0=1.2035 conv=1 ref=1 Ei=2.13758e-05 Ef=7.68971e-12 NL=3 LinCalls=43 t=0.122157 s
+mixed_rho_initial / MGG / hexagonal case 1300/2000 rho_target=1.10288 rho_ref=1.10386 rho0=1.10386 conv=1 ref=1 Ei=2.23483e-05 Ef=1.60923e-14 NL=4 LinCalls=44 t=0.15174 s
+mixed_rho_initial / MGG / hexagonal case 1400/2000 rho_target=1.23055 rho_ref=1.23079 rho0=1.23079 conv=1 ref=1 Ei=1.93303e-05 Ef=3.20309e-12 NL=3 LinCalls=44 t=0.118938 s
+mixed_rho_initial / MGG / hexagonal case 1500/2000 rho_target=1.17951 rho_ref=1.18158 rho0=1.18159 conv=1 ref=1 Ei=2.27467e-05 Ef=5.0853e-11 NL=3 LinCalls=35 t=0.104302 s
+mixed_rho_initial / MGG / hexagonal case 1600/2000 rho_target=1.20183 rho_ref=1.20206 rho0=1.20207 conv=1 ref=1 Ei=2.06649e-05 Ef=3.06742e-11 NL=3 LinCalls=44 t=0.118871 s
+mixed_rho_initial / MGG / hexagonal case 1700/2000 rho_target=1.24157 rho_ref=1.24206 rho0=1.24206 conv=1 ref=1 Ei=2.22162e-05 Ef=2.5957e-11 NL=3 LinCalls=44 t=0.123655 s
+mixed_rho_initial / MGG / hexagonal case 1800/2000 rho_target=1.15392 rho_ref=1.15422 rho0=1.15422 conv=1 ref=1 Ei=2.0089e-05 Ef=3.76156e-14 NL=4 LinCalls=45 t=0.147612 s
+mixed_rho_initial / MGG / hexagonal case 1900/2000 rho_target=1.14537 rho_ref=1.14575 rho0=1.14577 conv=1 ref=1 Ei=1.97519e-05 Ef=1.37699e-11 NL=3 LinCalls=44 t=0.119431 s
+mixed_rho_initial / MGG / hexagonal case 2000/2000 rho_target=1.19094 rho_ref=1.19138 rho0=1.19138 conv=1 ref=1 Ei=2.20989e-05 Ef=6.30175e-13 NL=3 LinCalls=44 t=0.119001 s
+mixed_rho_initial / MGG / random case 100/2000 rho_target=1.15334 rho_ref=1.15164 rho0=1.15165 conv=1 ref=1 Ei=2.25056e-05 Ef=6.60318e-15 NL=4 LinCalls=36 t=0.148906 s
+mixed_rho_initial / MGG / random case 200/2000 rho_target=1.26828 rho_ref=1.26653 rho0=1.26653 conv=1 ref=1 Ei=2.25623e-05 Ef=4.83342e-13 NL=4 LinCalls=36 t=0.157314 s
+mixed_rho_initial / MGG / random case 300/2000 rho_target=1.11833 rho_ref=1.11644 rho0=1.11644 conv=1 ref=1 Ei=2.0097e-05 Ef=8.77184e-15 NL=4 LinCalls=36 t=0.156493 s
+mixed_rho_initial / MGG / random case 400/2000 rho_target=1.25443 rho_ref=1.25138 rho0=1.25139 conv=1 ref=1 Ei=1.96519e-05 Ef=1.65376e-12 NL=4 LinCalls=45 t=0.173481 s
+mixed_rho_initial / MGG / random case 500/2000 rho_target=1.25458 rho_ref=1.25202 rho0=1.25203 conv=1 ref=1 Ei=2.02203e-05 Ef=2.98403e-14 NL=4 LinCalls=45 t=0.175882 s
+mixed_rho_initial / MGG / random case 600/2000 rho_target=1.25963 rho_ref=1.25762 rho0=1.25763 conv=1 ref=1 Ei=1.95123e-05 Ef=8.36112e-14 NL=4 LinCalls=46 t=0.175855 s
+mixed_rho_initial / MGG / random case 700/2000 rho_target=1.155 rho_ref=1.15269 rho0=1.15269 conv=1 ref=1 Ei=2.03004e-05 Ef=1.45626e-14 NL=4 LinCalls=37 t=0.151316 s
+mixed_rho_initial / MGG / random case 800/2000 rho_target=1.26715 rho_ref=1.26534 rho0=1.26534 conv=1 ref=1 Ei=2.20134e-05 Ef=6.0733e-14 NL=4 LinCalls=36 t=0.154421 s
+mixed_rho_initial / MGG / random case 900/2000 rho_target=1.29066 rho_ref=1.28833 rho0=1.28833 conv=1 ref=1 Ei=2.20056e-05 Ef=1.17746e-13 NL=4 LinCalls=37 t=0.154978 s
+mixed_rho_initial / MGG / random case 1000/2000 rho_target=1.2034 rho_ref=1.20109 rho0=1.2011 conv=1 ref=1 Ei=1.98312e-05 Ef=2.92657e-14 NL=4 LinCalls=36 t=0.150069 s
+mixed_rho_initial / MGG / random case 1100/2000 rho_target=1.18256 rho_ref=1.18071 rho0=1.18072 conv=1 ref=1 Ei=2.15431e-05 Ef=4.92121e-14 NL=4 LinCalls=45 t=0.17046 s
+mixed_rho_initial / MGG / random case 1200/2000 rho_target=1.20134 rho_ref=1.20005 rho0=1.20005 conv=1 ref=1 Ei=2.12991e-05 Ef=3.0559e-14 NL=4 LinCalls=44 t=0.164352 s
+mixed_rho_initial / MGG / random case 1300/2000 rho_target=1.10288 rho_ref=1.10121 rho0=1.10121 conv=1 ref=1 Ei=2.21719e-05 Ef=3.40985e-14 NL=4 LinCalls=36 t=0.148643 s
+mixed_rho_initial / MGG / random case 1400/2000 rho_target=1.23055 rho_ref=1.22609 rho0=1.2261 conv=1 ref=1 Ei=1.92838e-05 Ef=4.27176e-15 NL=4 LinCalls=45 t=0.16873 s
+mixed_rho_initial / MGG / random case 1500/2000 rho_target=1.17951 rho_ref=1.17828 rho0=1.17828 conv=1 ref=1 Ei=2.26176e-05 Ef=1.11615e-13 NL=4 LinCalls=36 t=0.149435 s
+mixed_rho_initial / MGG / random case 1600/2000 rho_target=1.20183 rho_ref=1.1997 rho0=1.19971 conv=1 ref=1 Ei=2.05168e-05 Ef=6.98464e-14 NL=4 LinCalls=45 t=0.162825 s
+mixed_rho_initial / MGG / random case 1700/2000 rho_target=1.24157 rho_ref=1.23972 rho0=1.23973 conv=1 ref=1 Ei=2.20687e-05 Ef=2.21839e-13 NL=4 LinCalls=45 t=0.172517 s
+mixed_rho_initial / MGG / random case 1800/2000 rho_target=1.15392 rho_ref=1.15043 rho0=1.15043 conv=1 ref=1 Ei=2.0029e-05 Ef=4.73959e-14 NL=4 LinCalls=45 t=0.16592 s
+mixed_rho_initial / MGG / random case 1900/2000 rho_target=1.14537 rho_ref=1.14285 rho0=1.14287 conv=1 ref=1 Ei=1.95927e-05 Ef=1.57995e-14 NL=4 LinCalls=45 t=0.165248 s
+mixed_rho_initial / MGG / random case 2000/2000 rho_target=1.19094 rho_ref=1.1886 rho0=1.18861 conv=1 ref=1 Ei=2.19656e-05 Ef=7.89787e-15 NL=4 LinCalls=45 t=0.177188 s
+
+Results: Result/run_20261009T232635Z
+Cases recorded: 12000
+rho-target calibration failures: 0
+Algorithmic non-convergences: 0
+rho_reference<1 but residual did not converge: 0
+rho_reference<1 but reference equilibrium not recovered: 1
+Converged to a different equilibrium: 1
+Case exceptions (campaign continued): 0
+Setup failures: 0

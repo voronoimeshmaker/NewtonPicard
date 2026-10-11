@@ -1,0 +1,2 @@
+method,mesh_family,requested_cells,actual_cells,nominal_nx,nominal_ny,colours,jacobian_nnz,source_derivative,gradient_operator_relative_defect,calibration_rho_c1,spectral_A_factorisation_seconds,newton_A_factorisation_seconds
+WLSQR,random,87552,87552,512,171,15,610490,adolc,1.55397511678819020e-16,7.35919125405511743e+00,6.37098861000000016e-01,0.00000000000000000e+00

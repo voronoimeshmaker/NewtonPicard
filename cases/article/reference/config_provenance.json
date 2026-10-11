@@ -1,0 +1,122 @@
+[
+  {
+    "case": "01_fadeev_spatial",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/FadeevConvergence/config.yaml",
+    "sha256": "815d16ddeb1fce9ecba4a908e5c67ea18135ab4d7e9587456e5d0b64debca765"
+  },
+  {
+    "case": "02_newton",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/NewtonOnly10000/config.yaml",
+    "sha256": "2f0393a5aa76f16743461bd11a9ebd4c266e494d329ff2ceaf6840db4ff40243"
+  },
+  {
+    "case": "03_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/NewtonOnly10000/config.yaml",
+    "sha256": "2f0393a5aa76f16743461bd11a9ebd4c266e494d329ff2ceaf6840db4ff40243"
+  },
+  {
+    "case": "04_initial_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/NewtonOnly10000/config.yaml",
+    "sha256": "2f0393a5aa76f16743461bd11a9ebd4c266e494d329ff2ceaf6840db4ff40243"
+  },
+  {
+    "case": "05_updated_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/NewtonOnly10000/config.yaml",
+    "sha256": "2f0393a5aa76f16743461bd11a9ebd4c266e494d329ff2ceaf6840db4ff40243"
+  },
+  {
+    "case": "amplitude_1e-4_newton",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-4/config.yaml",
+    "sha256": "033862711dd3bbb49e70da03cf5fd4191d3f65c363fc0e31090669cee2703cd9"
+  },
+  {
+    "case": "amplitude_1e-4_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-4/config.yaml",
+    "sha256": "033862711dd3bbb49e70da03cf5fd4191d3f65c363fc0e31090669cee2703cd9"
+  },
+  {
+    "case": "amplitude_1e-4_initial_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-4/config.yaml",
+    "sha256": "033862711dd3bbb49e70da03cf5fd4191d3f65c363fc0e31090669cee2703cd9"
+  },
+  {
+    "case": "amplitude_1e-4_updated_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-4/config.yaml",
+    "sha256": "033862711dd3bbb49e70da03cf5fd4191d3f65c363fc0e31090669cee2703cd9"
+  },
+  {
+    "case": "amplitude_1e-2_newton",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-2/config.yaml",
+    "sha256": "0db89d59c35c2f9729bb4ee5b0c6bc9ee05b17ef35d61c950751ee41b5126af3"
+  },
+  {
+    "case": "amplitude_1e-2_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-2/config.yaml",
+    "sha256": "0db89d59c35c2f9729bb4ee5b0c6bc9ee05b17ef35d61c950751ee41b5126af3"
+  },
+  {
+    "case": "amplitude_1e-2_initial_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-2/config.yaml",
+    "sha256": "0db89d59c35c2f9729bb4ee5b0c6bc9ee05b17ef35d61c950751ee41b5126af3"
+  },
+  {
+    "case": "amplitude_1e-2_updated_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-2/config.yaml",
+    "sha256": "0db89d59c35c2f9729bb4ee5b0c6bc9ee05b17ef35d61c950751ee41b5126af3"
+  },
+  {
+    "case": "amplitude_1e-1_newton",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-1/config.yaml",
+    "sha256": "3d2e563d0481505427fb2a2edb4aeb9075bc8269c63ce407ac9aee9ef29a3d3e"
+  },
+  {
+    "case": "amplitude_1e-1_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-1/config.yaml",
+    "sha256": "3d2e563d0481505427fb2a2edb4aeb9075bc8269c63ce407ac9aee9ef29a3d3e"
+  },
+  {
+    "case": "amplitude_1e-1_initial_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-1/config.yaml",
+    "sha256": "3d2e563d0481505427fb2a2edb4aeb9075bc8269c63ce407ac9aee9ef29a3d3e"
+  },
+  {
+    "case": "amplitude_1e-1_updated_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e-1/config.yaml",
+    "sha256": "3d2e563d0481505427fb2a2edb4aeb9075bc8269c63ce407ac9aee9ef29a3d3e"
+  },
+  {
+    "case": "amplitude_1e0_newton",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e0/config.yaml",
+    "sha256": "f360c9c1636a748b6a454bfe16275f6b98b38a5ee5eda9883168b44d2c219fdd"
+  },
+  {
+    "case": "amplitude_1e0_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e0/config.yaml",
+    "sha256": "f360c9c1636a748b6a454bfe16275f6b98b38a5ee5eda9883168b44d2c219fdd"
+  },
+  {
+    "case": "amplitude_1e0_initial_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e0/config.yaml",
+    "sha256": "f360c9c1636a748b6a454bfe16275f6b98b38a5ee5eda9883168b44d2c219fdd"
+  },
+  {
+    "case": "amplitude_1e0_updated_rho",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/A-PalpiteInicial/amp_1e0/config.yaml",
+    "sha256": "f360c9c1636a748b6a454bfe16275f6b98b38a5ee5eda9883168b44d2c219fdd"
+  },
+  {
+    "case": "branch_L1_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/B-EscalaDeMalha/L1/config.yaml",
+    "sha256": "ef9fa338c1db63638164ed8168ed9e64175b6e6950a4eb4cfc4854540cf2cf3b"
+  },
+  {
+    "case": "branch_L3_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/B-EscalaDeMalha/L3/config.yaml",
+    "sha256": "c9a14194467b94eb8cf346ba7a05e3330551fe9f757c28151c5676df17899fec"
+  },
+  {
+    "case": "branch_L4_picard",
+    "source": "/home/jflavio/Programas/GSMaker/Old/GSMakerLib/papers/PaperIII/CampanhasComplementares/B-EscalaDeMalha/L4/config.yaml",
+    "sha256": "a8415d8d112193f8561d62e789a850ea56737f28d3062dff147b4b73146db1a5"
+  }
+]

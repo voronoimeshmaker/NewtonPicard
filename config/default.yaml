@@ -1,0 +1,68 @@
+mesh:
+  type: "cartesian_square"       # cartesian_square | hexagonal_square | random_square | uniform_internal
+  n_per_direction: 16
+  n_per_direction_y: 16
+  n_generators: 256
+  random_seed: 12345
+  domain: [-15.0, 15.0, -5.0, 5.0]
+  hilbert_reorder: false
+  reordering: "natural"
+
+solver:
+  nonlinear: "picard"            # linear_constant | picard | picard_relaxed | newton
+  linear: "cholesky_sparse"      # cholesky_sparse | cg_jacobi | cg_gamg
+  max_iter: 100
+  tolerance_relative: 1.0e-8
+  tolerance_absolute: 1.0e-12
+  relaxation_omega: 1.0
+  rhs_constant: 1.0
+  source_regularisation_delta: 1.0e-10 # Batch 2 measured invariance plateau upper bound
+  diagonal_shift: 1.0            # temporary SPD shift for AX=B smoke solve
+  initial_guess: "zero"
+  perturbation_amplitude: 0.0
+  perturbation_type: "gaussian"
+
+newton:
+  jacobian: "adolc"
+  linesearch: true
+  linesearch_max_iter: 10
+  linesearch_reduction: 0.5
+
+petsc:
+  ksp_type: "preonly"
+  pc_type: "cholesky"
+  mat_solver_type: "mumps"
+  mumps_reorder: "pord"
+  mumps_icntl_14: 20
+
+benchmark:
+  type: "fadeev"
+  fadeev_epsilon: 0.1
+  fadeev_psi0: 1.0
+  fadeev_k: 1.0
+  compute_error: true
+  error_norms: ["L1", "L2", "Linf"]
+  kappa_island_threshold: 100.0
+
+convergence_study:
+  enabled: false
+  n_generators_sequence: [64, 256, 1024, 4096, 16384]
+  output_csv: "convergence_study.csv"
+
+gradient_analysis:
+  enabled: true
+  top_k: 20
+  quantities: ["grad_psi", "grad_psi_inv", "source_term"]
+  min_distance: 2.0
+  grad_critical_threshold: 0.01
+  output:
+    format: "both"
+    filename_extrema: "gradient_extrema.csv"
+    filename_critical: "critical_points.csv"
+
+output:
+  format: "vtk"
+  write_solution: true
+  write_error: true
+  timing_report: true
+  timing_components: true

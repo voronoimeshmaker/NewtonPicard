@@ -1,0 +1,139 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/2000 rho_target=1.15334 rho_c1=7.37093 c=0.156472
+calibration case 200/2000 rho_target=1.26828 rho_c1=7.34255 c=0.17273
+calibration case 300/2000 rho_target=1.11833 rho_c1=7.08693 c=0.157801
+calibration case 400/2000 rho_target=1.25443 rho_c1=7.87394 c=0.159314
+calibration case 500/2000 rho_target=1.25458 rho_c1=7.99865 c=0.156849
+calibration case 600/2000 rho_target=1.25963 rho_c1=8.71317 c=0.144567
+calibration case 700/2000 rho_target=1.155 rho_c1=7.23926 c=0.159546
+calibration case 800/2000 rho_target=1.26715 rho_c1=7.28553 c=0.173927
+calibration case 900/2000 rho_target=1.29066 rho_c1=7.54793 c=0.170995
+calibration case 1000/2000 rho_target=1.2034 rho_c1=7.09664 c=0.169573
+calibration case 1100/2000 rho_target=1.18256 rho_c1=7.71113 c=0.153357
+calibration case 1200/2000 rho_target=1.20134 rho_c1=7.17017 c=0.167548
+calibration case 1300/2000 rho_target=1.10288 rho_c1=7.32178 c=0.15063
+calibration case 1400/2000 rho_target=1.23055 rho_c1=7.87668 c=0.156227
+calibration case 1500/2000 rho_target=1.17951 rho_c1=7.27109 c=0.162219
+calibration case 1600/2000 rho_target=1.20183 rho_c1=8.36456 c=0.143681
+calibration case 1700/2000 rho_target=1.24157 rho_c1=7.69143 c=0.161423
+calibration case 1800/2000 rho_target=1.15392 rho_c1=7.80425 c=0.147858
+calibration case 1900/2000 rho_target=1.14537 rho_c1=7.71239 c=0.14851
+calibration case 2000/2000 rho_target=1.19094 rho_c1=7.74858 c=0.153698
+picard_only / WLSQR / cartesian case 100/2000 rho_target=1.15334 rho_ref=1.15334 rho0=1.15334 conv=1 ref=0 Ei=2.24882e-05 Ef=0.0351117 NL=210 LinCalls=210 t=0.490891 s
+picard_only / WLSQR / cartesian case 200/2000 rho_target=1.26828 rho_ref=1.26828 rho0=1.26828 conv=1 ref=0 Ei=2.25457e-05 Ef=0.0605299 NL=132 LinCalls=132 t=0.246901 s
+picard_only / WLSQR / cartesian case 500/2000 rho_target=1.25458 rho_ref=1.25458 rho0=1.25459 conv=1 ref=0 Ei=2.0264e-05 Ef=0.0466624 NL=130 LinCalls=130 t=0.251895 s
+picard_only / WLSQR / cartesian case 600/2000 rho_target=1.25963 rho_ref=1.25963 rho0=1.25965 conv=0 ref=0 Ei=1.95475e-05 Ef=1.75538 NL=51 LinCalls=51 t=0.0922551 s
+picard_only / WLSQR / cartesian case 700/2000 rho_target=1.155 rho_ref=1.155 rho0=1.155 conv=1 ref=0 Ei=2.02413e-05 Ef=0.0309315 NL=207 LinCalls=207 t=0.369787 s
+picard_only / WLSQR / cartesian case 800/2000 rho_target=1.26715 rho_ref=1.26715 rho0=1.26714 conv=0 ref=0 Ei=2.20526e-05 Ef=4.18066 NL=56 LinCalls=56 t=0.101588 s
+picard_only / WLSQR / cartesian case 900/2000 rho_target=1.29066 rho_ref=1.29066 rho0=1.29066 conv=1 ref=0 Ei=2.19794e-05 Ef=0.0618404 NL=120 LinCalls=120 t=0.223095 s
+picard_only / WLSQR / cartesian case 1000/2000 rho_target=1.2034 rho_ref=1.2034 rho0=1.2034 conv=1 ref=0 Ei=1.97678e-05 Ef=0.0394146 NL=167 LinCalls=167 t=0.310149 s
+picard_only / WLSQR / cartesian case 1100/2000 rho_target=1.18256 rho_ref=1.18256 rho0=1.18256 conv=0 ref=0 Ei=2.15745e-05 Ef=63.0342 NL=76 LinCalls=76 t=0.148337 s
+picard_only / WLSQR / cartesian case 1200/2000 rho_target=1.20134 rho_ref=1.20134 rho0=1.20135 conv=1 ref=0 Ei=2.12478e-05 Ef=0.0428993 NL=169 LinCalls=169 t=0.30273 s
+picard_only / WLSQR / cartesian case 1400/2000 rho_target=1.23055 rho_ref=1.23055 rho0=1.23056 conv=1 ref=0 Ei=1.92277e-05 Ef=0.0396461 NL=146 LinCalls=146 t=0.279718 s
+picard_only / WLSQR / cartesian case 1500/2000 rho_target=1.17951 rho_ref=1.17951 rho0=1.17951 conv=1 ref=0 Ei=2.25983e-05 Ef=0.0414688 NL=189 LinCalls=189 t=0.349854 s
+picard_only / WLSQR / cartesian case 1700/2000 rho_target=1.24157 rho_ref=1.24157 rho0=1.24158 conv=1 ref=0 Ei=2.20749e-05 Ef=0.051423 NL=143 LinCalls=143 t=0.265929 s
+picard_only / WLSQR / cartesian case 1800/2000 rho_target=1.15392 rho_ref=1.15392 rho0=1.15392 conv=1 ref=0 Ei=1.99771e-05 Ef=0.0285351 NL=203 LinCalls=203 t=0.381463 s
+picard_only / WLSQR / cartesian case 1900/2000 rho_target=1.14537 rho_ref=1.14537 rho0=1.14538 conv=0 ref=0 Ei=1.96445e-05 Ef=29.6219 NL=78 LinCalls=78 t=0.146854 s
+picard_only / WLSQR / cartesian case 2000/2000 rho_target=1.19094 rho_ref=1.19094 rho0=1.19094 conv=1 ref=0 Ei=2.19593e-05 Ef=0.0404936 NL=171 LinCalls=171 t=0.335132 s
+picard_only / WLSQR / hexagonal case 100/2000 rho_target=1.15334 rho_ref=1.15428 rho0=1.15428 conv=1 ref=0 Ei=2.2635e-05 Ef=0.0356821 NL=209 LinCalls=209 t=0.784801 s
+picard_only / WLSQR / hexagonal case 200/2000 rho_target=1.26828 rho_ref=1.26948 rho0=1.26948 conv=1 ref=0 Ei=2.26932e-05 Ef=0.0614103 NL=132 LinCalls=132 t=0.503197 s
+picard_only / WLSQR / hexagonal case 300/2000 rho_target=1.11833 rho_ref=1.11988 rho0=1.11988 conv=0 ref=0 Ei=2.02688e-05 Ef=15.4375 NL=110 LinCalls=110 t=0.411761 s
+picard_only / WLSQR / hexagonal case 400/2000 rho_target=1.25443 rho_ref=1.25472 rho0=1.25473 conv=1 ref=0 Ei=1.981e-05 Ef=0.0457078 NL=128 LinCalls=128 t=0.494145 s
+picard_only / WLSQR / hexagonal case 500/2000 rho_target=1.25458 rho_ref=1.25485 rho0=1.25487 conv=0 ref=0 Ei=2.03801e-05 Ef=1.48641 NL=51 LinCalls=51 t=0.198673 s
+picard_only / WLSQR / hexagonal case 600/2000 rho_target=1.25963 rho_ref=1.25978 rho0=1.2598 conv=0 ref=0 Ei=1.96558e-05 Ef=2.10996 NL=51 LinCalls=51 t=0.187437 s
+picard_only / WLSQR / hexagonal case 700/2000 rho_target=1.155 rho_ref=1.15568 rho0=1.15568 conv=1 ref=0 Ei=2.03556e-05 Ef=0.0313585 NL=206 LinCalls=206 t=0.762744 s
+picard_only / WLSQR / hexagonal case 800/2000 rho_target=1.26715 rho_ref=1.26854 rho0=1.26854 conv=0 ref=0 Ei=2.21925e-05 Ef=133.393 NL=57 LinCalls=57 t=0.219405 s
+picard_only / WLSQR / hexagonal case 900/2000 rho_target=1.29066 rho_ref=1.29129 rho0=1.2913 conv=1 ref=0 Ei=2.21187e-05 Ef=0.0625948 NL=120 LinCalls=120 t=0.444842 s
+picard_only / WLSQR / hexagonal case 1000/2000 rho_target=1.2034 rho_ref=1.20447 rho0=1.20447 conv=1 ref=0 Ei=1.98759e-05 Ef=0.0399783 NL=166 LinCalls=166 t=0.615516 s
+picard_only / WLSQR / hexagonal case 1100/2000 rho_target=1.18256 rho_ref=1.18296 rho0=1.18297 conv=0 ref=0 Ei=2.17083e-05 Ef=126.553 NL=76 LinCalls=76 t=0.279787 s
+picard_only / WLSQR / hexagonal case 1200/2000 rho_target=1.20134 rho_ref=1.20353 rho0=1.2035 conv=1 ref=0 Ei=2.13758e-05 Ef=0.0438144 NL=177 LinCalls=177 t=0.697238 s
+picard_only / WLSQR / hexagonal case 1300/2000 rho_target=1.10288 rho_ref=1.10386 rho0=1.10386 conv=0 ref=0 Ei=2.23483e-05 Ef=11.0032 NL=128 LinCalls=128 t=0.473545 s
+picard_only / WLSQR / hexagonal case 1400/2000 rho_target=1.23055 rho_ref=1.23079 rho0=1.23079 conv=1 ref=0 Ei=1.93303e-05 Ef=0.0400515 NL=145 LinCalls=145 t=0.540974 s
+picard_only / WLSQR / hexagonal case 1500/2000 rho_target=1.17951 rho_ref=1.18159 rho0=1.18159 conv=1 ref=0 Ei=2.27467e-05 Ef=0.0423985 NL=193 LinCalls=193 t=0.727765 s
+picard_only / WLSQR / hexagonal case 1700/2000 rho_target=1.24157 rho_ref=1.24206 rho0=1.24206 conv=1 ref=0 Ei=2.22162e-05 Ef=0.0520463 NL=143 LinCalls=143 t=0.528957 s
+picard_only / WLSQR / hexagonal case 1800/2000 rho_target=1.15392 rho_ref=1.15422 rho0=1.15422 conv=1 ref=0 Ei=2.0089e-05 Ef=0.0288568 NL=203 LinCalls=203 t=0.746728 s
+picard_only / WLSQR / hexagonal case 2000/2000 rho_target=1.19094 rho_ref=1.19138 rho0=1.19138 conv=1 ref=0 Ei=2.20989e-05 Ef=0.0409969 NL=171 LinCalls=171 t=0.652397 s
+picard_only / WLSQR / random case 100/2000 rho_target=1.15334 rho_ref=1.1509 rho0=1.1509 conv=1 ref=0 Ei=2.25056e-05 Ef=0.0348834 NL=216 LinCalls=216 t=0.679055 s
+picard_only / WLSQR / random case 200/2000 rho_target=1.26828 rho_ref=1.26565 rho0=1.26565 conv=1 ref=0 Ei=2.25623e-05 Ef=0.0605027 NL=135 LinCalls=135 t=0.428025 s
+picard_only / WLSQR / random case 300/2000 rho_target=1.11833 rho_ref=1.11639 rho0=1.11645 conv=0 ref=0 Ei=2.0097e-05 Ef=5.04375 NL=112 LinCalls=112 t=0.347385 s
+picard_only / WLSQR / random case 400/2000 rho_target=1.25443 rho_ref=1.25013 rho0=1.25015 conv=0 ref=0 Ei=1.96519e-05 Ef=1.80307 NL=50 LinCalls=50 t=0.154835 s
+picard_only / WLSQR / random case 500/2000 rho_target=1.25458 rho_ref=1.25086 rho0=1.25087 conv=0 ref=0 Ei=2.02203e-05 Ef=2.81033 NL=52 LinCalls=52 t=0.173765 s
+picard_only / WLSQR / random case 600/2000 rho_target=1.25963 rho_ref=1.25569 rho0=1.2557 conv=0 ref=0 Ei=1.95123e-05 Ef=1.31721 NL=52 LinCalls=52 t=0.164649 s
+picard_only / WLSQR / random case 700/2000 rho_target=1.155 rho_ref=1.15205 rho0=1.15205 conv=1 ref=0 Ei=2.03004e-05 Ef=0.0307379 NL=210 LinCalls=210 t=0.67677 s
+picard_only / WLSQR / random case 800/2000 rho_target=1.26715 rho_ref=1.26455 rho0=1.26456 conv=0 ref=0 Ei=2.20134e-05 Ef=2.01865 NL=57 LinCalls=57 t=0.185669 s
+picard_only / WLSQR / random case 900/2000 rho_target=1.29066 rho_ref=1.28769 rho0=1.28769 conv=1 ref=0 Ei=2.20056e-05 Ef=0.0618241 NL=122 LinCalls=122 t=0.385901 s
+picard_only / WLSQR / random case 1000/2000 rho_target=1.2034 rho_ref=1.20045 rho0=1.20045 conv=1 ref=0 Ei=1.98312e-05 Ef=0.0393565 NL=171 LinCalls=171 t=0.531822 s
+picard_only / WLSQR / random case 1100/2000 rho_target=1.18256 rho_ref=1.17986 rho0=1.17986 conv=0 ref=0 Ei=2.15431e-05 Ef=10.2788 NL=77 LinCalls=77 t=0.250735 s
+picard_only / WLSQR / random case 1200/2000 rho_target=1.20134 rho_ref=1.19687 rho0=1.19666 conv=1 ref=0 Ei=2.12991e-05 Ef=0.0429863 NL=165 LinCalls=165 t=0.526827 s
+picard_only / WLSQR / random case 1400/2000 rho_target=1.23055 rho_ref=1.22487 rho0=1.22487 conv=1 ref=0 Ei=1.92838e-05 Ef=0.0392677 NL=150 LinCalls=150 t=0.567197 s
+picard_only / WLSQR / random case 1500/2000 rho_target=1.17951 rho_ref=1.17693 rho0=1.1769 conv=1 ref=0 Ei=2.26176e-05 Ef=0.0413225 NL=183 LinCalls=183 t=0.690571 s
+picard_only / WLSQR / random case 1600/2000 rho_target=1.20183 rho_ref=1.19849 rho0=1.1985 conv=0 ref=0 Ei=2.05168e-05 Ef=2.52928 NL=71 LinCalls=71 t=0.265587 s
+picard_only / WLSQR / random case 1700/2000 rho_target=1.24157 rho_ref=1.23929 rho0=1.2393 conv=1 ref=0 Ei=2.20687e-05 Ef=0.0514507 NL=143 LinCalls=143 t=0.522693 s
+picard_only / WLSQR / random case 1800/2000 rho_target=1.15392 rho_ref=1.14926 rho0=1.14927 conv=1 ref=0 Ei=2.0029e-05 Ef=0.0281844 NL=219 LinCalls=219 t=0.813348 s
+picard_only / WLSQR / random case 1900/2000 rho_target=1.14537 rho_ref=1.14169 rho0=1.1417 conv=0 ref=0 Ei=1.95927e-05 Ef=198.084 NL=80 LinCalls=80 t=0.292792 s
+picard_only / WLSQR / random case 2000/2000 rho_target=1.19094 rho_ref=1.18828 rho0=1.18828 conv=1 ref=0 Ei=2.19656e-05 Ef=0.0402909 NL=174 LinCalls=174 t=0.66941 s
+picard_only / MGG / cartesian case 100/2000 rho_target=1.15334 rho_ref=1.15334 rho0=1.15334 conv=1 ref=0 Ei=2.24882e-05 Ef=0.0351117 NL=210 LinCalls=210 t=0.540776 s
+picard_only / MGG / cartesian case 200/2000 rho_target=1.26828 rho_ref=1.26828 rho0=1.26828 conv=1 ref=0 Ei=2.25457e-05 Ef=0.0605299 NL=132 LinCalls=132 t=0.272036 s
+picard_only / MGG / cartesian case 300/2000 rho_target=1.11833 rho_ref=1.11833 rho0=1.11833 conv=0 ref=0 Ei=2.01557e-05 Ef=53365.5 NL=111 LinCalls=111 t=0.233841 s
+picard_only / MGG / cartesian case 400/2000 rho_target=1.25443 rho_ref=1.25443 rho0=1.25445 conv=0 ref=0 Ei=1.97015e-05 Ef=1.27579e+06 NL=50 LinCalls=50 t=0.113835 s
+picard_only / MGG / cartesian case 500/2000 rho_target=1.25458 rho_ref=1.25458 rho0=1.25459 conv=1 ref=0 Ei=2.0264e-05 Ef=0.0466624 NL=130 LinCalls=130 t=0.294488 s
+picard_only / MGG / cartesian case 600/2000 rho_target=1.25963 rho_ref=1.25963 rho0=1.25965 conv=0 ref=0 Ei=1.95475e-05 Ef=1.75498 NL=51 LinCalls=51 t=0.104518 s
+picard_only / MGG / cartesian case 700/2000 rho_target=1.155 rho_ref=1.155 rho0=1.155 conv=1 ref=0 Ei=2.02413e-05 Ef=0.0309315 NL=207 LinCalls=207 t=0.447464 s
+picard_only / MGG / cartesian case 800/2000 rho_target=1.26715 rho_ref=1.26715 rho0=1.26714 conv=0 ref=0 Ei=2.20526e-05 Ef=4.18149 NL=56 LinCalls=56 t=0.115352 s
+picard_only / MGG / cartesian case 900/2000 rho_target=1.29066 rho_ref=1.29066 rho0=1.29066 conv=1 ref=0 Ei=2.19794e-05 Ef=0.0618403 NL=120 LinCalls=120 t=0.266523 s
+picard_only / MGG / cartesian case 1000/2000 rho_target=1.2034 rho_ref=1.2034 rho0=1.2034 conv=1 ref=0 Ei=1.97678e-05 Ef=0.0394146 NL=167 LinCalls=167 t=0.367399 s
+picard_only / MGG / cartesian case 1100/2000 rho_target=1.18256 rho_ref=1.18256 rho0=1.18256 conv=0 ref=0 Ei=2.15745e-05 Ef=63.1532 NL=76 LinCalls=76 t=0.156723 s
+picard_only / MGG / cartesian case 1200/2000 rho_target=1.20134 rho_ref=1.20135 rho0=1.20135 conv=1 ref=0 Ei=2.12478e-05 Ef=0.0428993 NL=169 LinCalls=169 t=0.362326 s
+picard_only / MGG / cartesian case 1300/2000 rho_target=1.10288 rho_ref=1.10288 rho0=1.10289 conv=0 ref=0 Ei=2.22061e-05 Ef=947060 NL=129 LinCalls=129 t=0.276737 s
+picard_only / MGG / cartesian case 1400/2000 rho_target=1.23055 rho_ref=1.23055 rho0=1.23056 conv=1 ref=0 Ei=1.92277e-05 Ef=0.0396461 NL=146 LinCalls=146 t=0.311211 s
+picard_only / MGG / cartesian case 1500/2000 rho_target=1.17951 rho_ref=1.17951 rho0=1.17951 conv=1 ref=0 Ei=2.25983e-05 Ef=0.0414688 NL=189 LinCalls=189 t=0.402658 s
+picard_only / MGG / cartesian case 1600/2000 rho_target=1.20183 rho_ref=1.20183 rho0=1.20184 conv=0 ref=0 Ei=2.0544e-05 Ef=64962 NL=70 LinCalls=70 t=0.143464 s
+picard_only / MGG / cartesian case 1700/2000 rho_target=1.24157 rho_ref=1.24157 rho0=1.24158 conv=1 ref=0 Ei=2.20749e-05 Ef=0.051423 NL=143 LinCalls=143 t=0.32521 s
+picard_only / MGG / cartesian case 1800/2000 rho_target=1.15392 rho_ref=1.15392 rho0=1.15392 conv=1 ref=0 Ei=1.99771e-05 Ef=0.0285351 NL=203 LinCalls=203 t=0.415828 s
+picard_only / MGG / cartesian case 1900/2000 rho_target=1.14537 rho_ref=1.14537 rho0=1.14538 conv=0 ref=0 Ei=1.96445e-05 Ef=29.5952 NL=78 LinCalls=78 t=0.156446 s
+picard_only / MGG / cartesian case 2000/2000 rho_target=1.19094 rho_ref=1.19094 rho0=1.19094 conv=1 ref=0 Ei=2.19593e-05 Ef=0.0404935 NL=171 LinCalls=171 t=0.341245 s
+picard_only / MGG / hexagonal case 100/2000 rho_target=1.15334 rho_ref=1.15428 rho0=1.15428 conv=1 ref=0 Ei=2.2635e-05 Ef=0.0356819 NL=209 LinCalls=209 t=0.772973 s
+picard_only / MGG / hexagonal case 200/2000 rho_target=1.26828 rho_ref=1.26947 rho0=1.26948 conv=1 ref=0 Ei=2.26932e-05 Ef=0.0614102 NL=132 LinCalls=132 t=0.48115 s
+picard_only / MGG / hexagonal case 300/2000 rho_target=1.11833 rho_ref=1.11988 rho0=1.11988 conv=0 ref=0 Ei=2.02688e-05 Ef=15.3712 NL=110 LinCalls=110 t=0.401613 s
+picard_only / MGG / hexagonal case 400/2000 rho_target=1.25443 rho_ref=1.25472 rho0=1.25473 conv=1 ref=0 Ei=1.981e-05 Ef=0.0457077 NL=128 LinCalls=128 t=0.48838 s
+picard_only / MGG / hexagonal case 500/2000 rho_target=1.25458 rho_ref=1.25485 rho0=1.25487 conv=0 ref=0 Ei=2.03801e-05 Ef=1.48568 NL=51 LinCalls=51 t=0.196113 s
+picard_only / MGG / hexagonal case 600/2000 rho_target=1.25963 rho_ref=1.25978 rho0=1.2598 conv=0 ref=0 Ei=1.96558e-05 Ef=2.10842 NL=51 LinCalls=51 t=0.186254 s
+picard_only / MGG / hexagonal case 700/2000 rho_target=1.155 rho_ref=1.15568 rho0=1.15568 conv=1 ref=0 Ei=2.03556e-05 Ef=0.0313584 NL=206 LinCalls=206 t=0.739106 s
+picard_only / MGG / hexagonal case 800/2000 rho_target=1.26715 rho_ref=1.26854 rho0=1.26854 conv=0 ref=0 Ei=2.21925e-05 Ef=134.547 NL=57 LinCalls=57 t=0.205921 s
+picard_only / MGG / hexagonal case 900/2000 rho_target=1.29066 rho_ref=1.29129 rho0=1.2913 conv=1 ref=0 Ei=2.21187e-05 Ef=0.0625947 NL=120 LinCalls=120 t=0.453714 s
+picard_only / MGG / hexagonal case 1000/2000 rho_target=1.2034 rho_ref=1.20447 rho0=1.20447 conv=1 ref=0 Ei=1.98759e-05 Ef=0.0399782 NL=166 LinCalls=166 t=0.598279 s
+picard_only / MGG / hexagonal case 1100/2000 rho_target=1.18256 rho_ref=1.18296 rho0=1.18297 conv=0 ref=0 Ei=2.17083e-05 Ef=126.776 NL=76 LinCalls=76 t=0.274244 s
+picard_only / MGG / hexagonal case 1200/2000 rho_target=1.20134 rho_ref=1.20353 rho0=1.2035 conv=1 ref=0 Ei=2.13758e-05 Ef=0.0438144 NL=177 LinCalls=177 t=0.642285 s
+picard_only / MGG / hexagonal case 1300/2000 rho_target=1.10288 rho_ref=1.10386 rho0=1.10386 conv=0 ref=0 Ei=2.23483e-05 Ef=11.1225 NL=128 LinCalls=128 t=0.48133 s
+picard_only / MGG / hexagonal case 1400/2000 rho_target=1.23055 rho_ref=1.23079 rho0=1.23079 conv=1 ref=0 Ei=1.93303e-05 Ef=0.0400514 NL=145 LinCalls=145 t=0.57324 s
+picard_only / MGG / hexagonal case 1500/2000 rho_target=1.17951 rho_ref=1.18158 rho0=1.18159 conv=1 ref=0 Ei=2.27467e-05 Ef=0.0423983 NL=193 LinCalls=193 t=0.856831 s
+picard_only / MGG / hexagonal case 1600/2000 rho_target=1.20183 rho_ref=1.20206 rho0=1.20207 conv=0 ref=0 Ei=2.06649e-05 Ef=445763 NL=70 LinCalls=70 t=0.270701 s
+picard_only / MGG / hexagonal case 1700/2000 rho_target=1.24157 rho_ref=1.24206 rho0=1.24206 conv=1 ref=0 Ei=2.22162e-05 Ef=0.0520462 NL=143 LinCalls=143 t=0.53854 s
+picard_only / MGG / hexagonal case 1800/2000 rho_target=1.15392 rho_ref=1.15422 rho0=1.15422 conv=1 ref=0 Ei=2.0089e-05 Ef=0.0288567 NL=203 LinCalls=203 t=0.763768 s
+picard_only / MGG / hexagonal case 1900/2000 rho_target=1.14537 rho_ref=1.14575 rho0=1.14577 conv=0 ref=0 Ei=1.97519e-05 Ef=2544.29 NL=78 LinCalls=78 t=0.35543 s
+picard_only / MGG / hexagonal case 2000/2000 rho_target=1.19094 rho_ref=1.19138 rho0=1.19138 conv=1 ref=0 Ei=2.20989e-05 Ef=0.0409968 NL=171 LinCalls=171 t=0.77666 s
+picard_only / MGG / random case 100/2000 rho_target=1.15334 rho_ref=1.15164 rho0=1.15165 conv=1 ref=0 Ei=2.25056e-05 Ef=0.0350498 NL=215 LinCalls=215 t=0.976952 s
+picard_only / MGG / random case 200/2000 rho_target=1.26828 rho_ref=1.26653 rho0=1.26653 conv=1 ref=0 Ei=2.25623e-05 Ef=0.0606905 NL=134 LinCalls=134 t=0.588272 s
+picard_only / MGG / random case 300/2000 rho_target=1.11833 rho_ref=1.11644 rho0=1.11644 conv=0 ref=0 Ei=2.0097e-05 Ef=63.2815 NL=113 LinCalls=113 t=0.526512 s
+picard_only / MGG / random case 400/2000 rho_target=1.25443 rho_ref=1.25138 rho0=1.25139 conv=0 ref=0 Ei=1.96519e-05 Ef=7.75862 NL=50 LinCalls=50 t=0.229755 s
+picard_only / MGG / random case 500/2000 rho_target=1.25458 rho_ref=1.25202 rho0=1.25203 conv=0 ref=0 Ei=2.02203e-05 Ef=12.3418 NL=52 LinCalls=52 t=0.253049 s
+picard_only / MGG / random case 700/2000 rho_target=1.155 rho_ref=1.15269 rho0=1.15269 conv=1 ref=0 Ei=2.03004e-05 Ef=0.0308577 NL=212 LinCalls=212 t=0.78857 s
+picard_only / MGG / random case 800/2000 rho_target=1.26715 rho_ref=1.26534 rho0=1.26534 conv=0 ref=0 Ei=2.20134e-05 Ef=19.4985 NL=58 LinCalls=58 t=0.219105 s
+picard_only / MGG / random case 900/2000 rho_target=1.29066 rho_ref=1.28833 rho0=1.28833 conv=1 ref=0 Ei=2.20056e-05 Ef=0.0619513 NL=122 LinCalls=122 t=0.472974 s
+picard_only / MGG / random case 1000/2000 rho_target=1.2034 rho_ref=1.20109 rho0=1.2011 conv=1 ref=0 Ei=1.98312e-05 Ef=0.0394653 NL=172 LinCalls=172 t=0.668504 s
+picard_only / MGG / random case 1100/2000 rho_target=1.18256 rho_ref=1.18071 rho0=1.18072 conv=0 ref=0 Ei=2.15431e-05 Ef=12.9162 NL=76 LinCalls=76 t=0.280415 s
+picard_only / MGG / random case 1400/2000 rho_target=1.23055 rho_ref=1.22609 rho0=1.2261 conv=1 ref=0 Ei=1.92838e-05 Ef=0.0394426 NL=149 LinCalls=149 t=0.562692 s
+picard_only / MGG / random case 1700/2000 rho_target=1.24157 rho_ref=1.23972 rho0=1.23973 conv=1 ref=0 Ei=2.20687e-05 Ef=0.051498 NL=145 LinCalls=145 t=0.542606 s
+picard_only / MGG / random case 1800/2000 rho_target=1.15392 rho_ref=1.15043 rho0=1.15043 conv=1 ref=0 Ei=2.0029e-05 Ef=0.0282576 NL=209 LinCalls=209 t=0.79904 s
+picard_only / MGG / random case 1900/2000 rho_target=1.14537 rho_ref=1.14285 rho0=1.14287 conv=0 ref=0 Ei=1.95927e-05 Ef=15.2884 NL=79 LinCalls=79 t=0.298285 s
+picard_only / MGG / random case 2000/2000 rho_target=1.19094 rho_ref=1.1886 rho0=1.18861 conv=1 ref=0 Ei=2.19656e-05 Ef=0.0403583 NL=175 LinCalls=175 t=0.645125 s
+
+Results: Result/run_20261009T191103Z
+Cases recorded: 12000
+rho-target calibration failures: 0
+Algorithmic non-convergences: 2132
+rho_reference<1 but residual did not converge: 0
+rho_reference<1 but reference equilibrium not recovered: 2
+Converged to a different equilibrium: 3371
+Case exceptions (campaign continued): 372
+Setup failures: 0

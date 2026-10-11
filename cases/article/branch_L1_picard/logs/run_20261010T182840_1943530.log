@@ -1,0 +1,15 @@
+Calibrating c from rho_target on canonical Cartesian/WLSQR reference states...
+calibration case 100/100 rho_target=1.15334 rho_c1=7.25848 c=0.158896
+picard_only / WLSQR / cartesian case 100/100 rho_target=1.15334 rho_ref=1.15334 rho0=1.15334 conv=1 ref=0 Ei=2.2528e-05 Ef=0.0351917 NL=214 LinCalls=214 t=0.0686902 s
+picard_only / WLSQR / hexagonal case 100/100 rho_target=1.15334 rho_ref=1.15528 rho0=1.15654 conv=0 ref=0 Ei=2.26437e-05 Ef=43.815 NL=28 LinCalls=28 t=0.015799 s
+picard_only / WLSQR / random case 100/100 rho_target=1.15334 rho_ref=1.14514 rho0=1.14514 conv=1 ref=0 Ei=2.25346e-05 Ef=0.0338544 NL=231 LinCalls=231 t=0.131491 s
+
+Results: Result/run_20261010T182840Z
+Cases recorded: 300
+rho-target calibration failures: 0
+Algorithmic non-convergences: 90
+rho_reference<1 but residual did not converge: 2
+rho_reference<1 but reference equilibrium not recovered: 2
+Converged to a different equilibrium: 65
+Case exceptions (campaign continued): 4
+Setup failures: 0

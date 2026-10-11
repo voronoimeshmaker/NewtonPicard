@@ -1,0 +1,4 @@
+mesh_family,p_l2,order_available,monotone_l2,monotone_linf,all_linear_solves_converged
+cartesian,2.03628333178895904e+00,1,1,1,1
+hexagonal,2.02781711906650797e+00,1,1,1,1
+random,2.67427085353355043e+00,1,1,1,1

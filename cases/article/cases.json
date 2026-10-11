@@ -1,0 +1,122 @@
+[
+  {
+    "name": "01_fadeev_spatial",
+    "kind": "spatial",
+    "description": "Verifica\u00e7\u00e3o espacial: fonte anal\u00edtica prescrita, malhas 48x16, 96x32 e 192x64; tr\u00eas fam\u00edlias. N\u00e3o \u00e9 um teste n\u00e3o linear."
+  },
+  {
+    "name": "02_newton",
+    "kind": "official:newton",
+    "description": "Campanha principal newton: 2000 amostras, tr\u00eas fam\u00edlias, WLSQR e MGG. As tabelas principais do artigo selecionam WLSQR."
+  },
+  {
+    "name": "03_picard",
+    "kind": "official:picard",
+    "description": "Campanha principal picard: 2000 amostras, tr\u00eas fam\u00edlias, WLSQR e MGG. As tabelas principais do artigo selecionam WLSQR."
+  },
+  {
+    "name": "04_initial_rho",
+    "kind": "official:initial_rho",
+    "description": "Campanha principal initial_rho: 2000 amostras, tr\u00eas fam\u00edlias, WLSQR e MGG. As tabelas principais do artigo selecionam WLSQR."
+  },
+  {
+    "name": "05_updated_rho",
+    "kind": "official:updated_rho",
+    "description": "Campanha principal updated_rho: 2000 amostras, tr\u00eas fam\u00edlias, WLSQR e MGG. As tabelas principais do artigo selecionam WLSQR."
+  },
+  {
+    "name": "amplitude_1e-4_newton",
+    "kind": "complementary:newton",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-4: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia newton."
+  },
+  {
+    "name": "amplitude_1e-4_picard",
+    "kind": "complementary:picard",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-4: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia picard."
+  },
+  {
+    "name": "amplitude_1e-4_initial_rho",
+    "kind": "complementary:initial_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-4: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia initial_rho."
+  },
+  {
+    "name": "amplitude_1e-4_updated_rho",
+    "kind": "complementary:updated_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-4: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia updated_rho."
+  },
+  {
+    "name": "amplitude_1e-2_newton",
+    "kind": "complementary:newton",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-2: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia newton."
+  },
+  {
+    "name": "amplitude_1e-2_picard",
+    "kind": "complementary:picard",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-2: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia picard."
+  },
+  {
+    "name": "amplitude_1e-2_initial_rho",
+    "kind": "complementary:initial_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-2: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia initial_rho."
+  },
+  {
+    "name": "amplitude_1e-2_updated_rho",
+    "kind": "complementary:updated_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-2: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia updated_rho."
+  },
+  {
+    "name": "amplitude_1e-1_newton",
+    "kind": "complementary:newton",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-1: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia newton."
+  },
+  {
+    "name": "amplitude_1e-1_picard",
+    "kind": "complementary:picard",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-1: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia picard."
+  },
+  {
+    "name": "amplitude_1e-1_initial_rho",
+    "kind": "complementary:initial_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-1: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia initial_rho."
+  },
+  {
+    "name": "amplitude_1e-1_updated_rho",
+    "kind": "complementary:updated_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e-1: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia updated_rho."
+  },
+  {
+    "name": "amplitude_1e0_newton",
+    "kind": "complementary:newton",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e0: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia newton."
+  },
+  {
+    "name": "amplitude_1e0_picard",
+    "kind": "complementary:picard",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e0: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia picard."
+  },
+  {
+    "name": "amplitude_1e0_initial_rho",
+    "kind": "complementary:initial_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e0: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia initial_rho."
+  },
+  {
+    "name": "amplitude_1e0_updated_rho",
+    "kind": "complementary:updated_rho",
+    "description": "Varia\u00e7\u00e3o de amplitude 1e0: 200 amostras, WLSQR, tr\u00eas fam\u00edlias, estrat\u00e9gia updated_rho."
+  },
+  {
+    "name": "branch_L1_picard",
+    "kind": "complementary:picard",
+    "description": "Refinamento de ramos, n\u00edvel hist\u00f3rico L1, 100 amostras, Picard/WLSQR. Correspond\u00eancia: L1=128x43; L3=512x171; L4=1024x341."
+  },
+  {
+    "name": "branch_L3_picard",
+    "kind": "complementary:picard",
+    "description": "Refinamento de ramos, n\u00edvel hist\u00f3rico L3, 100 amostras, Picard/WLSQR. Correspond\u00eancia: L1=128x43; L3=512x171; L4=1024x341."
+  },
+  {
+    "name": "branch_L4_picard",
+    "kind": "complementary:picard",
+    "description": "Refinamento de ramos, n\u00edvel hist\u00f3rico L4, 100 amostras, Picard/WLSQR. Correspond\u00eancia: L1=128x43; L3=512x171; L4=1024x341."
+  }
+]

@@ -1,0 +1,37 @@
+mesh:
+  type: cartesian_square
+  n_generators: 768
+  n_per_direction: 48
+  n_per_direction_y: 16
+  nominal_nx: 48
+  nominal_ny: 16
+  families: [cartesian, hexagonal, random]
+  random_seed: 12345
+  domain: [-15.0, 15.0, -5.0, 5.0]
+  hilbert_reorder: false
+  reordering: natural
+
+solver:
+  nonlinear: picard
+  linear: petsc
+  max_iter: 100
+  tolerance_relative: 1.0e-10
+  tolerance_absolute: 1.0e-12
+  source_regularisation_delta: 1.0e-10
+
+study:
+  finite_difference_scale: 1.0
+  jacobian_stencil_radius: 1
+  repair_stationary_points: false
+  recovery_sweeps: 5
+
+paper:
+  alpha: 0.225
+  theta_degrees: 5.7
+  # The domain has aspect ratio 3:1.  These levels preserve Nx/Ny = 3
+  # exactly while increasing the nominal cell count by a factor of four.
+  refinement_levels:
+    - [48, 16]
+    - [96, 32]
+    - [192, 64]
+  require_monotone_l2: true

@@ -1,0 +1,123 @@
+#include "gss/assembly/MatrixAssembler.hpp"
+
+#include <cmath>
+#include <vector>
+
+#include "gss/linear/PETScLinearSystem.hpp"
+
+namespace gss {
+
+namespace {
+
+[[nodiscard]] PetscInt owned_row_start(MPI_Comm comm, PetscInt local_rows) {
+    PetscInt start = 0;
+    MPI_Exscan(&local_rows, &start, 1, MPIU_INT, MPI_SUM, comm);
+    PetscMPIInt rank = 0;
+    MPI_Comm_rank(comm, &rank);
+    return rank == 0 ? 0 : start;
+}
+
+} // namespace
+
+Mat MatrixAssembler::assemble(const MeshAdapter& mesh, MPI_Comm comm, Real diffusivity) {
+    if (!(diffusivity > Real{0}) || !std::isfinite(diffusivity)) {
+        throw std::invalid_argument("Diffusivity must be finite and positive");
+    }
+    const Index n = mesh.n_cells();
+    const auto& topo = mesh.topology();
+    PetscInt local_rows = PETSC_DECIDE;
+    PetscInt global_rows = n;
+    petsc_check(PetscSplitOwnership(comm, &local_rows, &global_rows), "split matrix ownership");
+    const PetscInt rstart = owned_row_start(comm, local_rows);
+    const PetscInt rend = rstart + local_rows;
+
+    std::vector<PetscInt> d_nnz(static_cast<std::size_t>(local_rows), 1);
+    std::vector<PetscInt> o_nnz(static_cast<std::size_t>(local_rows), 0);
+    for (Index p = rstart; p < rend; ++p) {
+        const auto local = static_cast<std::size_t>(p - rstart);
+        const Index begin = topo.neighbor_start[static_cast<std::size_t>(p)];
+        const Index end = topo.neighbor_start[static_cast<std::size_t>(p + 1)];
+        for (Index e = begin; e < end; ++e) {
+            const Index q = topo.neighbor_list[static_cast<std::size_t>(e)];
+            if (q >= rstart && q < rend) {
+                ++d_nnz[local];
+            } else {
+                ++o_nnz[local];
+            }
+        }
+    }
+
+    Mat A{};
+    petsc_check(MatCreateAIJ(
+        comm,
+        local_rows,
+        local_rows,
+        n,
+        n,
+        0,
+        d_nnz.data(),
+        0,
+        o_nnz.data(),
+        &A), "create distributed AIJ matrix");
+
+    for (Index p = rstart; p < rend; ++p) {
+        const Index begin = topo.neighbor_start[static_cast<std::size_t>(p)];
+        const Index end = topo.neighbor_start[static_cast<std::size_t>(p + 1)];
+        std::vector<Index> cols;
+        std::vector<Real> vals;
+        cols.reserve(static_cast<std::size_t>(end - begin + 1));
+        vals.reserve(static_cast<std::size_t>(end - begin + 1));
+        Real diag = 0.0;
+        for (Index e = begin; e < end; ++e) {
+            const auto es = static_cast<std::size_t>(e);
+            const Real c = diffusivity * topo.interface_area[es] / topo.distance[es];
+            diag += c;
+            cols.push_back(topo.neighbor_list[es]);
+            vals.push_back(-c);
+        }
+        cols.push_back(p);
+        vals.push_back(diag);
+        petsc_check(MatSetValues(A, 1, &p, static_cast<PetscInt>(cols.size()), cols.data(), vals.data(), INSERT_VALUES), "set matrix row");
+    }
+    petsc_check(MatAssemblyBegin(A, MAT_FINAL_ASSEMBLY), "begin matrix assembly");
+    petsc_check(MatAssemblyEnd(A, MAT_FINAL_ASSEMBLY), "end matrix assembly");
+#ifndef NDEBUG
+    PetscBool symmetric = PETSC_FALSE;
+    petsc_check(MatIsSymmetric(A, 1.0e-12, &symmetric), "check matrix symmetry");
+    if (!symmetric) {
+        throw std::runtime_error("assembled FVM matrix is not symmetric");
+    }
+#endif
+    return A;
+}
+
+void MatrixAssembler::apply_stencil(const MeshAdapter& mesh, Vec psi, Vec out, Real diffusivity) {
+    const auto psi_std = PETScLinearSystem::to_std_vector(psi);
+    const auto applied = apply_stencil(mesh, psi_std, diffusivity);
+    PetscInt rstart = 0;
+    PetscInt rend = 0;
+    petsc_check(VecGetOwnershipRange(out, &rstart, &rend), "get stencil output ownership");
+    for (PetscInt i = rstart; i < rend; ++i) {
+        const Real value = applied[static_cast<std::size_t>(i)];
+        petsc_check(VecSetValue(out, i, value, INSERT_VALUES), "set stencil output");
+    }
+    petsc_check(VecAssemblyBegin(out), "begin stencil output assembly");
+    petsc_check(VecAssemblyEnd(out), "end stencil output assembly");
+}
+
+std::vector<Real> MatrixAssembler::apply_stencil(const MeshAdapter& mesh, std::span<const Real> psi, Real diffusivity) {
+    if (!(diffusivity > Real{0}) || !std::isfinite(diffusivity)) {
+        throw std::invalid_argument("Diffusivity must be finite and positive");
+    }
+    const Index n = mesh.n_cells();
+    std::vector<Real> out(static_cast<std::size_t>(n), 0.0);
+#ifdef _OPENMP
+#pragma omp parallel for schedule(static) if(n > 1024)
+#endif
+    for (Index p = 0; p < n; ++p) {
+        out[static_cast<std::size_t>(p)] = stencil_at(mesh, psi, p, diffusivity);
+    }
+    return out;
+}
+
+} // namespace gss

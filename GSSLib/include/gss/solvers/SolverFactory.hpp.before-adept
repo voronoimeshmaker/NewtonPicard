@@ -1,0 +1,31 @@
+#pragma once
+
+#include <stdexcept>
+#include <variant>
+
+#include "gss/linear/CholeskyBackend.hpp"
+#include "gss/solvers/NewtonSolver.hpp"
+#include "gss/solvers/PicardSolver.hpp"
+
+namespace gss {
+
+/// @brief Factory returning concrete solver variants from YAML boundary strings.
+class SolverFactory {
+public:
+    using SolverVariant = std::variant<
+        PicardSolver<CholeskyBackend>,
+        NewtonSolver<CholeskyBackend, FiniteDifferenceJacobian>>;
+
+    /// @brief Create a concrete nonlinear solver variant.
+    [[nodiscard]] static SolverVariant create(const Config& config) {
+        if (config.solver.nonlinear == "picard" || config.solver.nonlinear == "picard_relaxed") {
+            return PicardSolver<CholeskyBackend>{config};
+        }
+        if (config.solver.nonlinear == "newton") {
+            return NewtonSolver<CholeskyBackend, FiniteDifferenceJacobian>{config};
+        }
+        throw std::runtime_error("unknown solver.nonlinear: " + config.solver.nonlinear);
+    }
+};
+
+} // namespace gss

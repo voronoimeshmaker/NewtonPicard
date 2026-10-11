@@ -1,0 +1,1 @@
+rho_min,rho_max,cases,converged,converged_to_reference,prediction_failure_residual,prediction_failure_reference,mean_linear_solve_calls,mean_algorithmic_seconds,median_algorithmic_seconds,p95_algorithmic_seconds

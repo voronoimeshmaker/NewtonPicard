@@ -1,0 +1,22 @@
+[
+  {
+    "file": "ArticleExactClippedVoronoiBuilder2D.hpp",
+    "sha256": "3a35bab6c43196b1d9d8974b0c02927f0f17dd412f3bb972fdc469aa8caca67b"
+  },
+  {
+    "file": "ArticleExactVoronoiCellBuilder2D.hpp",
+    "sha256": "b36eb6ed594cdc10701b481f9f7038d02c6622946450be39e4e34f1726f5c6c0"
+  },
+  {
+    "file": "MeshFactory.cpp",
+    "sha256": "663c1c82ba2e8d9ec5c3262c8b386e4507304df8ada70faa80a9d84c7cfdc25e"
+  },
+  {
+    "file": "README.md",
+    "sha256": "490fd7cbfae7e39e2fc2003fc1eae6d38a25bd41145d4a417bd3e085fb32bb86"
+  },
+  {
+    "file": "test_exact_clipping.cpp",
+    "sha256": "735f6d2bb16f17f69bb3989f993539715bdd882f2b44fddd3d921a2c284160c9"
+  }
+]

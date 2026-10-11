@@ -1,0 +1,172 @@
+#include "gss/io/YAMLConfig.hpp"
+
+#include <algorithm>
+#include <fstream>
+#include <stdexcept>
+
+#include <yaml-cpp/yaml.h>
+
+namespace gss {
+namespace {
+
+template<typename T>
+[[nodiscard]] T require_as(const YAML::Node& node, const char* path) {
+    try {
+        if (!node) {
+            throw std::runtime_error("");
+        }
+        return node.as<T>();
+    } catch (const std::exception&) {
+        throw std::runtime_error(std::string("invalid or missing YAML field: ") + path);
+    }
+}
+
+template<typename T>
+[[nodiscard]] T optional_as(const YAML::Node& node, const T& fallback) {
+    return node ? node.as<T>() : fallback;
+}
+
+} // namespace
+
+Config YAMLConfig::load(const std::filesystem::path& path) {
+    const YAML::Node root = YAML::LoadFile(path.string());
+    Config c{};
+    c.mesh.type = require_as<std::string>(root["mesh"]["type"], "mesh.type");
+    c.mesh.n_generators = require_as<Index>(root["mesh"]["n_generators"], "mesh.n_generators");
+    c.mesh.n_per_direction = optional_as(root["mesh"]["n_per_direction"], c.mesh.n_per_direction);
+    c.mesh.n_per_direction_y = optional_as(root["mesh"]["n_per_direction_y"], c.mesh.n_per_direction_y);
+    c.mesh.random_seed = optional_as(root["mesh"]["random_seed"], c.mesh.random_seed);
+    const auto domain = require_as<std::vector<Real>>(root["mesh"]["domain"], "mesh.domain");
+    if (domain.size() != 4) {
+        throw std::runtime_error("invalid YAML field: mesh.domain must contain four values");
+    }
+    std::copy(domain.begin(), domain.end(), c.mesh.domain.begin());
+    c.mesh.hilbert_reorder = optional_as(root["mesh"]["hilbert_reorder"], c.mesh.hilbert_reorder);
+    c.mesh.reordering = optional_as(root["mesh"]["reordering"], c.mesh.reordering);
+    c.solver.nonlinear = require_as<std::string>(root["solver"]["nonlinear"], "solver.nonlinear");
+    c.solver.linear = require_as<std::string>(root["solver"]["linear"], "solver.linear");
+    c.solver.max_iter = require_as<Index>(root["solver"]["max_iter"], "solver.max_iter");
+    c.solver.tolerance_relative = require_as<Real>(root["solver"]["tolerance_relative"], "solver.tolerance_relative");
+    c.solver.tolerance_absolute = require_as<Real>(root["solver"]["tolerance_absolute"], "solver.tolerance_absolute");
+    c.solver.relaxation_omega = optional_as(root["solver"]["relaxation_omega"], c.solver.relaxation_omega);
+    c.solver.rhs_constant = optional_as(root["solver"]["rhs_constant"], c.solver.rhs_constant);
+    c.solver.source_regularisation_delta = optional_as(
+        root["solver"]["source_regularisation_delta"], c.solver.source_regularisation_delta);
+    c.solver.diagonal_shift = optional_as(root["solver"]["diagonal_shift"], c.solver.diagonal_shift);
+    c.solver.initial_guess = optional_as(root["solver"]["initial_guess"], c.solver.initial_guess);
+    c.solver.perturbation_amplitude = optional_as(root["solver"]["perturbation_amplitude"], c.solver.perturbation_amplitude);
+    c.solver.perturbation_type = optional_as(root["solver"]["perturbation_type"], c.solver.perturbation_type);
+    c.newton.jacobian = optional_as(root["newton"]["jacobian"], c.newton.jacobian);
+    c.newton.linesearch = optional_as(root["newton"]["linesearch"], c.newton.linesearch);
+    c.newton.linesearch_max_iter = optional_as(root["newton"]["linesearch_max_iter"], c.newton.linesearch_max_iter);
+    c.newton.linesearch_reduction = optional_as(root["newton"]["linesearch_reduction"], c.newton.linesearch_reduction);
+    c.petsc.ksp_type = optional_as(root["petsc"]["ksp_type"], c.petsc.ksp_type);
+    c.petsc.pc_type = optional_as(root["petsc"]["pc_type"], c.petsc.pc_type);
+    c.petsc.mat_solver_type = optional_as(root["petsc"]["mat_solver_type"], c.petsc.mat_solver_type);
+    c.petsc.mumps_reorder = optional_as(root["petsc"]["mumps_reorder"], c.petsc.mumps_reorder);
+    c.petsc.mumps_icntl_14 = optional_as(root["petsc"]["mumps_icntl_14"], c.petsc.mumps_icntl_14);
+    c.benchmark.type = optional_as(root["benchmark"]["type"], c.benchmark.type);
+    c.benchmark.fadeev_epsilon = optional_as(root["benchmark"]["fadeev_epsilon"], c.benchmark.fadeev_epsilon);
+    c.benchmark.fadeev_psi0 = optional_as(root["benchmark"]["fadeev_psi0"], c.benchmark.fadeev_psi0);
+    c.benchmark.fadeev_k = optional_as(root["benchmark"]["fadeev_k"], c.benchmark.fadeev_k);
+    c.benchmark.fadeev_alpha = optional_as(root["benchmark"]["fadeev_alpha"], c.benchmark.fadeev_alpha);
+    c.benchmark.fadeev_theta_degrees = optional_as(
+        root["benchmark"]["fadeev_theta_degrees"], c.benchmark.fadeev_theta_degrees);
+    c.benchmark.compute_error = optional_as(root["benchmark"]["compute_error"], c.benchmark.compute_error);
+    c.benchmark.error_norms = optional_as(root["benchmark"]["error_norms"], c.benchmark.error_norms);
+    c.benchmark.kappa_island_threshold = optional_as(root["benchmark"]["kappa_island_threshold"], c.benchmark.kappa_island_threshold);
+    c.convergence_study.enabled = optional_as(root["convergence_study"]["enabled"], c.convergence_study.enabled);
+    c.convergence_study.n_generators_sequence = optional_as(root["convergence_study"]["n_generators_sequence"], c.convergence_study.n_generators_sequence);
+    c.convergence_study.output_csv = optional_as(root["convergence_study"]["output_csv"], c.convergence_study.output_csv);
+    c.gradient_analysis.enabled = optional_as(root["gradient_analysis"]["enabled"], c.gradient_analysis.enabled);
+    c.gradient_analysis.top_k = optional_as(root["gradient_analysis"]["top_k"], c.gradient_analysis.top_k);
+    c.gradient_analysis.quantities = optional_as(root["gradient_analysis"]["quantities"], c.gradient_analysis.quantities);
+    c.gradient_analysis.min_distance = optional_as(root["gradient_analysis"]["min_distance"], c.gradient_analysis.min_distance);
+    c.gradient_analysis.grad_critical_threshold = optional_as(root["gradient_analysis"]["grad_critical_threshold"], c.gradient_analysis.grad_critical_threshold);
+    c.gradient_analysis.output_format = optional_as(root["gradient_analysis"]["output"]["format"], c.gradient_analysis.output_format);
+    c.gradient_analysis.filename_extrema = optional_as(root["gradient_analysis"]["output"]["filename_extrema"], c.gradient_analysis.filename_extrema);
+    c.gradient_analysis.filename_critical = optional_as(root["gradient_analysis"]["output"]["filename_critical"], c.gradient_analysis.filename_critical);
+    c.output.format = optional_as(root["output"]["format"], c.output.format);
+    c.output.write_solution = optional_as(root["output"]["write_solution"], c.output.write_solution);
+    c.output.write_error = optional_as(root["output"]["write_error"], c.output.write_error);
+    c.output.timing_report = optional_as(root["output"]["timing_report"], c.output.timing_report);
+    c.output.timing_components = optional_as(root["output"]["timing_components"], c.output.timing_components);
+    return c;
+}
+
+void YAMLConfig::write(const Config& c, const std::filesystem::path& path) {
+    YAML::Emitter out;
+    out << YAML::BeginMap;
+    out << YAML::Key << "mesh" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "type" << YAML::Value << c.mesh.type
+        << YAML::Key << "n_generators" << YAML::Value << c.mesh.n_generators
+        << YAML::Key << "n_per_direction" << YAML::Value << c.mesh.n_per_direction
+        << YAML::Key << "n_per_direction_y" << YAML::Value << c.mesh.n_per_direction_y
+        << YAML::Key << "random_seed" << YAML::Value << c.mesh.random_seed
+        << YAML::Key << "domain" << YAML::Value << YAML::Flow << std::vector<Real>{c.mesh.domain.begin(), c.mesh.domain.end()}
+        << YAML::Key << "hilbert_reorder" << YAML::Value << c.mesh.hilbert_reorder
+        << YAML::Key << "reordering" << YAML::Value << c.mesh.reordering << YAML::EndMap;
+    out << YAML::Key << "solver" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "nonlinear" << YAML::Value << c.solver.nonlinear
+        << YAML::Key << "linear" << YAML::Value << c.solver.linear
+        << YAML::Key << "max_iter" << YAML::Value << c.solver.max_iter
+        << YAML::Key << "tolerance_relative" << YAML::Value << c.solver.tolerance_relative
+        << YAML::Key << "tolerance_absolute" << YAML::Value << c.solver.tolerance_absolute
+        << YAML::Key << "relaxation_omega" << YAML::Value << c.solver.relaxation_omega
+        << YAML::Key << "rhs_constant" << YAML::Value << c.solver.rhs_constant
+        << YAML::Key << "source_regularisation_delta" << YAML::Value << c.solver.source_regularisation_delta
+        << YAML::Key << "diagonal_shift" << YAML::Value << c.solver.diagonal_shift
+        << YAML::Key << "initial_guess" << YAML::Value << c.solver.initial_guess
+        << YAML::Key << "perturbation_amplitude" << YAML::Value << c.solver.perturbation_amplitude
+        << YAML::Key << "perturbation_type" << YAML::Value << c.solver.perturbation_type << YAML::EndMap;
+    out << YAML::Key << "newton" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "jacobian" << YAML::Value << c.newton.jacobian
+        << YAML::Key << "linesearch" << YAML::Value << c.newton.linesearch
+        << YAML::Key << "linesearch_max_iter" << YAML::Value << c.newton.linesearch_max_iter
+        << YAML::Key << "linesearch_reduction" << YAML::Value << c.newton.linesearch_reduction << YAML::EndMap;
+    out << YAML::Key << "petsc" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "ksp_type" << YAML::Value << c.petsc.ksp_type
+        << YAML::Key << "pc_type" << YAML::Value << c.petsc.pc_type
+        << YAML::Key << "mat_solver_type" << YAML::Value << c.petsc.mat_solver_type
+        << YAML::Key << "mumps_reorder" << YAML::Value << c.petsc.mumps_reorder
+        << YAML::Key << "mumps_icntl_14" << YAML::Value << c.petsc.mumps_icntl_14 << YAML::EndMap;
+    out << YAML::Key << "benchmark" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "type" << YAML::Value << c.benchmark.type
+        << YAML::Key << "fadeev_epsilon" << YAML::Value << c.benchmark.fadeev_epsilon
+        << YAML::Key << "fadeev_psi0" << YAML::Value << c.benchmark.fadeev_psi0
+        << YAML::Key << "fadeev_k" << YAML::Value << c.benchmark.fadeev_k
+        << YAML::Key << "fadeev_alpha" << YAML::Value << c.benchmark.fadeev_alpha
+        << YAML::Key << "fadeev_theta_degrees" << YAML::Value << c.benchmark.fadeev_theta_degrees
+        << YAML::Key << "compute_error" << YAML::Value << c.benchmark.compute_error
+        << YAML::Key << "error_norms" << YAML::Value << c.benchmark.error_norms
+        << YAML::Key << "kappa_island_threshold" << YAML::Value << c.benchmark.kappa_island_threshold << YAML::EndMap;
+    out << YAML::Key << "convergence_study" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "enabled" << YAML::Value << c.convergence_study.enabled
+        << YAML::Key << "n_generators_sequence" << YAML::Value << c.convergence_study.n_generators_sequence
+        << YAML::Key << "output_csv" << YAML::Value << c.convergence_study.output_csv << YAML::EndMap;
+    out << YAML::Key << "gradient_analysis" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "enabled" << YAML::Value << c.gradient_analysis.enabled
+        << YAML::Key << "top_k" << YAML::Value << c.gradient_analysis.top_k
+        << YAML::Key << "quantities" << YAML::Value << c.gradient_analysis.quantities
+        << YAML::Key << "min_distance" << YAML::Value << c.gradient_analysis.min_distance
+        << YAML::Key << "grad_critical_threshold" << YAML::Value << c.gradient_analysis.grad_critical_threshold
+        << YAML::Key << "output" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "format" << YAML::Value << c.gradient_analysis.output_format
+        << YAML::Key << "filename_extrema" << YAML::Value << c.gradient_analysis.filename_extrema
+        << YAML::Key << "filename_critical" << YAML::Value << c.gradient_analysis.filename_critical
+        << YAML::EndMap << YAML::EndMap;
+    out << YAML::Key << "output" << YAML::Value << YAML::BeginMap
+        << YAML::Key << "format" << YAML::Value << c.output.format
+        << YAML::Key << "write_solution" << YAML::Value << c.output.write_solution
+        << YAML::Key << "write_error" << YAML::Value << c.output.write_error
+        << YAML::Key << "timing_report" << YAML::Value << c.output.timing_report
+        << YAML::Key << "timing_components" << YAML::Value << c.output.timing_components << YAML::EndMap;
+    out << YAML::EndMap;
+    std::ofstream file(path);
+    if (!file) {
+        throw std::runtime_error("failed to open YAML output: " + path.string());
+    }
+    file << out.c_str() << '\n';
+}
+
+} // namespace gss
