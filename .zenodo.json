@@ -1,0 +1,24 @@
+{
+  "title": "A spectral criterion for the solution branch reached by the Picard iteration in semilinear unstructured finite-volume systems",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Vasconcellos, João Flávio",
+      "affiliation": "Universidade do Estado do Rio de Janeiro (UERJ)"
+    }
+  ],
+  "description": "Research software, numerical data, case configurations and supporting documentation accompanying the manuscript <em>A spectral criterion for the solution branch reached by the Picard iteration in semilinear unstructured finite-volume systems</em>. The archived v1.0.0 Git tag points to commit <code>cc2ae381c79f10cf8f131d4b4906a6abc202881b</code>. Source repository: https://github.com/voronoimeshmaker/NewtonPicard . The numerical campaigns use ADOL-C for source-term differentiation. Code: GPL-3.0-or-later; author-owned data, case configurations and documentation: CC-BY-4.0. Existing third-party notices remain applicable. The record-level software licence does not replace the separate data/documentation licence.",
+  "license": "GPL-3.0-or-later",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/voronoimeshmaker/NewtonPicard",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/voronoimeshmaker/NewtonPicard/commit/cc2ae381c79f10cf8f131d4b4906a6abc202881b",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
