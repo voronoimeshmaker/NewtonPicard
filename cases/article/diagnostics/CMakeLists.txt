@@ -30,3 +30,6 @@ target_compile_definitions(diag_historical PUBLIC GSMAKER_USE_SLEPC=1 GSMAKER_US
 target_link_libraries(diag_historical PUBLIC PkgConfig::PETSC PkgConfig::SLEPC MPI::MPI_CXX yaml-cpp::yaml-cpp ${ADOLC_LIB} VoroGradToolkit::VoroGradToolkit VoronoiMeshMaker::VoronoiMeshMaker CGAL::CGAL TBB::tbb OpenMP::OpenMP_CXX)
 add_executable(diag_D0 D0_gate/main.cpp)
 target_link_libraries(diag_D0 PRIVATE diag_historical)
+
+add_executable(diag_D1 D1_spectral_hypotheses/main.cpp)
+target_link_libraries(diag_D1 PRIVATE diag_historical)
