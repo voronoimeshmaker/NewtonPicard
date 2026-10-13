@@ -39,3 +39,10 @@ target_link_libraries(diag_D2 PRIVATE diag_historical)
 
 add_executable(diag_D4 D4_random_eigvec_localisation/main.cpp)
 target_link_libraries(diag_D4 PRIVATE diag_historical)
+
+set(REFINED_SOURCES ${LIB_SOURCES})
+list(FILTER REFINED_SOURCES EXCLUDE REGEX "/mesh/MeshFactory.cpp$")
+add_library(diag_refined STATIC ${REFINED_SOURCES} support/diag_mesh_factory.cpp)
+target_link_libraries(diag_refined PUBLIC diag_historical)
+add_executable(diag_D3 D3_hex_floor_location/main.cpp)
+target_link_libraries(diag_D3 PRIVATE diag_refined)
