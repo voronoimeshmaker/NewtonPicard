@@ -1,11 +1,7 @@
-# D0 — gate de reprodutibilidade
+# D0 — gate de reprodução
 
-Recalcula rho_ref em Psi_F de 20 casos WLSQR por família, usando c do CSV.
-Selecção determinística: primeiros 20 case_id com rho_reference finito e positivo
-em cada família; casos excepcionais não são usados para este gate.
-Critério: abs(rho_new-rho_csv)/rho_csv <= 1e-10 para todos os 60 casos.
-Não resolve o problema não linear. Código de produção incluído sem alterações.
-selected.tsv e sources.json identificam os casos e arquivos de origem.
-CSV: família, ID, c, rho histórico/novo, erro relativo, nconv, iterações EPS,
-resíduo relativo máximo dos autovalores, segundos e aprovação por caso.
-Resultado: pendente da execução.
+APROVADO: 60/60, erro relativo máximo zero. Vinte primeiros case_id WLSQR com rho_reference finito positivo, por família; random exclui ID3 indisponível e inclui ID21. Fonte: 03_picard/Result/run_20261009T191103Z/cases.csv. Usa c gravado e PsiF, sem recalibração. Tolerância |rho_new-rho_csv|/rho_csv <=1e-10.
+
+Inclusão direta do código de produção, mesmas bibliotecas instaladas, Release, serial OMP_NUM_THREADS=1. CSV gate.csv: família, ID, c, rho histórico/reproduzido, erro relativo, convergência EPS, resíduo, tempo e pass. Os casos e hashes estão no manifest e selected.tsv. Em caso de falha o launcher devolve status não zero; os demais launchers verificam a aprovação dos 60 casos.
+
+Reprodução, a partir de diagnostics/: bash D0_gate/run.sh.

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "D0: successful exit, executable hash matches, protected snapshot unchanged",
+    "D1: successful exit, executable hash matches, protected snapshot unchanged",
+    "D2: successful exit, executable hash matches, protected snapshot unchanged",
+    "D3: successful exit, executable hash matches, protected snapshot unchanged",
+    "D4: successful exit, executable hash matches, protected snapshot unchanged",
+    "All protected files from initial D0 snapshot remain byte-identical after D1-D4",
+    "D1: 3281 unique cases; all nconv>=8; every converged pair exported",
+    "D2: all mandatory cases, both states, eight directional steps/state and all tied-maximiser spectra exported",
+    "D3: all twelve meshes and four expected hexagonal cell counts",
+    "D4: 82 states, ten dominant cells plus maximal row cell per state, IPR and participation counts valid",
+    "All result CSV rows match their column headers"
+  ]
+}

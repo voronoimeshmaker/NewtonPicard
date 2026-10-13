@@ -46,3 +46,5 @@ add_library(diag_refined STATIC ${REFINED_SOURCES} support/diag_mesh_factory.cpp
 target_link_libraries(diag_refined PUBLIC diag_historical)
 add_executable(diag_D3 D3_hex_floor_location/main.cpp)
 target_link_libraries(diag_D3 PRIVATE diag_refined)
+
+add_executable(diag_D5 D5_branch_alignment/main.cpp)
