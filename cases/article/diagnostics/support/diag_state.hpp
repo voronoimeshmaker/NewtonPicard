@@ -1,0 +1,13 @@
+#pragma once
+#include "diag_jacobian.hpp"
+#include "diag_spectrum.hpp"
+#include <random>
+namespace diag {
+struct Floor {DenseVector gx,gy,g;double M2{},tau{},rmin{},eta{};size_t min{},count{};std::vector<size_t> ties;};
+template<class J> Floor floor(J&j,const DenseVector&s,double delta){Floor f;j.apply_gradient_operator(s,f.gx,f.gy);f.g.resize(s.size());for(size_t i=0;i<s.size();i++)f.g[i]=f.gx[i]*f.gx[i]+f.gy[i]*f.gy[i];f.M2=*std::max_element(f.g.begin(),f.g.end());if(!(f.M2>0))throw std::runtime_error("Globally zero reconstructed gradient");f.tau=delta*delta*f.M2;f.min=std::min_element(f.g.begin(),f.g.end())-f.g.begin();f.rmin=sqrt(f.g[f.min]/f.M2);f.eta=f.tau/(f.g[f.min]+f.tau);for(size_t i=0;i<s.size();i++){f.count+=f.g[i]<=f.tau;if(f.M2-f.g[i]<=1e-12*f.M2)f.ties.push_back(i);}return f;}
+template<class J> DenseVector wline(J&j,const Floor&f,size_t q,double delta){DenseVector w(f.g.size(),0);for(size_t k=j.pattern_.row_start[q];k<size_t(j.pattern_.row_start[q+1]);k++)w[j.pattern_.column[k]]+=2*delta*delta*(j.gradient_x_[k]*f.gx[q]+j.gradient_y_[k]*f.gy[q]);return w;}
+template<class J> DenseVector zcolumn(J&j,const DenseVector&s,double scale){size_t n=s.size();std::vector<double>x(s.begin(),s.end()),seed(n+1,0),out(n),z(n);x.push_back(j.frozen_regularisation_threshold(s));seed[n]=1;int rc=fos_forward(j.tape_tag_,checked_adolc_dimension(n,"outputs"),checked_adolc_dimension(n+1,"inputs"),0,x.data(),seed.data(),out.data(),z.data());if(rc<0)throw std::runtime_error("AD tau column failed");for(auto&v:z)v*=scale;return z;}
+inline DenseVector rownorm(const sparse::Pattern&p,const DenseVector&v){DenseVector r(p.cells,0);for(size_t i=0;i<p.cells;i++){for(size_t k=p.row_start[i];k<size_t(p.row_start[i+1]);k++)r[i]+=v[k]*v[k];r[i]=sqrt(r[i]);}return r;}
+inline std::pair<double,int> stationary(double x,double y,double theta){double best=INFINITY;int ki=0;double t=theta*std::numbers::pi/180;for(int k=-4;k<=4;k++){double d=hypot(x-k*std::numbers::pi*cos(t),y+k*std::numbers::pi*sin(t));if(d<best){best=d;ki=k;}}return {best,ki};}
+inline DenseVector aspect(const ps::CaseWorkspace&ws){DenseVector r(ws.exact.size(),NAN);for(auto&cell:ws.diagram.cells){auto&poly=cell.polygon;double diameter=0,width=INFINITY;for(size_t i=0;i<poly.size();i++){auto a=poly[i],b=poly[(i+1)%poly.size()];double dx=b.x-a.x,dy=b.y-a.y,len=hypot(dx,dy);double lo=INFINITY,hi=-INFINITY;for(auto v:poly){diameter=std::max(diameter,hypot(double(v.x-a.x),double(v.y-a.y)));if(len>0){double q=(-dy*v.x+dx*v.y)/len;lo=std::min(lo,q);hi=std::max(hi,q);}}if(len>0)width=std::min(width,hi-lo);}if(width>0)r[cell.volume_id]=diameter/width;}return r;}
+}

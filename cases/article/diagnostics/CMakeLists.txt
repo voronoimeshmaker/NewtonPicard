@@ -33,3 +33,9 @@ target_link_libraries(diag_D0 PRIVATE diag_historical)
 
 add_executable(diag_D1 D1_spectral_hypotheses/main.cpp)
 target_link_libraries(diag_D1 PRIVATE diag_historical)
+
+add_executable(diag_D2 D2_frozen_vs_total/main.cpp)
+target_link_libraries(diag_D2 PRIVATE diag_historical)
+
+add_executable(diag_D4 D4_random_eigvec_localisation/main.cpp)
+target_link_libraries(diag_D4 PRIVATE diag_historical)
