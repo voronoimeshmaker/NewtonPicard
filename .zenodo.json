@@ -1,14 +1,24 @@
 {
-  "title": "A spectral criterion for the solution branch reached by the Picard iteration in semilinear unstructured finite-volume systems",
+  "title": "NewtonPicard: code and data for \"Spectral indicators for Picard and Newton iterations in semilinear finite-volume systems\"",
   "upload_type": "software",
+  "version": "v1.0.1",
   "creators": [
     {
       "name": "Vasconcellos, João Flávio",
       "affiliation": "Universidade do Estado do Rio de Janeiro (UERJ)"
     }
   ],
-  "description": "Research software, numerical data, case configurations and supporting documentation accompanying the manuscript <em>A spectral criterion for the solution branch reached by the Picard iteration in semilinear unstructured finite-volume systems</em>. The archived v1.0.0 Git tag points to commit <code>cc2ae381c79f10cf8f131d4b4906a6abc202881b</code>. Source repository: https://github.com/voronoimeshmaker/NewtonPicard . The numerical campaigns use ADOL-C for source-term differentiation. Code: GPL-3.0-or-later; author-owned data, case configurations and documentation: CC-BY-4.0. Existing third-party notices remain applicable. The record-level software licence does not replace the separate data/documentation licence.",
+  "description": "<p>Source code, case configurations and numerical data accompanying the manuscript <em>Spectral indicators for Picard and Newton iterations in semilinear finite-volume systems</em>, submitted to the SIAM Journal on Scientific Computing.</p><p>The numerical campaigns reported in the manuscript were produced with commit <code>cc2ae381c79f10cf8f131d4b4906a6abc202881b</code> (tag v1.0.0, DOI 10.5281/zenodo.23306169). Version v1.0.1 adds licensing, citation and documentation files; the numerical code is unchanged.</p><p>Source code and scripts: GPL-3.0-or-later. Author-owned data, case configurations and documentation: CC-BY-4.0. Existing third-party notices remain applicable; see LICENSING.md.</p>",
   "license": "GPL-3.0-or-later",
+  "keywords": [
+    "Picard iteration",
+    "Newton's method",
+    "spectral radius",
+    "finite-volume method",
+    "Voronoi mesh",
+    "Grad-Shafranov equation",
+    "many-query computation"
+  ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/voronoimeshmaker/NewtonPicard",

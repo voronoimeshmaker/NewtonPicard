@@ -1,14 +1,17 @@
 cff-version: 1.2.0
-message: "Please cite the archived release and the source repository when using this software."
+message: "If you use this software, please cite the archived release."
 type: software
-title: "A spectral criterion for the solution branch reached by the Picard iteration in semilinear unstructured finite-volume systems"
+title: 'NewtonPicard: code and data for "Spectral indicators for Picard and Newton iterations in semilinear finite-volume systems"'
 authors:
   - family-names: "Vasconcellos"
     given-names: "João Flávio"
-version: "1.0.0"
-doi: "10.5281/zenodo.23306169"
+    affiliation: "Universidade do Estado do Rio de Janeiro (UERJ)"
+version: "1.0.1"
+date-released: 2026-10-15
+doi: "10.5281/zenodo.23306168"
 repository-code: "https://github.com/voronoimeshmaker/NewtonPicard"
-url: "https://doi.org/10.5281/zenodo.23306169"
 commit: "cc2ae381c79f10cf8f131d4b4906a6abc202881b"
-license: "GPL-3.0-or-later"
-abstract: "Research software and numerical materials accompanying the manuscript. Code is GPL-3.0-or-later; author-owned data, case configurations and documentation are CC-BY-4.0; existing third-party notices remain applicable."
+license:
+  - GPL-3.0-or-later
+  - CC-BY-4.0
+abstract: "Code and data accompanying the manuscript. The numerical campaigns were produced with the commit given above (tag v1.0.0)."
